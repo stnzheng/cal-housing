@@ -1,0 +1,13 @@
+<h1>Create a new subletter profile</h1>
+<%= form_for @subletter_new do |s|  %>
+	<%= s.label :"Name" %>
+	<%= s.text_field :name %></br>
+
+	<%= s.label :"Email" %>
+	<%= s.text_field :email %></br>
+
+	<%= s.label :"Description" %></br>
+	<%= s.text_area :description, :cols => "60", :rows => "5"%></br>
+
+	<%= s.submit "Create Profile"%>
+<% end %>

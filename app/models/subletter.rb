@@ -1,0 +1,2 @@
+class Subletter < ApplicationRecord
+end

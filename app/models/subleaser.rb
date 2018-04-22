@@ -1,0 +1,2 @@
+class Subleaser < ApplicationRecord
+end
