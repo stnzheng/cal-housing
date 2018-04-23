@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180420025908) do
+ActiveRecord::Schema.define(version: 20180423015956) do
 
   create_table "landlords", force: :cascade do |t|
     t.string "name"
@@ -67,6 +67,8 @@ ActiveRecord::Schema.define(version: 20180420025908) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string "name"
+    t.integer "listingID"
+    t.integer "userType"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

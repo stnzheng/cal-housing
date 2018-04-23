@@ -247,3 +247,207 @@ Processing by VisitorsController#index as HTML
 Completed 200 OK in 352ms (Views: 339.4ms | ActiveRecord: 0.8ms)
 
 
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at C:/workspace/rubyrails/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-22 18:33:56 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_navigation_links.html.erb (3.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (138.2ms)
+  Rendered layouts/_navigation.html.erb (553.4ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 34924ms (Views: 34835.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-22 18:35:28 -0700
+Started GET "/" for 127.0.0.1 at 2018-04-22 18:35:28 -0700
+Processing by VisitorsController#index as HTML
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (66.6ms)
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (35.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (117.6ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 1351ms (Views: 1304.5ms | ActiveRecord: 0.6ms)
+
+
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (136.7ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1563ms (Views: 1384.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-22 18:35:36 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (6148.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (72.4ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 7048ms (Views: 6990.5ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-04-22 18:36:21 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8wOCwZRWJG3WhHpp+2EObM28517Ij0x4mazxDy82Brb0SJFv9FNMyYmIjtAvyty3OK36Ro//7uomFj5OdEIOyg==", "user"=>{"email"=>"nalinchopra123@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8wOCwZRWJG3WhHpp+2EObM28517Ij0x4mazxDy82Brb0SJFv9FNMyYmIjtAvyty3OK36Ro//7uomFj5OdEIOyg==", "user"=>{"email"=>"nalinchopra123@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (88.2ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+Completed 200 OK in 883ms (Views: 880.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-22 18:36:30 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (96.3ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 862ms (Views: 827.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-22 18:37:08 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (170.1ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 1066ms (Views: 1063.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-22 18:37:12 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (80.8ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 935ms (Views: 932.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-04-22 18:37:21 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (99.3ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 842ms (Views: 840.7ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at C:/workspace/rubyrails/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at C:/workspace/rubyrails/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DropLandlords (20180423014417)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180423014417"]]
+  [1m[35m (65.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at C:/workspace/rubyrails/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at C:/workspace/rubyrails/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DropSubleasers (20180423014556)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (26.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180423014556"]]
+  [1m[35m (57.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at C:/workspace/rubyrails/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at C:/workspace/rubyrails/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at C:/workspace/rubyrails/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDetailsToUsers (20180423015635)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mALTER TABLE "users" ADD "name" varchar[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at C:/workspace/rubyrails/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at C:/workspace/rubyrails/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at C:/workspace/rubyrails/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDetailsToUsers (20180423015956)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (27.1ms)[0m  [1m[35mALTER TABLE "users" ADD "listingID" integer[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "userType" integer[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180423015956"]]
+  [1m[35m (31.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
