@@ -1,8 +1,15 @@
-class ListingController < ApplicationController
+
+class ListingsController < ApplicationController
 
   def index
-    @listings = Listing.within(10, :origin => [current_user.lon,current_user.lat])
+    #require 'geokit'
+
+    address = params[:address]
+
+    @lat_lon = a=Geokit::Geocoders::GoogleGeocoder.geocode '2830 Bancroft Steps, Berkeley, CA'
+    @listings = Listing.within(10, :origin => [@lat_lon.lat, @lat_lon.lon])
   end
+
 
   def new
     @listing = Listing.new

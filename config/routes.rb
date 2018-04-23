@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   devise_for :users, path: 'user'
   resources :users
 
+  get "/browse", to: "listings#index", as: "browse"
+
+
 end

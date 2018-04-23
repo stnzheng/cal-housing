@@ -1018,3 +1018,525 @@ Migrating to DeviseCreateSubletters (20180423021318)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-22 19:29:24 -0700
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (30.7ms)
+  Rendered layouts/_navigation_links.html.erb (50.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (352.7ms)
+  Rendered layouts/_navigation.html.erb (473.8ms)
+  Rendered layouts/_messages.html.erb (3.4ms)
+Completed 200 OK in 4762ms (Views: 4633.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-22 19:34:25 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (206.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1405.8ms)
+  Rendered layouts/_navigation_links.html.erb (205.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (898.9ms)
+  Rendered layouts/_navigation.html.erb (1808.3ms)
+  Rendered layouts/_messages.html.erb (79.7ms)
+Completed 200 OK in 23330ms (Views: 22563.2ms | ActiveRecord: 206.2ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-22 19:36:51 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (21.4ms)
+  Rendered layouts/_navigation_links.html.erb (11.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (70.3ms)
+  Rendered layouts/_navigation.html.erb (124.7ms)
+  Rendered layouts/_messages.html.erb (14.4ms)
+Completed 200 OK in 1898ms (Views: 1824.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-22 19:37:14 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (46.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (350.6ms)
+  Rendered layouts/_navigation_links.html.erb (18.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (16.2ms)
+  Rendered layouts/_navigation.html.erb (68.8ms)
+  Rendered layouts/_messages.html.erb (43.4ms)
+Completed 200 OK in 2863ms (Views: 2744.5ms | ActiveRecord: 46.8ms)
+
+
+Started GET "/user/sign_up" for 127.0.0.1 at 2018-04-22 19:37:41 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (34.8ms)
+  Rendered users/registrations/new.html.erb within layouts/application (12603.2ms)
+  Rendered layouts/_navigation_links.html.erb (29.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (39.3ms)
+  Rendered layouts/_navigation.html.erb (113.4ms)
+  Rendered layouts/_messages.html.erb (6.8ms)
+Completed 200 OK in 14947ms (Views: 13720.6ms | ActiveRecord: 7.3ms)
+
+
+Started POST "/user" for 127.0.0.1 at 2018-04-22 19:38:23 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a9JNUKsorToSRNQVTgbnf2noib8+x1JheEmPFyilTXbETRqEtp+Q+Imtwr9KGCCL6ya6QXy3pfBl+K/9gIbM4g==", "user"=>{"email"=>"v@berk.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (30.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (73.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "v@berk.edu"], ["LIMIT", 1]]
+  [1m[35m (25.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (53.9ms)
+  Rendered users/registrations/new.html.erb within layouts/application (581.7ms)
+  Rendered layouts/_navigation_links.html.erb (132.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (138.7ms)
+  Rendered layouts/_navigation.html.erb (338.9ms)
+  Rendered layouts/_messages.html.erb (44.2ms)
+Completed 200 OK in 7706ms (Views: 3491.2ms | ActiveRecord: 129.8ms)
+
+
+Started POST "/user" for 127.0.0.1 at 2018-04-22 19:38:48 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SExqw8I4pdA9vFx382JYvG2l/l/vr4sDAcoa1s3j53vC+xQMZpgB6BRAMWhdf9UuDkqM+PvzeLFPczGGG0O4Ew==", "user"=>{"email"=>"v@berk.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (85.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (21.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "v@berk.edu"], ["LIMIT", 1]]
+  [1m[35mSQL (32.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "v@berk.edu"], ["encrypted_password", "$2a$11$DwOU8Fmf6UWTjRDqZ/2GSOGLGjz6DoziBN.rRmbdI8q7tN/lnILj."], ["created_at", "2018-04-23 02:38:49.578945"], ["updated_at", "2018-04-23 02:38:49.578945"]]
+  [1m[35m (20.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (9.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-04-23 02:38:50.430602"], ["last_sign_in_at", "2018-04-23 02:38:50.430602"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2018-04-23 02:38:50.966225"], ["id", 1]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3887ms (ActiveRecord: 172.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-22 19:38:52 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (8.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (199.3ms)
+  Rendered layouts/_navigation_links.html.erb (195.0ms)
+  [1m[36mUser Load (35.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (1627.2ms)
+  Rendered layouts/_navigation.html.erb (2513.5ms)
+  Rendered layouts/_messages.html.erb (61.0ms)
+Completed 200 OK in 13286ms (Views: 13115.8ms | ActiveRecord: 44.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-22 19:40:13 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (250.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/_user.html.erb (103.9ms)
+  Rendered users/index.html.erb within layouts/application (353.2ms)
+  Rendered layouts/_navigation_links.html.erb (84.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (109.6ms)
+  Rendered layouts/_navigation.html.erb (263.4ms)
+  Rendered layouts/_messages.html.erb (214.4ms)
+Completed 200 OK in 5866ms (Views: 4059.4ms | ActiveRecord: 251.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-22 19:40:27 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (95.5ms)
+  Rendered layouts/_navigation_links.html.erb (10.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (100.6ms)
+  Rendered layouts/_navigation.html.erb (162.0ms)
+  Rendered layouts/_messages.html.erb (38.6ms)
+Completed 200 OK in 2433ms (Views: 2405.5ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-22 19:42:14 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (22.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (623.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (116.1ms)
+  Rendered layouts/_navigation.html.erb (159.3ms)
+  Rendered layouts/_messages.html.erb (11.5ms)
+Completed 200 OK in 3642ms (Views: 3524.2ms | ActiveRecord: 24.6ms)
+
+
+Started POST "/?class=button+medium&method=patch" for 127.0.0.1 at 2018-04-22 19:42:46 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-22 19:56:32 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1601.7ms)
+  Rendered layouts/_navigation_links.html.erb (127.2ms)
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (1870.1ms)
+  Rendered layouts/_navigation.html.erb (2153.7ms)
+  Rendered layouts/_messages.html.erb (32.0ms)
+Completed 200 OK in 17890ms (Views: 17054.5ms | ActiveRecord: 273.0ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeLonToLng (20180423032803)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180423032803"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveLonFromListings (20180423033044)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "alistings" ("id" integer NOT NULL PRIMARY KEY, "author" varchar DEFAULT NULL, "price" integer DEFAULT NULL, "open_spots" integer DEFAULT NULL, "street" varchar DEFAULT NULL, "city" varchar DEFAULT NULL, "distance" decimal DEFAULT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL, "rating" integer DEFAULT NULL, "description" text DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "lat" decimal DEFAULT NULL, "lon" decimal DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "alistings" ("id","author","price","open_spots","street","city","distance","start_date","end_date","rating","description","created_at","updated_at","lat","lon")
+                     SELECT "id","author","price","open_spots","street","city","distance","start_date","end_date","rating","description","created_at","updated_at","lat","lon" FROM "listings"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "listings"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "listings" ("id" integer NOT NULL PRIMARY KEY, "author" varchar DEFAULT NULL, "price" integer DEFAULT NULL, "open_spots" integer DEFAULT NULL, "street" varchar DEFAULT NULL, "city" varchar DEFAULT NULL, "distance" decimal DEFAULT NULL, "start_date" date DEFAULT NULL, "end_date" date DEFAULT NULL, "rating" integer DEFAULT NULL, "description" text DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "lat" decimal DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "listings" ("id","author","price","open_spots","street","city","distance","start_date","end_date","rating","description","created_at","updated_at","lat")
+                     SELECT "id","author","price","open_spots","street","city","distance","start_date","end_date","rating","description","created_at","updated_at","lat" FROM "alistings"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "alistings"[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180423033044"]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (1.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_email' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddLngToListings (20180423033223)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "listings" ADD "lng" decimal[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180423033223"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-22 20:42:00 -0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_navigation_links.html.erb (5.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (188.5ms)
+  Rendered layouts/_navigation.html.erb (212.5ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 1402ms (Views: 1356.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-22 20:47:14 -0700
+
+NameError - uninitialized constant BrowseController:
+
+Started POST "/__better_errors/3634fb8107e4cfe2/variables" for 127.0.0.1 at 2018-04-22 20:47:15 -0700
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-22 20:48:34 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (25.4ms)
+  Rendered layouts/_navigation_links.html.erb (6.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (222.5ms)
+  Rendered layouts/_navigation.html.erb (261.5ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 756ms (Views: 732.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-22 20:48:43 -0700
+
+NameError - uninitialized constant ListingController:
+
+Started POST "/__better_errors/de1a6a739f0ca005/variables" for 127.0.0.1 at 2018-04-22 20:48:43 -0700
+Started GET "/" for 127.0.0.1 at 2018-04-22 20:49:14 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_navigation_links.html.erb (5.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (147.2ms)
+  Rendered layouts/_navigation.html.erb (166.6ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 358ms (Views: 343.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-22 20:49:18 -0700
+
+LoadError - Unable to autoload constant ListingsController, expected /Users/Vcortes/ruby198/cal-housing/app/controllers/listings_controller.rb to define it:
+
+Started POST "/__better_errors/7cbafd96024b1a70/variables" for 127.0.0.1 at 2018-04-22 20:49:19 -0700
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-22 20:50:18 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (29.6ms)
+  Rendered layouts/_navigation.html.erb (43.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 276ms (Views: 266.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-22 20:50:22 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ListingsController::Geokit:
+  app/controllers/listings_controller.rb:4:in `index'
+
+Started POST "/__better_errors/3f9a41824fd8360c/variables" for 127.0.0.1 at 2018-04-22 20:50:22 -0700
+Started GET "/" for 127.0.0.1 at 2018-04-22 20:52:22 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (48.2ms)
+  Rendered layouts/_navigation_links.html.erb (6.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (103.3ms)
+  Rendered layouts/_navigation.html.erb (151.0ms)
+  Rendered layouts/_messages.html.erb (1.6ms)
+Completed 200 OK in 425ms (Views: 401.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-22 20:52:26 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ListingsController::Geokit:
+  app/controllers/listings_controller.rb:5:in `index'
+
+Started POST "/__better_errors/48d47db000af6b03/variables" for 127.0.0.1 at 2018-04-22 20:52:26 -0700
+Started GET "/" for 127.0.0.1 at 2018-04-22 20:52:46 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (33.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (58.0ms)
+  Rendered layouts/_navigation.html.erb (69.8ms)
+  Rendered layouts/_messages.html.erb (1.7ms)
+Completed 200 OK in 277ms (Views: 254.5ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-22 20:52:50 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ListingsController::Geokit:
+  app/controllers/listings_controller.rb:5:in `index'
+
+Started POST "/__better_errors/3ac46e90ccb20c4c/variables" for 127.0.0.1 at 2018-04-22 20:52:50 -0700
+Started GET "/" for 127.0.0.1 at 2018-04-22 20:53:15 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (69.1ms)
+  Rendered layouts/_navigation.html.erb (83.0ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 370ms (Views: 358.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-22 20:53:18 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ListingsController::Geokit:
+  app/controllers/listings_controller.rb:5:in `index'
+
+Started POST "/__better_errors/f6aebe25baa796c6/variables" for 127.0.0.1 at 2018-04-22 20:53:19 -0700
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-22 20:55:24 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+
+
+LoadError - cannot load such file -- geokit:
+  app/controllers/listings_controller.rb:4:in `index'
+
+Started POST "/__better_errors/ee6b7f861afa5a43/variables" for 127.0.0.1 at 2018-04-22 20:55:25 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-22 20:56:31 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Completed 500 Internal Server Error in 12ms
+
+
+
+NameError - uninitialized constant ListingsController::Geokit:
+  app/controllers/listings_controller.rb:8:in `index'
+
+Started POST "/__better_errors/0554024c3d06aec8/variables" for 127.0.0.1 at 2018-04-22 20:56:31 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-22 20:57:59 -0700
+
+LoadError - cannot load such file -- geokit:
+  app/controllers/listings_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/b3e23554c5fe6cf1/variables" for 127.0.0.1 at 2018-04-22 20:58:00 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-22 20:58:11 -0700
+
+LoadError - cannot load such file -- geokit:
+  app/controllers/listings_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/792f1fcf6f137597/variables" for 127.0.0.1 at 2018-04-22 20:58:11 -0700
