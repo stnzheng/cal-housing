@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20180423021318) do
+ActiveRecord::Schema.define(version: 20180423035625) do
 
   create_table "landlords", force: :cascade do |t|
     t.string "name"
@@ -20,9 +19,6 @@ ActiveRecord::Schema.define(version: 20180423021318) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-=======
-ActiveRecord::Schema.define(version: 20180423015956) do
->>>>>>> 36d82f5ce24ee092516e18debc90f98af1b32cb7
 
   create_table "listings", force: :cascade do |t|
     t.string "author"
@@ -35,6 +31,15 @@ ActiveRecord::Schema.define(version: 20180423015956) do
     t.date "end_date"
     t.integer "rating"
     t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "subleasers", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.integer "listingID"
+    t.integer "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -52,6 +57,7 @@ ActiveRecord::Schema.define(version: 20180423015956) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
     t.index ["email"], name: "index_subletters_on_email", unique: true
     t.index ["reset_password_token"], name: "index_subletters_on_reset_password_token", unique: true
   end
