@@ -1,7 +1,7 @@
 class ListingController < ApplicationController
 
   def index
-    @listings = Listing.all
+    @listings = Listing.within(10, :origin => [current_user.lon,current_user.lat])
   end
 
   def new
