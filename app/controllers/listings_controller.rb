@@ -11,9 +11,9 @@ class ListingController < ApplicationController
   def create
     @listing = Listing.create(allowed_params)
     @listing.rating = 5
-    @listing.trainer_id = current_author.id
+    @listing.user_id = current_user.id
     if @listing.save
-      redirect_to current_author
+      redirect_to current_user
     else
       redirect_to listings_new_path, alert: "Error creating Listing. Make sure to fill in all required fields."
     end

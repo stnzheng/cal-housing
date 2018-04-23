@@ -247,3 +247,87 @@ Processing by VisitorsController#index as HTML
 Completed 200 OK in 352ms (Views: 339.4ms | ActiveRecord: 0.8ms)
 
 
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-22 18:33:50 -0700
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_navigation_links.html.erb (76.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (260.5ms)
+  Rendered layouts/_navigation.html.erb (476.8ms)
+  Rendered layouts/_messages.html.erb (57.0ms)
+Completed 200 OK in 13712ms (Views: 13671.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-22 18:34:25 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (10.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (35.3ms)
+  Rendered layouts/_navigation_links.html.erb (5.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.0ms)
+  Rendered layouts/_navigation.html.erb (28.5ms)
+  Rendered layouts/_messages.html.erb (1.6ms)
+Completed 200 OK in 857ms (Views: 787.8ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-22 18:34:33 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (18.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (59.6ms)
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.2ms)
+  Rendered layouts/_navigation.html.erb (20.6ms)
+  Rendered layouts/_messages.html.erb (3.4ms)
+Completed 200 OK in 631ms (Views: 548.0ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2018-04-22 18:34:34 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (6.9ms)
+  Rendered layouts/_navigation.html.erb (19.5ms)
+  Rendered layouts/_messages.html.erb (3.9ms)
+Completed 200 OK in 429ms (Views: 423.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-04-22 18:34:35 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2079.1ms)
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.1ms)
+  Rendered layouts/_navigation.html.erb (21.8ms)
+  Rendered layouts/_messages.html.erb (4.6ms)
+Completed 200 OK in 2546ms (Views: 2447.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-04-22 18:34:41 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (21.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (12.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 212ms (Views: 196.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-22 18:34:43 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (10.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (30.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.7ms)
+  Rendered layouts/_navigation.html.erb (11.2ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 179ms (Views: 163.9ms | ActiveRecord: 10.9ms)
+
+
