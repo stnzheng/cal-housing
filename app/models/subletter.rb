@@ -1,2 +1,0 @@
-class Subletter < ApplicationRecord
-end
