@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   get '/app/views/signup/index.html', to: 'signups#index'
   # get '/subletter/new', to: new_subletter_registration_path
   # devise_for :students, path: 's', controllers: { sessions: "students/sessions" }
+
+  get "/browse", to: "listings#index", as: "browse"
+
+
 end

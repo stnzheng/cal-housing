@@ -1,8 +1,15 @@
-class ListingController < ApplicationController
+
+class ListingsController < ApplicationController
 
   def index
-    @listings = Listing.all
+    #require 'geokit'
+
+    address = params[:address]
+
+    @lat_lon = a=Geokit::Geocoders::GoogleGeocoder.geocode '2830 Bancroft Steps, Berkeley, CA'
+    @listings = Listing.within(10, :origin => [@lat_lon.lat, @lat_lon.lon])
   end
+
 
   def new
     @listing = Listing.new
@@ -11,9 +18,9 @@ class ListingController < ApplicationController
   def create
     @listing = Listing.create(allowed_params)
     @listing.rating = 5
-    @listing.trainer_id = current_author.id
+    @listing.user_id = current_user.id
     if @listing.save
-      redirect_to current_author
+      redirect_to current_user
     else
       redirect_to listings_new_path, alert: "Error creating Listing. Make sure to fill in all required fields."
     end
