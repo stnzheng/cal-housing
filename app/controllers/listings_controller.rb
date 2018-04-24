@@ -10,7 +10,7 @@ class ListingsController < ApplicationController
     @lat_lon = a=Geokit::Geocoders::GoogleGeocoder.geocode address
     @listings = Listing.within(5, :origin => [@lat_lon.lat, @lat_lon.lng])
 
-  #end
+  end
 
 
   def new

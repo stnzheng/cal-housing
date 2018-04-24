@@ -8493,3 +8493,825 @@ Processing by VisitorsController#index as HTML
   Rendered layouts/_navigation.html.erb (19.9ms)
   Rendered layouts/_messages.html.erb (0.8ms)
 Completed 200 OK in 264ms (Views: 257.1ms | ActiveRecord: 1.5ms)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-24 10:52:58 -0700
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/befb461cb24e701d/variables" for 127.0.0.1 at 2018-04-24 10:52:59 -0700
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserIdToListings (20180424083248)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (12.6ms)[0m  [1m[35mALTER TABLE "listings" ADD "user_id" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX "index_listings_on_user_id" ON "listings" ("user_id")[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180424083248"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddImageToListings (20180424083522)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "listings" ADD "image" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180424083522"]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_listings_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_listings_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-24 10:53:48 -0700
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_navigation_links.html.erb (4.5ms)
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (29.0ms)
+  Rendered layouts/_navigation.html.erb (43.3ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 6697ms (Views: 6658.0ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-24 10:54:06 -0700
+
+SyntaxError - syntax error, unexpected end-of-input, expecting keyword_end:
+  app/controllers/listings_controller.rb:89:in `'
+
+Started POST "/__better_errors/58a51411b20084df/variables" for 127.0.0.1 at 2018-04-24 10:54:07 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 10:54:23 -0700
+
+SyntaxError - syntax error, unexpected end-of-input, expecting keyword_end:
+  app/controllers/listings_controller.rb:89:in `'
+
+Started POST "/__better_errors/402a9bf9f96ee6b4/variables" for 127.0.0.1 at 2018-04-24 10:54:23 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 10:54:54 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+Completed 500 Internal Server Error in 718ms
+
+
+
+NoMethodError - undefined method `within' for Listing (call 'Listing.connection' to establish a connection):Class:
+  app/controllers/listings_controller.rb:11:in `index'
+
+Started POST "/__better_errors/42e0b643d1adde7b/variables" for 127.0.0.1 at 2018-04-24 10:54:55 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 10:55:04 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+Completed 500 Internal Server Error in 555ms
+
+
+
+NoMethodError - undefined method `within' for Listing (call 'Listing.connection' to establish a connection):Class:
+  app/controllers/listings_controller.rb:11:in `index'
+
+Started POST "/__better_errors/574b357921406fd9/variables" for 127.0.0.1 at 2018-04-24 10:55:05 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 10:55:14 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22error_message%22+%3A+%22You+have+exceeded+your+daily+request+quota+for+this+API.+We+recommend+registering+for+a+key+at+the+Google+Developers+Console%3A+https%3A%2F%2Fconsole.developers.google.com%2Fapis%2Fcredentials%3Fproject%3D_%22%2C%0A+++%22results%22+%3A+%5B%5D%2C%0A+++%22status%22+%3A+%22OVER_QUERY_LIMIT%22%0A%7D%0A
+Completed 500 Internal Server Error in 107ms
+
+
+
+Geokit::Geocoders::TooManyQueriesError - You have exceeded your daily request quota for this API. We recommend registering for a key at the Google Developers Console: https://console.developers.google.com/apis/credentials?project=_:
+  app/controllers/listings_controller.rb:10:in `index'
+
+Started POST "/__better_errors/c23fcbb345ef0406/variables" for 127.0.0.1 at 2018-04-24 10:55:14 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 10:56:25 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (3.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.7970271735732 AND listings.lat<37.941597026426784 AND listings.lng>-122.34208441760072 AND listings.lng<-122.15894858239928) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.660944181610328)*COS(-2.1336740251886543)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.660944181610328)*SIN(-2.1336740251886543)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.660944181610328)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (54.6ms)
+Completed 500 Internal Server Error in 283ms (ActiveRecord: 16.2ms)
+
+
+
+ArgumentError - nil is not a valid asset source:
+  app/views/listings/index.html.erb:12:in `block in _app_views_listings_index_html_erb___489884533502079499_70173857822720'
+  app/views/listings/index.html.erb:3:in `_app_views_listings_index_html_erb___489884533502079499_70173857822720'
+
+Started POST "/__better_errors/b940eb5f97482871/variables" for 127.0.0.1 at 2018-04-24 10:56:26 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 10:56:32 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.7970271735732 AND listings.lat<37.941597026426784 AND listings.lng>-122.34208441760072 AND listings.lng<-122.15894858239928) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.660944181610328)*COS(-2.1336740251886543)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.660944181610328)*SIN(-2.1336740251886543)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.660944181610328)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.6ms)
+
+
+
+ArgumentError - nil is not a valid asset source:
+  app/views/listings/index.html.erb:12:in `block in _app_views_listings_index_html_erb___489884533502079499_70173812256680'
+  app/views/listings/index.html.erb:3:in `_app_views_listings_index_html_erb___489884533502079499_70173812256680'
+
+Started POST "/__better_errors/a5f40357cd96a950/variables" for 127.0.0.1 at 2018-04-24 10:56:33 -0700
+Started GET "/" for 127.0.0.1 at 2018-04-24 10:56:52 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (37.0ms)
+  Rendered layouts/_navigation_links.html.erb (3.3ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (93.7ms)
+  Rendered layouts/_navigation.html.erb (108.7ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 496ms (Views: 461.7ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 10:57:01 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (7.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.7970271735732 AND listings.lat<37.941597026426784 AND listings.lng>-122.34208441760072 AND listings.lng<-122.15894858239928) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.660944181610328)*COS(-2.1336740251886543)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.660944181610328)*SIN(-2.1336740251886543)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.660944181610328)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (32.8ms)
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 7.5ms)
+
+
+
+ArgumentError - nil is not a valid asset source:
+  app/views/listings/index.html.erb:12:in `block in _app_views_listings_index_html_erb___489884533502079499_70173856998740'
+  app/views/listings/index.html.erb:3:in `_app_views_listings_index_html_erb___489884533502079499_70173856998740'
+
+Started POST "/__better_errors/930cffeaa8a8308f/variables" for 127.0.0.1 at 2018-04-24 10:57:01 -0700
+Started GET "/" for 127.0.0.1 at 2018-04-24 10:59:02 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (29.4ms)
+  Rendered layouts/_navigation_links.html.erb (3.8ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (99.6ms)
+  Rendered layouts/_navigation.html.erb (120.6ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 456ms (Views: 419.7ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-24 10:59:05 -0700
+Processing by ListingsController#index as HTML
+Google geocoding. address: , args []
+Caught an error during Google geocoding call: no implicit conversion of nil into String
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/inflectors.rb:24:in `escape'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/inflectors.rb:24:in `url_escape'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/geocoders/google.rb:63:in `do_geocode'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/geocoders.rb:90:in `geocode'
+/Users/Vcortes/ruby198/cal-housing/app/controllers/listings_controller.rb:10:in `index'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:186:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:131:in `run_callbacks'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:19:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/rescue.rb:20:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `block in instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activerecord-5.1.6/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:124:in `process'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.6/lib/action_view/rendering.rb:30:in `process'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal.rb:189:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal.rb:253:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `each'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:844:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/etag.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/conditional_get.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/head.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:232:in `context'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:226:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activerecord-5.1.6/lib/active_record/migration.rb:556:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:97:in `run_callbacks'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:84:in `protected_app_call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:79:in `better_errors_call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:57:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:135:in `call_app'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:30:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `catch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/method_override.rb:22:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/runtime.rb:22:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/static.rb:125:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/sendfile.rb:111:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/engine.rb:522:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>-0.0722849264267955 AND listings.lat<0.0722849264267955 AND listings.lng>-0.0722849264267955 AND listings.lng<0.0722849264267955) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.0)*COS(0.0)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.0)*SIN(0.0)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.0)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (5.3ms)
+  Rendered layouts/_navigation.html.erb (16.0ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 278ms (Views: 227.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-24 10:59:13 -0700
+Processing by ListingsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering listings/new.html.erb within layouts/application
+  Rendered listings/_form.html.erb (1241.9ms)
+  Rendered listings/new.html.erb within layouts/application (1247.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (10.7ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 1434ms (Views: 1331.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/listings/edit" for 127.0.0.1 at 2018-04-24 10:59:39 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mListing Load (2.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 22ms (ActiveRecord: 2.1ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=edit:
+  app/controllers/listings_controller.rb:81:in `set_listing'
+
+Started POST "/__better_errors/3fe8971b6c750195/variables" for 127.0.0.1 at 2018-04-24 10:59:40 -0700
+Started GET "/user/edit" for 127.0.0.1 at 2018-04-24 10:59:56 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/registrations/edit.html.erb within layouts/application (28.4ms)
+  Rendered layouts/_navigation_links.html.erb (2.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (16.2ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 234ms (Views: 226.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-24 11:00:03 -0700
+Processing by ListingsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering listings/new.html.erb within layouts/application
+  Rendered listings/_form.html.erb (28.1ms)
+  Rendered listings/new.html.erb within layouts/application (35.2ms)
+  Rendered layouts/_navigation_links.html.erb (2.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (14.8ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 345ms (Views: 330.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2018-04-24 11:00:10 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (5.5ms)
+  Rendered layouts/_navigation.html.erb (16.5ms)
+  Rendered layouts/_messages.html.erb (2.4ms)
+Completed 200 OK in 177ms (Views: 169.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 11:00:14 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (11.3ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 185ms (Views: 180.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2018-04-24 11:00:24 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (8.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-24 11:00:24 -0700
+Processing by ListingsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering listings/new.html.erb within layouts/application
+  Rendered listings/_form.html.erb (18.8ms)
+  Rendered listings/new.html.erb within layouts/application (30.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (9.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 192ms (Views: 173.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/listings/edit" for 127.0.0.1 at 2018-04-24 11:00:27 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=edit:
+  app/controllers/listings_controller.rb:81:in `set_listing'
+
+Started POST "/__better_errors/f03fb9a4eaefe513/variables" for 127.0.0.1 at 2018-04-24 11:00:27 -0700
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-24 11:00:29 -0700
+Processing by ListingsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering listings/new.html.erb within layouts/application
+  Rendered listings/_form.html.erb (13.0ms)
+  Rendered listings/new.html.erb within layouts/application (21.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.3ms)
+  Rendered layouts/_navigation.html.erb (50.8ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 320ms (Views: 307.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-24 11:00:31 -0700
+Processing by ListingsController#index as HTML
+Google geocoding. address: , args []
+Caught an error during Google geocoding call: no implicit conversion of nil into String
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/inflectors.rb:24:in `escape'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/inflectors.rb:24:in `url_escape'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/geocoders/google.rb:63:in `do_geocode'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/geocoders.rb:90:in `geocode'
+/Users/Vcortes/ruby198/cal-housing/app/controllers/listings_controller.rb:10:in `index'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:186:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:131:in `run_callbacks'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:19:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/rescue.rb:20:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `block in instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activerecord-5.1.6/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:124:in `process'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.6/lib/action_view/rendering.rb:30:in `process'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal.rb:189:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal.rb:253:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `each'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:844:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/etag.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/conditional_get.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/head.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:232:in `context'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:226:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activerecord-5.1.6/lib/active_record/migration.rb:556:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:97:in `run_callbacks'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:84:in `protected_app_call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:79:in `better_errors_call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:57:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:135:in `call_app'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:30:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `catch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/method_override.rb:22:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/runtime.rb:22:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/static.rb:125:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/sendfile.rb:111:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/engine.rb:522:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>-0.0722849264267955 AND listings.lat<0.0722849264267955 AND listings.lng>-0.0722849264267955 AND listings.lng<0.0722849264267955) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.0)*COS(0.0)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.0)*SIN(0.0)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.0)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.9ms)
+  Rendered layouts/_navigation.html.erb (14.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 150ms (Views: 136.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-24 11:00:36 -0700
+Processing by ListingsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering listings/new.html.erb within layouts/application
+  Rendered listings/_form.html.erb (14.2ms)
+  Rendered listings/new.html.erb within layouts/application (18.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (24.2ms)
+  Rendered layouts/_messages.html.erb (3.4ms)
+Completed 200 OK in 161ms (Views: 150.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 11:00:48 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (7.9ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 0.5ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mListing Load (8.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" LIMIT ?[0m  [["LIMIT", 11]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-24 11:02:48 -0700
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (18.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (96.9ms)
+  Rendered layouts/_navigation.html.erb (115.4ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 1209ms (Views: 1175.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 11:02:52 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22error_message%22+%3A+%22You+have+exceeded+your+daily+request+quota+for+this+API.+We+recommend+registering+for+a+key+at+the+Google+Developers+Console%3A+https%3A%2F%2Fconsole.developers.google.com%2Fapis%2Fcredentials%3Fproject%3D_%22%2C%0A+++%22results%22+%3A+%5B%5D%2C%0A+++%22status%22+%3A+%22OVER_QUERY_LIMIT%22%0A%7D%0A
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms)
+
+
+
+Geokit::Geocoders::TooManyQueriesError - You have exceeded your daily request quota for this API. We recommend registering for a key at the Google Developers Console: https://console.developers.google.com/apis/credentials?project=_:
+  app/controllers/listings_controller.rb:10:in `index'
+
+Started POST "/__better_errors/c5fe7a95bf8eb0f9/variables" for 127.0.0.1 at 2018-04-24 11:02:53 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 11:02:55 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22error_message%22+%3A+%22You+have+exceeded+your+daily+request+quota+for+this+API.+We+recommend+registering+for+a+key+at+the+Google+Developers+Console%3A+https%3A%2F%2Fconsole.developers.google.com%2Fapis%2Fcredentials%3Fproject%3D_%22%2C%0A+++%22results%22+%3A+%5B%5D%2C%0A+++%22status%22+%3A+%22OVER_QUERY_LIMIT%22%0A%7D%0A
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 0.0ms)
+
+
+
+Geokit::Geocoders::TooManyQueriesError - You have exceeded your daily request quota for this API. We recommend registering for a key at the Google Developers Console: https://console.developers.google.com/apis/credentials?project=_:
+  app/controllers/listings_controller.rb:10:in `index'
+
+Started POST "/__better_errors/4da7b7dbec58816d/variables" for 127.0.0.1 at 2018-04-24 11:02:55 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 11:02:58 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22error_message%22+%3A+%22You+have+exceeded+your+daily+request+quota+for+this+API.+We+recommend+registering+for+a+key+at+the+Google+Developers+Console%3A+https%3A%2F%2Fconsole.developers.google.com%2Fapis%2Fcredentials%3Fproject%3D_%22%2C%0A+++%22results%22+%3A+%5B%5D%2C%0A+++%22status%22+%3A+%22OVER_QUERY_LIMIT%22%0A%7D%0A
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.0ms)
+
+
+
+Geokit::Geocoders::TooManyQueriesError - You have exceeded your daily request quota for this API. We recommend registering for a key at the Google Developers Console: https://console.developers.google.com/apis/credentials?project=_:
+  app/controllers/listings_controller.rb:10:in `index'
+
+Started POST "/__better_errors/64cf58aa797e8a66/variables" for 127.0.0.1 at 2018-04-24 11:02:59 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 11:03:00 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.7970271735732 AND listings.lat<37.941597026426784 AND listings.lng>-122.34208441760072 AND listings.lng<-122.15894858239928) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.660944181610328)*COS(-2.1336740251886543)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.660944181610328)*SIN(-2.1336740251886543)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.660944181610328)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (38.8ms)
+Completed 500 Internal Server Error in 887ms (ActiveRecord: 3.2ms)
+
+
+
+ArgumentError - nil is not a valid asset source:
+  app/views/listings/index.html.erb:12:in `block in _app_views_listings_index_html_erb___2642440657820085879_70195842214860'
+  app/views/listings/index.html.erb:3:in `_app_views_listings_index_html_erb___2642440657820085879_70195842214860'
+
+Started POST "/__better_errors/9634f97bd023eabf/variables" for 127.0.0.1 at 2018-04-24 11:03:01 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 11:03:22 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.7970271735732 AND listings.lat<37.941597026426784 AND listings.lng>-122.34208441760072 AND listings.lng<-122.15894858239928) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.660944181610328)*COS(-2.1336740251886543)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.660944181610328)*SIN(-2.1336740251886543)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.660944181610328)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (6.1ms)
+  Rendered layouts/_navigation.html.erb (19.9ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 375ms (Views: 207.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/listings/3" for 127.0.0.1 at 2018-04-24 11:03:32 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (36.2ms)
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 2.1ms)
+
+
+
+ArgumentError - nil is not a valid asset source:
+  app/views/listings/show.html.erb:55:in `_app_views_listings_show_html_erb__2703999650392057724_70195859852640'
+
+Started POST "/__better_errors/52c9dcf950ee9c2d/variables" for 127.0.0.1 at 2018-04-24 11:03:32 -0700
+  [1m[36mListing Load (5.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started GET "/listings/5" for 127.0.0.1 at 2018-04-24 11:03:50 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.8ms)
+
+
+
+ArgumentError - nil is not a valid asset source:
+  app/views/listings/show.html.erb:55:in `_app_views_listings_show_html_erb__2703999650392057724_70195824695920'
+
+Started POST "/__better_errors/06a6b07174cb6a82/variables" for 127.0.0.1 at 2018-04-24 11:03:50 -0700
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-24 11:03:52 -0700
+Processing by ListingsController#index as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.7970271735732 AND listings.lat<37.941597026426784 AND listings.lng>-122.34208441760072 AND listings.lng<-122.15894858239928) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.660944181610328)*COS(-2.1336740251886543)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.660944181610328)*SIN(-2.1336740251886543)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.660944181610328)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (4.8ms)
+  Rendered layouts/_navigation.html.erb (23.6ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 523ms (Views: 298.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-24 11:03:58 -0700
+Processing by ListingsController#index as HTML
+Google geocoding. address: , args []
+Caught an error during Google geocoding call: no implicit conversion of nil into String
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/inflectors.rb:24:in `escape'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/inflectors.rb:24:in `url_escape'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/geocoders/google.rb:63:in `do_geocode'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/geocoders.rb:90:in `geocode'
+/Users/Vcortes/ruby198/cal-housing/app/controllers/listings_controller.rb:10:in `index'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:186:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:131:in `run_callbacks'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:19:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/rescue.rb:20:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `block in instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activerecord-5.1.6/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:124:in `process'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.6/lib/action_view/rendering.rb:30:in `process'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal.rb:189:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal.rb:253:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `each'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:844:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/etag.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/conditional_get.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/head.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:232:in `context'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:226:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activerecord-5.1.6/lib/active_record/migration.rb:556:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:97:in `run_callbacks'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:84:in `protected_app_call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:79:in `better_errors_call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:57:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:135:in `call_app'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:30:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `catch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/method_override.rb:22:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/runtime.rb:22:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/static.rb:125:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/sendfile.rb:111:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/engine.rb:522:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>-0.0722849264267955 AND listings.lat<0.0722849264267955 AND listings.lng>-0.0722849264267955 AND listings.lng<0.0722849264267955) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.0)*COS(0.0)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.0)*SIN(0.0)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.0)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (4.3ms)
+  Rendered layouts/_navigation.html.erb (14.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 158ms (Views: 147.7ms | ActiveRecord: 1.0ms)
+
+
