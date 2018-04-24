@@ -3,11 +3,10 @@ class ListingsController < ApplicationController
 
   def index
     #require 'geokit'
-
     address = params[:address]
+    @lat_lon = a=Geokit::Geocoders::GoogleGeocoder.geocode address
+    @listings = Listing.within(5, :origin => [@lat_lon.lat, @lat_lon.lng])
 
-    @lat_lon = a=Geokit::Geocoders::GoogleGeocoder.geocode '2830 Bancroft Steps, Berkeley, CA'
-    @listings = Listing.within(10, :origin => [@lat_lon.lat, @lat_lon.lon])
   end
 
 

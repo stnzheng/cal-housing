@@ -1,11 +1,14 @@
-<% @listings.each do |listing| %>
-  <!-- <tr> -->
-    <h1> <%= listing.open_spots%> Bedroom, <%= listing.price %>, <%= listing.city%> </h1>
-    <h3> Price: <%= listing.price %> </h3>
-    <h3> Author: <%= listing.author %> </h3>
-    <h3> Start Date: <%= listing.start_date %> </h3>
-    <h3> End Date: <%= listing.end_date %> </h3>
-    <h3> Rating: <%= listing.rating %> </h3>
-    <p> Description: <%= listing.description %> </p>
-  <!-- </tr> -->
-<% end %>
+<h1 class="listing_title"> Listings: </h1>
+<div class="all_listings">
+  <% @listings.each do |listing| %>
+    <div class="listing_container">
+      <h1> <%= listing.open_spots%> Bedroom, $<%= listing.price %>, <%= listing.city%> </h1>
+      <h5> Price: $ <%= listing.price %> </h5>
+      <h5> Author: <%= listing.author %> </h5>
+      <h5> Start Date: <%= listing.start_date %> </h5>
+      <h5> End Date: <%= listing.end_date %> </h5>
+      <h5> Rating: <%= listing.rating %> </h5>
+      <h5> Description: <%= listing.description %> </h5>
+    </div>
+  <% end %>
+</div>
