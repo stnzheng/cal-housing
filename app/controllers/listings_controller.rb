@@ -1,3 +1,4 @@
+
 class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
@@ -10,22 +11,36 @@ class ListingsController < ApplicationController
 
   # GET /listings/1
   # GET /listings/1.json
-  def show
-  end
+
+  #def index
 
   # GET /listings/new
+    #require 'geokit'
+    #address = params[:address]
+    #@lat_lon = a=Geokit::Geocoders::GoogleGeocoder.geocode address
+    #@listings = Listing.within(5, :origin => [@lat_lon.lat, @lat_lon.lng])
+
+  #end
+
+
   def new
-    @listing = Listing.new
+    @listing = current_user.listings.build
   end
 
   # GET /listings/1/edit
   def edit
+
   end
 
   # POST /listings
   # POST /listings.json
   def create
+
     @listing = current_user.listings.build(listing_params)
+    @listing.rating = 5
+    @listing.user_id = current_user.id
+
+
 
     respond_to do |format|
       if @listing.save
@@ -36,10 +51,17 @@ class ListingsController < ApplicationController
         format.json { render json: @listing.errors, status: :unprocessable_entity }
       end
     end
+
+  end
+
+  def show
+      @listing = Listing.find(params[:id])
+      @author_listing = current_user.listings
   end
 
   # PATCH/PUT /listings/1
   # PATCH/PUT /listings/1.json
+
   def update
     respond_to do |format|
       if @listing.update(listing_params)
@@ -54,6 +76,7 @@ class ListingsController < ApplicationController
 
   # DELETE /listings/1
   # DELETE /listings/1.json
+
   def destroy
     @listing.destroy
     respond_to do |format|
@@ -69,7 +92,8 @@ class ListingsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def listing_params
-      params.require(:listing).permit(:author, :price, :open_spots, :street, :city, :distance, :start_date, :end_date, :rating, :description, :image)
-    end
+  def listing_params
+    params.require(:listing).permit(:author, :price, :open_spots, :street, :city, :distance, :start_date, :end_date, :rating, :description, :image)
+  end
+
 end

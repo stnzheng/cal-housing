@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+// HOME PAGE STYLING
+.app_title {
+  font-size: 86px;
+  margin: 40px 20px 20px 100px;
+  padding: 40px;
+}
+.app_container {
+  height: 620px;
+}
+.app_content {
+  margin: 40px 20px 20px 100px;
+  padding: 40px;
+}
+ // RENDERED LISTINGS STYLING
+ .listing_title {
+   text-align: center;
+   margin: 30px auto;
+ }
+ .listing_container {
+   border-radius: 3px;
+   border: black solid;
+   margin: 10px;
+   padding: 20px;
+ }
+ .all_listings {
+   width: 50%;
+   margin: 0 auto;
+ }

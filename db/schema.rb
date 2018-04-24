@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180423021318) do
+ActiveRecord::Schema.define(version: 20180424083522) do
 
   create_table "landlords", force: :cascade do |t|
     t.string "name"
@@ -33,6 +33,11 @@ ActiveRecord::Schema.define(version: 20180423021318) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "lat"
+    t.decimal "lng"
+    t.integer "user_id"
+    t.string "image"
+    t.index ["user_id"], name: "index_listings_on_user_id"
   end
 
   create_table "subleasers", force: :cascade do |t|
@@ -57,6 +62,7 @@ ActiveRecord::Schema.define(version: 20180423021318) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
     t.index ["email"], name: "index_subletters_on_email", unique: true
     t.index ["reset_password_token"], name: "index_subletters_on_reset_password_token", unique: true
   end

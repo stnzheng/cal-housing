@@ -37,11 +37,6 @@
   </div>
 
   <div class="field">
-    <%= form.label :distance %>
-    <%= form.text_field :distance, id: :listing_distance %>
-  </div>
-
-  <div class="field">
     <%= form.label :start_date %>
     <%= form.date_select :start_date, id: :listing_start_date %>
   </div>
@@ -60,6 +55,20 @@
     <%= form.label :description %>
     <%= form.text_area :description, id: :listing_description %>
   </div>
+
+  <div class="field">
+          <div class="control">
+              <div class="file">
+                <%= form.label :add_images %>
+                <%= form.file_field :image, id: :listing_image %>
+                    <span class="file-icon"><i class="fa fa-upload"></i></span>
+                    <span class="file-label">Choose a file…</span>
+                  </span>
+              </label>
+              </div>
+            </div>
+          </div>
+
 
   <div class="actions">
     <%= form.submit %>

@@ -5,5 +5,8 @@ class SublettersController < ApplicationController
 		# redirect_to index
 	end
 
+	def show
+		@subletter = Subletter.find(params[:id])
+	end
 
 end
