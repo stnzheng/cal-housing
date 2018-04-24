@@ -1,36 +1,89 @@
 
 class ListingsController < ApplicationController
+  before_action :set_listing, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
+  # GET /listings
+  # GET /listings.json
   def index
     address = params[:address]
     @lat_lon = a=Geokit::Geocoders::GoogleGeocoder.geocode address
     @listings = Listing.within(5, :origin => [@lat_lon.lat, @lat_lon.lng])
 
-  end
+  #end
 
 
   def new
-    @listing = Listing.new
+    @listing = current_user.listings.build
   end
 
+  # GET /listings/1/edit
+  def edit
+
+  end
+
+  # POST /listings
+  # POST /listings.json
   def create
-    @listing = Listing.create(allowed_params)
+
+    @listing = current_user.listings.build(listing_params)
     @listing.rating = 5
     @listing.user_id = current_user.id
-    if @listing.save
-      redirect_to current_user
-    else
-      redirect_to listings_new_path, alert: "Error creating Listing. Make sure to fill in all required fields."
+
+
+
+    respond_to do |format|
+      if @listing.save
+        format.html { redirect_to @listing, notice: 'Listing was successfully created.' }
+        format.json { render :show, status: :created, location: @listing }
+      else
+        format.html { render :new }
+        format.json { render json: @listing.errors, status: :unprocessable_entity }
+      end
     end
+
   end
 
   def show
       @listing = Listing.find(params[:id])
-      @author_listing = @author.listings
+      @author_listing = current_user.listings
   end
 
-  def allowed_params
-    params.require(:listing).permit(:author, :price, :openspots, :address, :city, :distance, :startDate, :endDate, :description)
+  # PATCH/PUT /listings/1
+  # PATCH/PUT /listings/1.json
+
+  def update
+    respond_to do |format|
+      if @listing.update(listing_params)
+        format.html { redirect_to @listing, notice: 'Listing was successfully updated.' }
+        format.json { render :show, status: :ok, location: @listing }
+      else
+        format.html { render :edit }
+        format.json { render json: @listing.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /listings/1
+  # DELETE /listings/1.json
+
+  def destroy
+    @listing.destroy
+    respond_to do |format|
+      format.html { redirect_to listings_url, notice: 'Listing was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_listing
+      @listing = Listing.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+  def listing_params
+    params.require(:listing).permit(:author, :price, :open_spots, :street, :city, :distance, :start_date, :end_date, :rating, :description, :image)
   end
 
 end

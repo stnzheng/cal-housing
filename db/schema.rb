@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180423035625) do
+ActiveRecord::Schema.define(version: 20180424083522) do
 
   create_table "landlords", force: :cascade do |t|
     t.string "name"
@@ -35,6 +35,9 @@ ActiveRecord::Schema.define(version: 20180423035625) do
     t.datetime "updated_at", null: false
     t.decimal "lat"
     t.decimal "lng"
+    t.integer "user_id"
+    t.string "image"
+    t.index ["user_id"], name: "index_listings_on_user_id"
   end
 
   create_table "subleasers", force: :cascade do |t|

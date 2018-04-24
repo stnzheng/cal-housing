@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.4.1'
+
 # gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'rails', '~> 5.1.5'
 gem 'sqlite3'
@@ -13,6 +14,14 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'geokit'
 gem 'geokit-rails'
+gem 'graphicsmagick'
+
+gem 'bulma-rails', '~> 0.6.1'
+gem 'simple_form', '~> 3.5'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'carrierwave'
+gem 'mini_magick'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end

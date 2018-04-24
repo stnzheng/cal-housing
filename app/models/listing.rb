@@ -1,3 +1,7 @@
 class Listing < ApplicationRecord
-  acts_as_mappable
+  #require 'carrierwave/orm/activerecord'
+  belongs_to :user
+
+  mount_uploader :image, ImageUploader
+  serialize :image, JSON
 end

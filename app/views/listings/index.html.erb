@@ -8,7 +8,12 @@
       <h5> Start Date: <%= listing.start_date %> </h5>
       <h5> End Date: <%= listing.end_date %> </h5>
       <h5> Rating: <%= listing.rating %> </h5>
-      <h5> Description: <%= listing.description %> </h5>
+      <div class="listing-thumb">
+      <%= link_to image_tag(listing.image_url(:thumb)), listing %>
+      </div>
+      <td><%= link_to 'Show More', listing %></td>
     </div>
   <% end %>
 </div>
+
+<%= link_to 'New Listing', new_listing_path %>
