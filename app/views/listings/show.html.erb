@@ -50,5 +50,14 @@
   <%= @listing.description %>
 </p>
 
-<%= link_to 'Edit', edit_listing_path(@listing) %> |
-<%= link_to 'Back', listings_path %>
+
+<div>
+  <%= image_tag(@listing.image_url(:thumb), :style => "float :left; border 1px solid #00000;") %>
+</div>
+
+<div style="clear: both">
+<p>
+  <%= link_to 'Edit', edit_listing_path(@listing) %> |
+  <%= link_to 'Destroy', @listing, method: :delete, data: { confirm: 'Are you sure?' } %> |
+  <%= link_to 'Back', listings_path %>
+</p>
