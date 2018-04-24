@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @listing.author %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @listing.price %>
+</p>
+
+<p>
+  <strong>Open spots:</strong>
+  <%= @listing.open_spots %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @listing.street %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @listing.city %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @listing.distance %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @listing.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @listing.end_date %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @listing.rating %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @listing.description %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>

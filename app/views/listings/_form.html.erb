@@ -1,0 +1,67 @@
+<%= form_with(model: listing, local: true) do |form| %>
+  <% if listing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
+
+      <ul>
+      <% listing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :author %>
+    <%= form.text_field :author, id: :listing_author %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price, id: :listing_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :open_spots %>
+    <%= form.number_field :open_spots, id: :listing_open_spots %>
+  </div>
+
+  <div class="field">
+    <%= form.label :street %>
+    <%= form.text_field :street, id: :listing_street %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :listing_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :distance %>
+    <%= form.text_field :distance, id: :listing_distance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.date_select :start_date, id: :listing_start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.date_select :end_date, id: :listing_end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rating %>
+    <%= form.number_field :rating, id: :listing_rating %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :listing_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
