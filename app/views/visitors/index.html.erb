@@ -5,7 +5,7 @@
 
       <%= form_tag("/browse", method: "get") do %>
         <%= label_tag(:address, "Search for:") %>
-        <%= text_field_tag(:address) %>
+        <%= text_field_tag(:address, '', size: 50, placeholder: 'housing near this address...') %>
         <%= submit_tag("Search") %>
       <% end %>
   </div>
