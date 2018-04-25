@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 20180425055818) do
     t.integer "open_spots"
     t.string "street"
     t.string "city"
-    t.decimal "distance"
     t.date "start_date"
     t.date "end_date"
     t.integer "rating"

@@ -29,6 +29,9 @@ class ListingsController < ApplicationController
     @listing = current_user.listings.build(listing_params)
     @listing.rating = 5
     @listing.user_id = current_user.id
+    tempLatLon = a=Geokit::Geocoders::GoogleGeocoder.geocode @listing.address
+    @listing.lat = tempLatLon.lat
+    @listing.lng = tempLatLon.lng
 
 
 
@@ -83,7 +86,7 @@ class ListingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
   def listing_params
-    params.require(:listing).permit(:author, :price, :open_spots, :street, :city, :distance, :start_date, :end_date, :rating, :description, :image)
+    params.require(:listing).permit(:author, :price, :open_spots, :street, :city, :start_date, :end_date, :rating, :description, :image)
   end
 
 end
