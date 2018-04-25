@@ -12553,3 +12553,1106 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 0.3ms)
 
 
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-24 21:54:58 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (36.0ms)
+  Rendered layouts/_navigation.html.erb (42.1ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 406ms (Views: 391.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/user/3" for 127.0.0.1 at 2018-04-24 21:55:01 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.1ms)
+  Rendered layouts/_navigation.html.erb (5.2ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 86ms (Views: 75.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/user/sign_out" for 127.0.0.1 at 2018-04-24 21:55:11 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fHQCnXp15A+5YJMVaPJxxj2wbQKkbx7N0nxUIdeLg1BlO9nQvWYCyMdbhg5ZeHANNid6AQb+lP4TIzHAdTtLuQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 512ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 21:55:11 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (4.3ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-24 21:55:14 -0700
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-24 21:55:14 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (23.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (5.6ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subletter/sign_in" for 127.0.0.1 at 2018-04-24 21:55:16 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering subletters/sessions/new.html.erb within layouts/application
+  Rendered subletters/shared/_links.html.erb (1.8ms)
+  Rendered subletters/sessions/new.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (4.6ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 92ms (Views: 74.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/subletter/sign_in" for 127.0.0.1 at 2018-04-24 21:55:26 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0RM04QGmO8PCb8iCJwUuP+D352BDebOpxL3u332s+UzLj6uxvAqTpowSl69Xp4g0904AAB6B9bj5dGR/3K0Tsg==", "subletter"=>{"email"=>"subletter@berkeley.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mSubletter Load (0.6ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."email" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["email", "subletter@berkeley.edu"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "subletters" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "subletters"."id" = ?[0m  [["current_sign_in_at", "2018-04-25 04:55:26.180855"], ["sign_in_count", 2], ["updated_at", "2018-04-25 04:55:26.181931"], ["id", 4]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 169ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 21:55:26 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  [1m[36mSubletter Load (0.3ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.6ms)
+  Rendered layouts/_navigation.html.erb (7.0ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 54.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 21:55:28 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (6.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 81ms (Views: 78.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/edit" for 127.0.0.1 at 2018-04-24 22:10:08 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 26ms (ActiveRecord: 1.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=edit:
+  app/controllers/listings_controller.rb:81:in `set_listing'
+
+Started POST "/__better_errors/f18d4d34f7215162/variables" for 127.0.0.1 at 2018-04-24 22:10:08 -0700
+Started GET "/listings" for 127.0.0.1 at 2018-04-24 22:10:13 -0700
+Processing by ListingsController#index as HTML
+Google geocoding. address: , args []
+Caught an error during Google geocoding call: undefined method `encoding' for nil:NilClass
+/usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/cgi/util.rb:9:in `escape'
+/usr/local/lib/ruby/gems/2.3.0/gems/geokit-1.11.0/lib/geokit/inflectors.rb:24:in `url_escape'
+/usr/local/lib/ruby/gems/2.3.0/gems/geokit-1.11.0/lib/geokit/geocoders/google.rb:63:in `do_geocode'
+/usr/local/lib/ruby/gems/2.3.0/gems/geokit-1.11.0/lib/geokit/geocoders.rb:90:in `geocode'
+/Users/Steven/berkeley/sp18/rails_decal/cal-housing/app/controllers/listings_controller.rb:10:in `index'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:186:in `process_action'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+/usr/local/lib/ruby/gems/2.3.0/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:131:in `run_callbacks'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:19:in `process_action'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/rescue.rb:20:in `process_action'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+/usr/local/lib/ruby/gems/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `block in instrument'
+/usr/local/lib/ruby/gems/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/2.3.0/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `instrument'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+/usr/local/lib/ruby/gems/2.3.0/gems/activerecord-5.1.6/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:124:in `process'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionview-5.1.6/lib/action_view/rendering.rb:30:in `process'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal.rb:189:in `dispatch'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_controller/metal.rb:253:in `dispatch'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `each'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `serve'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:844:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'
+/usr/local/lib/ruby/gems/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'
+/usr/local/lib/ruby/gems/2.3.0/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/rack-2.0.4/lib/rack/etag.rb:25:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/rack-2.0.4/lib/rack/conditional_get.rb:25:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/rack-2.0.4/lib/rack/head.rb:12:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:232:in `context'
+/usr/local/lib/ruby/gems/2.3.0/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:226:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/activerecord-5.1.6/lib/active_record/migration.rb:556:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+/usr/local/lib/ruby/gems/2.3.0/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:97:in `run_callbacks'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:84:in `protected_app_call'
+/usr/local/lib/ruby/gems/2.3.0/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:79:in `better_errors_call'
+/usr/local/lib/ruby/gems/2.3.0/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:57:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/web-console-3.6.1/lib/web_console/middleware.rb:135:in `call_app'
+/usr/local/lib/ruby/gems/2.3.0/gems/web-console-3.6.1/lib/web_console/middleware.rb:30:in `block in call'
+/usr/local/lib/ruby/gems/2.3.0/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `catch'
+/usr/local/lib/ruby/gems/2.3.0/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:36:in `call_app'
+/usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `block in call'
+/usr/local/lib/ruby/gems/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/usr/local/lib/ruby/gems/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+/usr/local/lib/ruby/gems/2.3.0/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `tagged'
+/usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/rack-2.0.4/lib/rack/method_override.rb:22:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/rack-2.0.4/lib/rack/runtime.rb:22:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/activesupport-5.1.6/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.1.6/lib/action_dispatch/middleware/static.rb:125:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/rack-2.0.4/lib/rack/sendfile.rb:111:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/railties-5.1.6/lib/rails/engine.rb:522:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+/usr/local/lib/ruby/gems/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+/usr/local/lib/ruby/gems/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+/usr/local/lib/ruby/gems/2.3.0/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+/usr/local/lib/ruby/gems/2.3.0/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>-0.0722849264267955 AND listings.lat<0.0722849264267955 AND listings.lng>-0.0722849264267955 AND listings.lng<0.0722849264267955) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.0)*COS(0.0)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.0)*SIN(0.0)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.0)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.3ms)
+  Rendered layouts/_navigation.html.erb (8.8ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 110ms (Views: 99.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-24 22:10:15 -0700
+Processing by ListingsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-24 22:10:15 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (6.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 86ms (Views: 83.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/4" for 127.0.0.1 at 2018-04-24 22:10:22 -0700
+Processing by SublettersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/show.html.erb within layouts/application
+  Rendered subletters/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (8.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 75ms (Views: 71.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subletter/4" for 127.0.0.1 at 2018-04-24 22:15:03 -0700
+Processing by SublettersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/show.html.erb within layouts/application
+  Rendered subletters/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:15:06 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (6.2ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 73.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:16:26 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+
+SyntaxError - syntax error, unexpected =>, expecting keyword_end
+/Users/Steven/berkeley/sp18/rails_decal/cal-housing/app/views/subletters/registrations/edit.html.erb:13: syntax error, unexpected '<', expecting keyword_end
+  </div>
+   ^
+/Users/Steven/berkeley/sp18/rails_decal/cal-housing/app/views/subletters/registrations/edit.html.erb:16: unknown regexp options - dv
+/Users/Steven/berkeley/sp18/rails_decal/cal-housing/app/views/subletters/registrations/edit.html.erb:19: syntax error, unexpected '<', expecting keyword_end
+  <div class="field">
+   ^
+/Users/Steven/berkeley/sp18/rails_decal/cal-housing/app/views/subletters/registrations/edit.html.erb:20: syntax error, unexpected $undefined
+...d=' <i>(leave blank if you don\'t want to change it)</i><br ...
+...                               ^
+/Users/Steven/berkeley/sp18/rails_decal/cal-housing/app/views/subletters/registrations/edit.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/Steven/berkeley/sp18/rails_decal/cal-housing/app/views/subletters/registrations/edit.html.erb:50: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/Steven/berkeley/sp18/rails_decal/cal-housing/app/views/subletters/registrations/edit.html.erb:52: syntax error, unexpected keyword_end, expecting ')':
+  app/views/subletters/registrations/edit.html.erb:5:in `'
+
+Started POST "/__better_errors/73bc21aa65658887/variables" for 127.0.0.1 at 2018-04-24 22:16:26 -0700
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:16:32 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (456.8ms)
+Completed 500 Internal Server Error in 466ms (ActiveRecord: 0.2ms)
+
+
+
+NameError - undefined local variable or method `subletter' for #<#<Class:0x007fe08691c7b0>:0x007fe08704bc98>
+Did you mean?  @subletter:
+  app/views/subletters/registrations/edit.html.erb:5:in `_app_views_subletters_registrations_edit_html_erb__1481515858330850515_70301157315660'
+
+Started POST "/__better_errors/92a7c323a2d346d4/variables" for 127.0.0.1 at 2018-04-24 22:16:33 -0700
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:16:39 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (12.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 67ms (Views: 64.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:16:51 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.3ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.1ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:16:57 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:17:05 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (4.6ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:17:17 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:17:27 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (4.5ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:17:40 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (5.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 58.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:17:48 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (6.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:17:53 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (7.0ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 72.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:18:07 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 61ms (Views: 58.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:18:33 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+
+NoMethodError - undefined method `avatar' for nil:NilClass:
+  app/views/subletters/registrations/edit.html.erb:20:in `block in _app_views_subletters_registrations_edit_html_erb__1481515858330850515_70301122156720'
+  app/views/subletters/registrations/edit.html.erb:7:in `_app_views_subletters_registrations_edit_html_erb__1481515858330850515_70301122156720'
+
+Started POST "/__better_errors/2845e926d9318dfc/variables" for 127.0.0.1 at 2018-04-24 22:18:33 -0700
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAvatarToUsers (20180425051932)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "avatar" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180425051932"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_listings_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_listings_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-24 22:20:15 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (41.4ms)
+  Rendered layouts/_navigation.html.erb (46.2ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 437ms (Views: 426.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/subletter/4" for 127.0.0.1 at 2018-04-24 22:20:21 -0700
+Processing by SublettersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubletter Load (0.6ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/show.html.erb within layouts/application
+  Rendered subletters/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 101ms (Views: 91.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:20:23 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (461.7ms)
+Completed 500 Internal Server Error in 474ms (ActiveRecord: 0.2ms)
+
+
+
+NoMethodError - undefined method `avatar' for nil:NilClass:
+  app/views/subletters/registrations/edit.html.erb:20:in `block in _app_views_subletters_registrations_edit_html_erb___4345031373774568196_70333194824140'
+  app/views/subletters/registrations/edit.html.erb:7:in `_app_views_subletters_registrations_edit_html_erb___4345031373774568196_70333194824140'
+
+Started POST "/__better_errors/5c6f3a741f770aa0/variables" for 127.0.0.1 at 2018-04-24 22:20:24 -0700
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:22:37 -0700
+
+NoMethodError - undefined method `validates_integrity_of' for Subletter (call 'Subletter.connection' to establish a connection):Class
+Did you mean?  validates_size_of
+               validates_numericality_of
+               validates_length_of
+               validates_presence_of
+               validates
+               validates_format_of
+               validates_with
+               validates_inclusion_of:
+  app/models/subletter.rb:10:in `<class:Subletter>'
+  app/models/subletter.rb:1:in `<top (required)>'
+  config/routes.rb:6:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/163174ab66ebdd21/variables" for 127.0.0.1 at 2018-04-24 22:22:37 -0700
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAvatarToSubletters (20180425053340)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "subletters" ADD "avatar" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180425053340"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_listings_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_listings_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_listings_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_listings_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_subletters_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_subletters_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Steven/berkeley/sp18/rails_decal/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-24 22:45:03 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (21.0ms)
+  Rendered layouts/_navigation.html.erb (26.2ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 392ms (Views: 380.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/subletter/4" for 127.0.0.1 at 2018-04-24 22:45:06 -0700
+Processing by SublettersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubletter Load (0.3ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/show.html.erb within layouts/application
+  Rendered subletters/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (7.0ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 127ms (Views: 120.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:45:07 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (1.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.1ms)
+
+
+
+NoMethodError - undefined method `for' for #<Devise::ParameterSanitizer:0x007f9c4245bf10>
+Did you mean?  fork:
+  app/controllers/application_controller.rb:13:in `configure_permitted_parameters'
+
+Started POST "/__better_errors/d25ae3e2f26f13a9/variables" for 127.0.0.1 at 2018-04-24 22:45:07 -0700
+Started GET "/" for 127.0.0.1 at 2018-04-24 22:46:17 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (14.2ms)
+  Rendered layouts/_navigation.html.erb (18.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 69.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:46:18 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.3ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (402.9ms)
+Completed 500 Internal Server Error in 413ms (ActiveRecord: 0.3ms)
+
+
+
+NoMethodError - undefined method `avatar' for nil:NilClass:
+  app/views/subletters/registrations/edit.html.erb:20:in `block in _app_views_subletters_registrations_edit_html_erb__1631692482005918190_70154553555520'
+  app/views/subletters/registrations/edit.html.erb:7:in `_app_views_subletters_registrations_edit_html_erb__1631692482005918190_70154553555520'
+
+Started POST "/__better_errors/8967eaf63f07e1b6/variables" for 127.0.0.1 at 2018-04-24 22:46:19 -0700
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:46:57 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (4.5ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:47:50 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (4.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:48:18 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.1ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:48:46 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (6.3ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 66.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:48:58 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.1ms)
+  Rendered layouts/_navigation.html.erb (5.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:49:05 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (8.0ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:49:10 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (5.9ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:49:21 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.3ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (6.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:49:26 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (4.6ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:49:32 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (4.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:49:39 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.1ms)
+  Rendered layouts/_navigation.html.erb (4.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:49:46 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.1ms)
+  Rendered layouts/_navigation.html.erb (4.6ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 71.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:50:00 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.1ms)
+  Rendered layouts/_navigation.html.erb (5.5ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:50:01 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (6.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 66.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:50:12 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (4.7ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 63ms (Views: 60.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:51:04 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (5.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/4" for 127.0.0.1 at 2018-04-24 22:51:05 -0700
+Processing by SublettersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/show.html.erb within layouts/application
+  Rendered subletters/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (6.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 63.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:51:07 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.3ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (4.1ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subletter/4" for 127.0.0.1 at 2018-04-24 22:51:25 -0700
+Processing by SublettersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/show.html.erb within layouts/application
+  Rendered subletters/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+
+
+SyntaxError - syntax error, unexpected keyword_else, expecting ')'
+...vatar if @subletter.avatar else "none");@output_buffer.safe_...
+...                               ^:
+  app/views/subletters/show.html.erb:4:in `'
+
+Started POST "/__better_errors/103325b278d3d12d/variables" for 127.0.0.1 at 2018-04-24 22:51:25 -0700
+Started GET "/subletter/4" for 127.0.0.1 at 2018-04-24 22:51:34 -0700
+Processing by SublettersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/show.html.erb within layouts/application
+  Rendered subletters/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+
+SyntaxError - syntax error, unexpected keyword_else, expecting ')'
+...vatar if @subletter.avatar else "none" );@output_buffer.safe...
+...                               ^:
+  app/views/subletters/show.html.erb:4:in `'
+
+Started POST "/__better_errors/f72e06d467d7d963/variables" for 127.0.0.1 at 2018-04-24 22:51:34 -0700
+Started GET "/subletter/4" for 127.0.0.1 at 2018-04-24 22:52:34 -0700
+Processing by SublettersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/show.html.erb within layouts/application
+  Rendered subletters/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (4.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 58ms (Views: 54.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subletter/4" for 127.0.0.1 at 2018-04-24 22:52:36 -0700
+Processing by SublettersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/show.html.erb within layouts/application
+  Rendered subletters/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (6.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 70ms (Views: 66.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/subletter/edit" for 127.0.0.1 at 2018-04-24 22:52:37 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (5.0ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 72.2ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/subletter" for 127.0.0.1 at 2018-04-24 22:53:34 -0700
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E6NmH3nN/Jl/KfCCsIja8f3xlTB+FdHpOdofcnyw2vLQNLvGL1wbCCVxjiFEnk/mEy+B6E9v745rcE5ZGuz1OA==", "subletter"=>{"email"=>"subletter@berkeley.edu", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f9c42e07028 @tempfile=#<Tempfile:/var/folders/qj/vs32shzj54v9mv9qqy174f9w0000gn/T/RackMultipart20180424-53678-1xb75fw.JPG>, @original_filename="doge_tesla.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"subletter[avatar]\"; filename=\"doge_tesla.JPG\"\r\nContent-Type: image/jpeg\r\n">, "avatar_cache"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/registrations/edit.html.erb within layouts/application
+  Rendered subletters/registrations/edit.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (6.4ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 2067ms (Views: 82.0ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/subletter" for 127.0.0.1 at 2018-04-24 22:53:55 -0700
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FLPxMl2w18kM7p7EsIoKxfpsy51HOLo6Fmmwxml+WrNFn0Oe23F4YgP83c+ej8/uZxown52iSYloon7Gs+H8KA==", "subletter"=>{"email"=>"subletter@berkeley.edu", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f9c47003710 @tempfile=#<Tempfile:/var/folders/qj/vs32shzj54v9mv9qqy174f9w0000gn/T/RackMultipart20180424-53678-36lq81.JPG>, @original_filename="doge_tesla.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"subletter[avatar]\"; filename=\"doge_tesla.JPG\"\r\nContent-Type: image/jpeg\r\n">, "avatar_cache"=>"1524635614-53678-0001-1908/doge_tesla.JPG", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mSubletter Load (0.3ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "subletters" SET "avatar" = ?, "updated_at" = ? WHERE "subletters"."id" = ?[0m  [["avatar", "doge_tesla.JPG"], ["updated_at", "2018-04-25 05:53:57.323589"], ["id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2030ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-24 22:53:57 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  [1m[36mSubletter Load (0.3ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.3ms)
+  Rendered layouts/_navigation.html.erb (5.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 58.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/subletter/4" for 127.0.0.1 at 2018-04-24 22:53:59 -0700
+Processing by SublettersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.1ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/show.html.erb within layouts/application
+  Rendered subletters/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (6.1ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 95ms (Views: 91.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subletter/4" for 127.0.0.1 at 2018-04-24 22:55:46 -0700
+Processing by SublettersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSubletter Load (0.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.3ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering subletters/show.html.erb within layouts/application
+  Rendered subletters/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (6.2ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 78ms (Views: 73.5ms | ActiveRecord: 0.6ms)
+
+
