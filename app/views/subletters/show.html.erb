@@ -1,4 +1,6 @@
 <h3>Your Subletter Profile</h3>
 <p>Name: <%= @subletter.name if @subletter.name %></p>
 <p>Email: <%= @subletter.email if @subletter.email %></p>
-<p>Profile Picture: <img src=" <%= @subletter.avatar if @subletter.avatar %> "></p>
+<p>Profile Picture:
+	<%= link_to(image_tag(@subletter.avatar.medium.url), @subletter.avatar.url, target: '_blank') if @subletter.avatar? %></p>
+
