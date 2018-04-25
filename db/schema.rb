@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180425053340) do
+ActiveRecord::Schema.define(version: 20180424233047) do
 
   create_table "landlords", force: :cascade do |t|
     t.string "name"
@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 20180425053340) do
     t.integer "open_spots"
     t.string "street"
     t.string "city"
-    t.decimal "distance"
     t.date "start_date"
     t.date "end_date"
     t.integer "rating"
