@@ -14,7 +14,9 @@ class ListingsController < ApplicationController
 
 
   def new
-    @listing = current_user.listings.build
+    # @listing = current_user.listings.build
+    @listing = Listing.new
+    puts 'this is the new method'
   end
 
   # GET /listings/1/edit
@@ -25,13 +27,19 @@ class ListingsController < ApplicationController
   # POST /listings
   # POST /listings.json
   def create
+    @listing = Listing.new(listing_params)
 
-    @listing = current_user.listings.build(listing_params)
     @listing.rating = 5
     @listing.user_id = current_user.id
-    tempLatLon = a=Geokit::Geocoders::GoogleGeocoder.geocode @listing.address
+    address = @listing.street
+    city = @listing.city
+    puts 'this is the create method'
+    puts address, city
+    tempLatLon = a=Geokit::Geocoders::GoogleGeocoder.geocode address +', '+ city
+    puts tempLatLon
     @listing.lat = tempLatLon.lat
     @listing.lng = tempLatLon.lng
+    @listing.save
 
 
 
