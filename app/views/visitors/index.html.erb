@@ -1,12 +1,18 @@
 <div class="app_container">
-  <h1 class="app_title"> Welcome to CalHousing</h1>
-  <div class="app_content"
-      <p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
+  <header class="masthead">
+    <div class="container">
+      <div class = "bg"> </div>
+      <div class="intro-text">
+        <div class="intro-lead-in">Housing at Cal</div>
+        <div class="intro-heading text-uppercase">subleasing made easy.</div>
+        <!-- <p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p> -->
 
-      <%= form_tag("/browse", method: "get") do %>
-        <%= label_tag(:address, "Search for:") %>
-        <%= text_field_tag(:address, '', size: 50, placeholder: 'housing near this address...') %>
-        <%= submit_tag("Search") %>
-      <% end %>
-  </div>
+        <%= form_tag("/browse", method: "get") do %>
+          <%= label_tag(:address, "Search for:") %>
+          <%= text_field_tag(:address, '', size: 50, placeholder: 'housing near this address...') %>
+          <%= submit_tag("Search") %>
+        <% end %>
+      </div>
+    </div>
+  </header>
 </div>

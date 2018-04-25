@@ -17518,3 +17518,3045 @@ DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is depr
   [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
   [1m[36mListing Load (6.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" LIMIT ?[0m  [["LIMIT", 11]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:08:12 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (831.4ms)
+  Rendered layouts/_navigation_links.html.erb (4.3ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (19.1ms)
+  Rendered layouts/_navigation.html.erb (36.9ms)
+  Rendered layouts/_messages.html.erb (3.0ms)
+Completed 200 OK in 1238ms (Views: 1207.6ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:08:37 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.3ms)
+  Rendered layouts/_navigation.html.erb (13.6ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 257ms (Views: 251.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:09:44 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_navigation_links.html.erb (9.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.3ms)
+  Rendered layouts/_navigation.html.erb (40.6ms)
+  Rendered layouts/_messages.html.erb (1.6ms)
+Completed 200 OK in 492ms (Views: 481.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:10:02 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (11.9ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 159ms (Views: 155.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:11:09 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (13.4ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 253ms (Views: 250.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/images/sf-bridge.jpg" for 127.0.0.1 at 2018-04-25 11:11:10 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/sf-bridge.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:11:21 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (15.1ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 178ms (Views: 175.5ms | ActiveRecord: 0.2ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/sf-bridge.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:11:34 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.1ms)
+  Rendered layouts/_navigation.html.erb (21.2ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 250ms (Views: 246.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:11:56 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.8ms)
+  Rendered layouts/_navigation.html.erb (13.7ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 303ms (Views: 299.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:12:02 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (8.5ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 158ms (Views: 155.6ms | ActiveRecord: 0.2ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/sf-bridge.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.6) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.6) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:12:15 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (11.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 214ms (Views: 211.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/images/sf-bridge.jpg" for 127.0.0.1 at 2018-04-25 11:12:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/sf-bridge.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:12:26 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (9.7ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 161ms (Views: 158.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/images/campanille.jpg" for 127.0.0.1 at 2018-04-25 11:12:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/campanille.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:12:43 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (13.1ms)
+  Rendered layouts/_messages.html.erb (2.1ms)
+Completed 200 OK in 184ms (Views: 181.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/campanille.jpg" for 127.0.0.1 at 2018-04-25 11:12:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/campanille.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:13:07 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.7ms)
+  Rendered layouts/_navigation.html.erb (11.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 226ms (Views: 222.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/images/campanille.jpg" for 127.0.0.1 at 2018-04-25 11:13:07 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/campanille.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:13:54 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (20.9ms)
+  Rendered layouts/_navigation_links.html.erb (3.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.7ms)
+  Rendered layouts/_navigation.html.erb (23.7ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 362ms (Views: 351.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:14:27 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (14.3ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 237ms (Views: 233.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:14:33 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (10.2ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 118ms (Views: 115.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:14:50 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (12.2ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 187ms (Views: 184.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:15:06 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (15.6ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 166ms (Views: 163.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:15:26 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (11.4ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 206ms (Views: 203.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:15:37 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.5ms)
+  Rendered layouts/_navigation.html.erb (14.8ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 222ms (Views: 217.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:15:48 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (13.4ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 255ms (Views: 250.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:16:05 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.3ms)
+  Rendered layouts/_navigation.html.erb (14.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 216ms (Views: 210.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:16:13 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (12.0ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 235ms (Views: 232.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:16:36 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (11.9ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 217ms (Views: 213.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:16:45 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (17.2ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 257ms (Views: 254.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:16:57 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (13.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 222ms (Views: 219.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:17:19 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (15.0ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 223ms (Views: 220.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:17:57 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (20.1ms)
+  Rendered layouts/_navigation_links.html.erb (2.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.8ms)
+  Rendered layouts/_navigation.html.erb (17.6ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 378ms (Views: 361.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:18:15 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (14.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 649ms (Views: 643.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:18:18 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navigation_links.html.erb (2.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.erb (15.5ms)
+  Rendered layouts/_messages.html.erb (1.8ms)
+Completed 200 OK in 140ms (Views: 133.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:20:47 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_navigation_links.html.erb (3.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (8.0ms)
+  Rendered layouts/_navigation.html.erb (25.1ms)
+  Rendered layouts/_messages.html.erb (3.3ms)
+Completed 200 OK in 337ms (Views: 319.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:21:13 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (47.1ms)
+  Rendered layouts/_navigation_links.html.erb (4.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.1ms)
+  Rendered layouts/_navigation.html.erb (17.8ms)
+  Rendered layouts/_messages.html.erb (2.2ms)
+Completed 200 OK in 822ms (Views: 798.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:21:50 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (42.1ms)
+  Rendered layouts/_navigation_links.html.erb (5.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (10.1ms)
+  Rendered layouts/_navigation.html.erb (32.4ms)
+  Rendered layouts/_messages.html.erb (11.7ms)
+Completed 200 OK in 1041ms (Views: 1014.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:22:11 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (11.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (53.8ms)
+  Rendered layouts/_navigation_links.html.erb (5.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (7.7ms)
+  Rendered layouts/_navigation.html.erb (23.6ms)
+  Rendered layouts/_messages.html.erb (4.6ms)
+Completed 200 OK in 608ms (Views: 571.5ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:22:24 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_navigation_links.html.erb (2.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.0ms)
+  Rendered layouts/_navigation.html.erb (23.3ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 789ms (Views: 775.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:22:50 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.5ms)
+  Rendered layouts/_navigation.html.erb (19.4ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 479ms (Views: 465.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:23:12 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (21.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.erb (13.7ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 452ms (Views: 438.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:23:21 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (18.9ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 213ms (Views: 207.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:23:33 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (16.7ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 325ms (Views: 316.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:23:37 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.8ms)
+  Rendered layouts/_navigation.html.erb (12.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 92ms (Views: 88.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:24:30 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (25.6ms)
+  Rendered layouts/_navigation_links.html.erb (2.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.7ms)
+  Rendered layouts/_navigation.html.erb (20.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 471ms (Views: 456.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:24:44 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (25.5ms)
+  Rendered layouts/_navigation_links.html.erb (5.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (10.3ms)
+  Rendered layouts/_navigation.html.erb (32.5ms)
+  Rendered layouts/_messages.html.erb (5.8ms)
+Completed 200 OK in 426ms (Views: 412.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:25:10 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (12.1ms)
+  Rendered layouts/_messages.html.erb (4.3ms)
+Completed 200 OK in 247ms (Views: 242.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:25:23 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.2ms)
+  Rendered layouts/_navigation.html.erb (13.7ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 236ms (Views: 231.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:25:33 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (15.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 225ms (Views: 220.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:25:42 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation_links.html.erb (2.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (14.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 217ms (Views: 213.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:25:56 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.erb (18.9ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 400ms (Views: 395.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:26:03 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (11.2ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 238ms (Views: 232.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:26:12 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (9.9ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 143ms (Views: 140.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:26:39 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (59.5ms)
+  Rendered layouts/_navigation_links.html.erb (2.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.4ms)
+  Rendered layouts/_navigation.html.erb (22.4ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 847ms (Views: 826.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:26:54 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.2ms)
+  Rendered layouts/_navigation.html.erb (17.0ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 349ms (Views: 337.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:27:21 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (18.5ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 348ms (Views: 342.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:27:25 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (9.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 115ms (Views: 108.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:27:43 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (10.8ms)
+  Rendered layouts/_navigation.html.erb (25.4ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 425ms (Views: 414.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:27:55 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.2ms)
+  Rendered layouts/_navigation.html.erb (17.3ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 259ms (Views: 254.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:28:05 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (13.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.0ms)
+  Rendered layouts/_navigation.html.erb (16.2ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 402ms (Views: 384.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2018-04-25 11:28:15 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation_links.html.erb (5.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (17.1ms)
+  Rendered layouts/_messages.html.erb (3.9ms)
+Completed 200 OK in 191ms (Views: 188.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-25 11:28:17 -0700
+Processing by ListingsController#new as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-25 11:28:18 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.3ms)
+  Rendered users/sessions/new.html.erb within layouts/application (64.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (11.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 239ms (Views: 179.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-25 11:28:21 -0700
+Processing by ListingsController#index as HTML
+Google geocoding. address: , args []
+Caught an error during Google geocoding call: no implicit conversion of nil into String
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/inflectors.rb:24:in `escape'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/inflectors.rb:24:in `url_escape'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/geocoders/google.rb:63:in `do_geocode'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/geocoders.rb:90:in `geocode'
+/Users/Vcortes/ruby198/cal-housing/app/controllers/listings_controller.rb:10:in `index'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:186:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:131:in `run_callbacks'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:19:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/rescue.rb:20:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `block in instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activerecord-5.1.6/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:124:in `process'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.6/lib/action_view/rendering.rb:30:in `process'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal.rb:189:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal.rb:253:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `each'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:844:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/etag.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/conditional_get.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/head.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:232:in `context'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:226:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activerecord-5.1.6/lib/active_record/migration.rb:556:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:97:in `run_callbacks'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:84:in `protected_app_call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:79:in `better_errors_call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:57:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:135:in `call_app'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:30:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `catch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/method_override.rb:22:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/runtime.rb:22:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/static.rb:125:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/sendfile.rb:111:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/engine.rb:522:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (5.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>-0.0722849264267955 AND listings.lat<0.0722849264267955 AND listings.lng>-0.0722849264267955 AND listings.lng<0.0722849264267955) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.0)*COS(0.0)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.0)*SIN(0.0)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.0)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (16.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (13.2ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 194ms (Views: 107.6ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:28:25 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (12.6ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 170ms (Views: 164.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:28:34 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.0ms)
+  Rendered layouts/_navigation.html.erb (16.0ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 493ms (Views: 454.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-25 11:28:40 -0700
+Processing by ListingsController#index as HTML
+Google geocoding. address: , args []
+Caught an error during Google geocoding call: no implicit conversion of nil into String
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/inflectors.rb:24:in `escape'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/inflectors.rb:24:in `url_escape'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/geocoders/google.rb:63:in `do_geocode'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/geokit-1.11.0/lib/geokit/geocoders.rb:90:in `geocode'
+/Users/Vcortes/ruby198/cal-housing/app/controllers/listings_controller.rb:10:in `index'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:186:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/rendering.rb:30:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:131:in `run_callbacks'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/callbacks.rb:19:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/rescue.rb:20:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `block in instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/notifications.rb:166:in `instrument'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activerecord-5.1.6/lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/abstract_controller/base.rb:124:in `process'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.6/lib/action_view/rendering.rb:30:in `process'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal.rb:189:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_controller/metal.rb:253:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:31:in `serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:50:in `block in serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `each'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/journey/router.rb:33:in `serve'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/routing/route_set.rb:844:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/etag.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/conditional_get.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/head.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:232:in `context'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/session/abstract/id.rb:226:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activerecord-5.1.6/lib/active_record/migration.rb:556:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/callbacks.rb:97:in `run_callbacks'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:84:in `protected_app_call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:79:in `better_errors_call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/better_errors-2.4.0/lib/better_errors/middleware.rb:57:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:135:in `call_app'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:30:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `catch'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.1/lib/web_console/middleware.rb:20:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:36:in `call_app'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `block in call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:26:in `tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/tagged_logging.rb:69:in `tagged'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/rack/logger.rb:24:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/method_override.rb:22:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/runtime.rb:22:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/activesupport-5.1.6/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/executor.rb:12:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/actionpack-5.1.6/lib/action_dispatch/middleware/static.rb:125:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/rack-2.0.4/lib/rack/sendfile.rb:111:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6/lib/rails/engine.rb:522:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/configuration.rb:225:in `call'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:632:in `handle_request'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:446:in `process_client'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/server.rb:306:in `block in run'
+/Users/Vcortes/.rvm/gems/ruby-2.4.1/gems/puma-3.11.4/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>-0.0722849264267955 AND listings.lat<0.0722849264267955 AND listings.lng>-0.0722849264267955 AND listings.lng<0.0722849264267955) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.0)*COS(0.0)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.0)*SIN(0.0)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.0)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (10.5ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 126ms (Views: 116.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:28:43 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.erb (13.4ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 130ms (Views: 125.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:28:57 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (13.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 265ms (Views: 259.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:29:00 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation_links.html.erb (6.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.7ms)
+  Rendered layouts/_navigation.html.erb (26.0ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+Completed 200 OK in 176ms (Views: 173.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:29:11 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (26.4ms)
+  Rendered layouts/_navigation_links.html.erb (2.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.6ms)
+  Rendered layouts/_navigation.html.erb (25.8ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 549ms (Views: 533.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:29:35 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (16.9ms)
+  Rendered layouts/_messages.html.erb (4.1ms)
+Completed 200 OK in 512ms (Views: 503.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:29:57 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.3ms)
+  Rendered layouts/_navigation.html.erb (11.8ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 297ms (Views: 284.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:30:12 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (22.6ms)
+  Rendered layouts/_navigation_links.html.erb (2.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.9ms)
+  Rendered layouts/_navigation.html.erb (19.2ms)
+  Rendered layouts/_messages.html.erb (4.0ms)
+Completed 200 OK in 381ms (Views: 366.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:30:29 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.8ms)
+  Rendered layouts/_navigation.html.erb (16.2ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 380ms (Views: 368.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:30:32 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation_links.html.erb (3.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (10.3ms)
+  Rendered layouts/_navigation.html.erb (22.9ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 186ms (Views: 182.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:30:38 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (22.6ms)
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (7.0ms)
+  Rendered layouts/_navigation.html.erb (17.4ms)
+  Rendered layouts/_messages.html.erb (4.2ms)
+Completed 200 OK in 395ms (Views: 379.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:31:01 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (25.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.1ms)
+  Rendered layouts/_navigation.html.erb (18.8ms)
+  Rendered layouts/_messages.html.erb (1.7ms)
+Completed 200 OK in 415ms (Views: 401.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:33:04 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (39.0ms)
+  Rendered layouts/_navigation_links.html.erb (2.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.0ms)
+  Rendered layouts/_navigation.html.erb (17.8ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 1134ms (Views: 1110.5ms | ActiveRecord: 5.2ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:44:42 -0700
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (17.1ms)
+Completed 500 Internal Server Error in 437ms (ActiveRecord: 2.6ms)
+
+
+
+Sass::SyntaxError - Invalid CSS after "...o', monospace;.": expected "{", was "}":
+  app/assets/stylesheets/application.css.scss:86:in `'
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1895872771797586693_70348650943300'
+
+Started POST "/__better_errors/c84eff8734747ded/variables" for 127.0.0.1 at 2018-04-25 11:44:43 -0700
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:45:22 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (9.9ms)
+  Rendered layouts/_navigation.html.erb (21.9ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 948ms (Views: 944.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/img/header-bg.jpg" for 127.0.0.1 at 2018-04-25 11:45:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/header-bg.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:46:02 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (52.6ms)
+  Rendered layouts/_navigation_links.html.erb (3.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (6.4ms)
+  Rendered layouts/_navigation.html.erb (25.6ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 777ms (Views: 754.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/img/header-bg.jpg" for 127.0.0.1 at 2018-04-25 11:46:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/header-bg.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:46:14 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (25.2ms)
+  Rendered layouts/_navigation_links.html.erb (3.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.9ms)
+  Rendered layouts/_navigation.html.erb (18.2ms)
+  Rendered layouts/_messages.html.erb (1.7ms)
+Completed 200 OK in 436ms (Views: 424.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/img/header-bg.jpg" for 127.0.0.1 at 2018-04-25 11:46:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/header-bg.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:46:19 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navigation_links.html.erb (2.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (14.8ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 131ms (Views: 127.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/img/header-bg.jpg" for 127.0.0.1 at 2018-04-25 11:46:19 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/header-bg.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:46:55 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (435.8ms)
+  Rendered layouts/_navigation_links.html.erb (4.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (11.4ms)
+  Rendered layouts/_navigation.html.erb (26.8ms)
+  Rendered layouts/_messages.html.erb (1.9ms)
+Completed 200 OK in 1036ms (Views: 978.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/img/header-bg.jpg" for 127.0.0.1 at 2018-04-25 11:46:56 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/header-bg.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:47:10 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (25.8ms)
+  Rendered layouts/_navigation_links.html.erb (6.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (11.3ms)
+  Rendered layouts/_navigation.html.erb (30.2ms)
+  Rendered layouts/_messages.html.erb (1.9ms)
+Completed 200 OK in 379ms (Views: 363.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/img/header-bg.jpg" for 127.0.0.1 at 2018-04-25 11:47:10 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/header-bg.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:47:54 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navigation_links.html.erb (5.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (29.6ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 621ms (Views: 617.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:48:02 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (16.9ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 200ms (Views: 196.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/img/header-bg.jpg" for 127.0.0.1 at 2018-04-25 11:48:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/header-bg.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:51:23 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (8.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (108.2ms)
+  Rendered layouts/_navigation_links.html.erb (2.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.1ms)
+  Rendered layouts/_navigation.html.erb (21.5ms)
+  Rendered layouts/_messages.html.erb (4.0ms)
+Completed 200 OK in 1893ms (Views: 1841.0ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:51:46 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (10.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (32.4ms)
+  Rendered layouts/_navigation_links.html.erb (3.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.7ms)
+  Rendered layouts/_navigation.html.erb (24.2ms)
+  Rendered layouts/_messages.html.erb (2.1ms)
+Completed 200 OK in 412ms (Views: 390.9ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:52:01 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (13.5ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 274ms (Views: 268.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:52:33 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (26.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.7ms)
+  Rendered layouts/_navigation.html.erb (15.7ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 499ms (Views: 485.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:53:01 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (17.7ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 266ms (Views: 261.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:53:23 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (13.0ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 268ms (Views: 260.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:53:59 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_navigation_links.html.erb (2.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.8ms)
+  Rendered layouts/_navigation.html.erb (20.0ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 371ms (Views: 364.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:57:26 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (83.7ms)
+  Rendered layouts/_navigation_links.html.erb (5.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (10.3ms)
+  Rendered layouts/_navigation.html.erb (40.5ms)
+  Rendered layouts/_messages.html.erb (2.5ms)
+Completed 200 OK in 1538ms (Views: 1468.7ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:57:45 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (124.4ms)
+  Rendered layouts/_navigation_links.html.erb (7.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (25.4ms)
+  Rendered layouts/_navigation.html.erb (85.3ms)
+  Rendered layouts/_messages.html.erb (3.6ms)
+Completed 200 OK in 1871ms (Views: 1821.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:58:14 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (35.0ms)
+  Rendered layouts/_navigation_links.html.erb (9.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (9.8ms)
+  Rendered layouts/_navigation.html.erb (73.4ms)
+  Rendered layouts/_messages.html.erb (1.8ms)
+Completed 200 OK in 1401ms (Views: 1362.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:59:14 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (72.8ms)
+  Rendered layouts/_navigation_links.html.erb (5.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (75.2ms)
+  Rendered layouts/_navigation.html.erb (156.2ms)
+  Rendered layouts/_messages.html.erb (2.8ms)
+Completed 200 OK in 1196ms (Views: 1165.9ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 11:59:31 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (62.0ms)
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.3ms)
+  Rendered layouts/_navigation.html.erb (31.8ms)
+  Rendered layouts/_messages.html.erb (1.9ms)
+Completed 200 OK in 1270ms (Views: 1256.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:00:01 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (10.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (52.5ms)
+  Rendered layouts/_navigation_links.html.erb (13.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (19.6ms)
+  Rendered layouts/_navigation.html.erb (72.2ms)
+  Rendered layouts/_messages.html.erb (3.2ms)
+Completed 200 OK in 774ms (Views: 742.8ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:00:20 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (20.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (38.4ms)
+  Rendered layouts/_navigation_links.html.erb (2.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (6.0ms)
+  Rendered layouts/_navigation.html.erb (49.6ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 1066ms (Views: 1035.3ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:00:46 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_navigation_links.html.erb (4.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.2ms)
+  Rendered layouts/_navigation.html.erb (29.8ms)
+  Rendered layouts/_messages.html.erb (3.5ms)
+Completed 200 OK in 1805ms (Views: 1786.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:01:14 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.4ms)
+  Rendered layouts/_navigation.html.erb (30.8ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 489ms (Views: 480.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:01:33 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navigation_links.html.erb (4.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.7ms)
+  Rendered layouts/_navigation.html.erb (31.9ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 300ms (Views: 289.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:01:52 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (21.5ms)
+  Rendered layouts/_navigation.html.erb (43.3ms)
+  Rendered layouts/_messages.html.erb (7.4ms)
+Completed 200 OK in 342ms (Views: 333.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2018-04-25 12:02:01 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation_links.html.erb (2.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.0ms)
+  Rendered layouts/_navigation.html.erb (20.7ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+Completed 200 OK in 213ms (Views: 209.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:02:03 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navigation_links.html.erb (2.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.6ms)
+  Rendered layouts/_navigation.html.erb (22.7ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 258ms (Views: 249.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:04:06 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (44.3ms)
+  Rendered layouts/_navigation_links.html.erb (16.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (90.7ms)
+  Rendered layouts/_navigation.html.erb (144.5ms)
+  Rendered layouts/_messages.html.erb (3.3ms)
+Completed 200 OK in 659ms (Views: 633.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:07:02 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (21.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (338.1ms)
+  Rendered layouts/_navigation_links.html.erb (20.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (115.4ms)
+  Rendered layouts/_navigation.html.erb (197.3ms)
+  Rendered layouts/_messages.html.erb (257.1ms)
+Completed 200 OK in 4861ms (Views: 4625.6ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:07:15 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (34.5ms)
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (7.2ms)
+  Rendered layouts/_navigation.html.erb (23.8ms)
+  Rendered layouts/_messages.html.erb (15.2ms)
+Completed 200 OK in 511ms (Views: 487.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:07:29 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (63.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (8.2ms)
+  Rendered layouts/_navigation.html.erb (24.1ms)
+  Rendered layouts/_messages.html.erb (4.5ms)
+Completed 200 OK in 661ms (Views: 641.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:07:35 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (25.8ms)
+  Rendered layouts/_navigation_links.html.erb (2.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (6.6ms)
+  Rendered layouts/_navigation.html.erb (18.9ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 777ms (Views: 757.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:07:44 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (21.7ms)
+  Rendered layouts/_navigation_links.html.erb (3.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (9.9ms)
+  Rendered layouts/_navigation.html.erb (29.7ms)
+  Rendered layouts/_messages.html.erb (1.6ms)
+Completed 200 OK in 559ms (Views: 544.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:07:52 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (41.5ms)
+  Rendered layouts/_navigation_links.html.erb (4.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (48.5ms)
+  Rendered layouts/_navigation.html.erb (72.2ms)
+  Rendered layouts/_messages.html.erb (2.1ms)
+Completed 200 OK in 713ms (Views: 695.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:08:01 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (32.9ms)
+  Rendered layouts/_navigation_links.html.erb (6.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.6ms)
+  Rendered layouts/_navigation.html.erb (22.8ms)
+  Rendered layouts/_messages.html.erb (1.8ms)
+Completed 200 OK in 330ms (Views: 317.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:08:09 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (26.5ms)
+  Rendered layouts/_navigation_links.html.erb (7.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (8.4ms)
+  Rendered layouts/_navigation.html.erb (34.8ms)
+  Rendered layouts/_messages.html.erb (1.6ms)
+Completed 200 OK in 659ms (Views: 643.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:08:17 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_navigation_links.html.erb (4.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.2ms)
+  Rendered layouts/_navigation.html.erb (25.4ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 762ms (Views: 756.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:13:26 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (24.4ms)
+  Rendered layouts/_navigation_links.html.erb (5.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (14.5ms)
+  Rendered layouts/_navigation.html.erb (38.8ms)
+  Rendered layouts/_messages.html.erb (2.2ms)
+Completed 200 OK in 538ms (Views: 523.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:13:42 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation_links.html.erb (7.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (19.4ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 141ms (Views: 136.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:13:45 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navigation_links.html.erb (4.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (142.1ms)
+  Rendered layouts/_navigation.html.erb (158.8ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 328ms (Views: 320.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-25 12:13:53 -0700
+Processing by ListingsController#new as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:13:55 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.8ms)
+  Rendered users/sessions/new.html.erb within layouts/application (48.4ms)
+  Rendered layouts/_navigation_links.html.erb (6.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.4ms)
+  Rendered layouts/_navigation.html.erb (44.2ms)
+  Rendered layouts/_messages.html.erb (84.6ms)
+Completed 200 OK in 455ms (Views: 381.8ms | ActiveRecord: 16.7ms)
+
+
+Started GET "/listings/edit" for 127.0.0.1 at 2018-04-25 12:13:57 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mListing Load (3.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 102ms (ActiveRecord: 4.8ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=edit:
+  app/controllers/listings_controller.rb:92:in `set_listing'
+
+Started POST "/__better_errors/2d36fee67b258234/variables" for 127.0.0.1 at 2018-04-25 12:13:57 -0700
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:14:03 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.5ms)
+  Rendered layouts/_navigation.html.erb (14.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 230ms (Views: 218.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:14:38 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (28.3ms)
+  Rendered layouts/_navigation_links.html.erb (6.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.1ms)
+  Rendered layouts/_navigation.html.erb (24.9ms)
+  Rendered layouts/_messages.html.erb (2.4ms)
+Completed 200 OK in 633ms (Views: 618.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:15:40 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (20.9ms)
+  Rendered layouts/_navigation_links.html.erb (2.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.9ms)
+  Rendered layouts/_navigation.html.erb (16.7ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 483ms (Views: 468.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:17:10 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (30.8ms)
+  Rendered layouts/_navigation_links.html.erb (4.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.9ms)
+  Rendered layouts/_navigation.html.erb (21.6ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 444ms (Views: 430.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/app/views/signup/index.html" for 127.0.0.1 at 2018-04-25 12:17:14 -0700
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.8ms)
+  Rendered layouts/_navigation.html.erb (13.7ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 137ms (Views: 131.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subletter/sign_in" for 127.0.0.1 at 2018-04-25 12:17:21 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering subletters/sessions/new.html.erb within layouts/application
+  Rendered subletters/shared/_links.html.erb (2.1ms)
+  Rendered subletters/sessions/new.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_navigation_links.html.erb (2.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (18.1ms)
+  Rendered layouts/_navigation.html.erb (29.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 171ms (Views: 130.7ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:17:22 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (13.2ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 114ms (Views: 111.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/views/signup/index.html" for 127.0.0.1 at 2018-04-25 12:17:23 -0700
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.2ms)
+  Rendered layouts/_navigation.html.erb (15.2ms)
+  Rendered layouts/_messages.html.erb (1.9ms)
+Completed 200 OK in 165ms (Views: 159.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-25 12:17:27 -0700
+Processing by ListingsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:17:27 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.2ms)
+  Rendered users/sessions/new.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (9.3ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 135ms (Views: 133.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:17:29 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3f0IQzOm8Jcnj20sQs+WD5sYQ6FzODv+QRjEQSb5yFaK5jGFoUxDDEH9dam2kDPoLoCagtJ93qtHMeU7Xldbng==", "user"=>{"email"=>"v@berk.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "v@berk.edu"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 21ms (ActiveRecord: 3.9ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3f0IQzOm8Jcnj20sQs+WD5sYQ6FzODv+QRjEQSb5yFaK5jGFoUxDDEH9dam2kDPoLoCagtJ93qtHMeU7Xldbng==", "user"=>{"email"=>"v@berk.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navigation_links.html.erb (3.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.7ms)
+  Rendered layouts/_navigation.html.erb (18.1ms)
+  Rendered layouts/_messages.html.erb (2.4ms)
+Completed 200 OK in 445ms (Views: 215.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:17:37 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B9MxCr+yIAdpqorh3WlTeSp7EArwKq9cGbZI9I6hWROUWGCF3eNbTZrByUuwTNtUrHLFsGUzt/JXpZtNApB59Q==", "user"=>{"email"=>"v@berk.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "v@berk.edu"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 3.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B9MxCr+yIAdpqorh3WlTeSp7EArwKq9cGbZI9I6hWROUWGCF3eNbTZrByUuwTNtUrHLFsGUzt/JXpZtNApB59Q==", "user"=>{"email"=>"v@berk.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (14.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 400ms (Views: 188.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:17:43 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V5rRZ5A+TQajJoVjMyN0pPrVrB/j0EJFMA5GHDQQgF3EEYDo8m82TFBNxsleBvyJfNx5pXbJWut+HZWluCGguw==", "user"=>{"email"=>"v@berk.edu", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "v@berk.edu"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 2.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V5rRZ5A+TQajJoVjMyN0pPrVrB/j0EJFMA5GHDQQgF3EEYDo8m82TFBNxsleBvyJfNx5pXbJWut+HZWluCGguw==", "user"=>{"email"=>"v@berk.edu", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (3.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (7.8ms)
+  Rendered layouts/_navigation.html.erb (19.2ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 297ms (Views: 137.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:17:53 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AWz36clrliRL89MScCR47NcffMfPDJWe39Pw5A3A8YKS56ZmqzrtbriYkLgdAfDBURapfVoVjTCRwCNdgfHRZA==", "user"=>{"email"=>"oski@berkeley.edu", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oski@berkeley.edu"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 2.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AWz36clrliRL89MScCR47NcffMfPDJWe39Pw5A3A8YKS56ZmqzrtbriYkLgdAfDBURapfVoVjTCRwCNdgfHRZA==", "user"=>{"email"=>"oski@berkeley.edu", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.1ms)
+  Rendered users/sessions/new.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navigation_links.html.erb (4.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (20.9ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 386ms (Views: 217.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:18:00 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NFGYoJKtgQoSO4jED0XNQx+n+IxsQ4yUL9j3/kkAOcSn2skv8Pz6QOFQy25iYEVuma4tNvlalDphyyRHxTEZIg==", "user"=>{"email"=>"oski@berk.edu", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oski@berk.edu"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 10ms (ActiveRecord: 3.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NFGYoJKtgQoSO4jED0XNQx+n+IxsQ4yUL9j3/kkAOcSn2skv8Pz6QOFQy25iYEVuma4tNvlalDphyyRHxTEZIg==", "user"=>{"email"=>"oski@berk.edu", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.3ms)
+  Rendered users/sessions/new.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (30.0ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 421ms (Views: 247.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:18:04 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (13.6ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 201ms (Views: 199.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:18:07 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navigation_links.html.erb (3.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (15.2ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 132ms (Views: 125.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:20:21 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (15.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (59.2ms)
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (6.7ms)
+  Rendered layouts/_navigation.html.erb (18.1ms)
+  Rendered layouts/_messages.html.erb (4.6ms)
+Completed 200 OK in 516ms (Views: 476.7ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:20:27 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (32.1ms)
+  Rendered layouts/_navigation_links.html.erb (5.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (13.9ms)
+  Rendered layouts/_navigation.html.erb (29.1ms)
+  Rendered layouts/_messages.html.erb (1.7ms)
+Completed 200 OK in 244ms (Views: 231.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:20:51 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.0ms)
+  Rendered layouts/_navigation.html.erb (14.1ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 202ms (Views: 196.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:21:54 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (24.0ms)
+  Rendered layouts/_navigation_links.html.erb (4.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (7.0ms)
+  Rendered layouts/_navigation.html.erb (18.9ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 293ms (Views: 277.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:22:47 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_navigation_links.html.erb (3.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.2ms)
+  Rendered layouts/_navigation.html.erb (18.7ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 230ms (Views: 223.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:23:26 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (27.4ms)
+  Rendered layouts/_navigation_links.html.erb (2.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.0ms)
+  Rendered layouts/_navigation.html.erb (16.9ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 395ms (Views: 379.6ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:23:29 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation_links.html.erb (2.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (15.4ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 117ms (Views: 114.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:25:17 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_navigation_links.html.erb (3.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (6.8ms)
+  Rendered layouts/_navigation.html.erb (19.0ms)
+  Rendered layouts/_messages.html.erb (1.6ms)
+Completed 200 OK in 317ms (Views: 301.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/subletter/sign_in" for 127.0.0.1 at 2018-04-25 12:25:21 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering subletters/sessions/new.html.erb within layouts/application
+  Rendered subletters/shared/_links.html.erb (3.4ms)
+  Rendered subletters/sessions/new.html.erb within layouts/application (22.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.5ms)
+  Rendered layouts/_navigation.html.erb (11.9ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 182ms (Views: 173.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/views/signup/index.html" for 127.0.0.1 at 2018-04-25 12:25:22 -0700
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation_links.html.erb (2.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.4ms)
+  Rendered layouts/_navigation.html.erb (15.4ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 160ms (Views: 151.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2018-04-25 12:25:27 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation_links.html.erb (2.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.0ms)
+  Rendered layouts/_navigation.html.erb (15.1ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 149ms (Views: 144.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2018-04-25 12:26:11 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.5ms)
+  Rendered layouts/_navigation.html.erb (20.6ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 512ms (Views: 511.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:26:17 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_navigation_links.html.erb (4.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.8ms)
+  Rendered layouts/_navigation.html.erb (16.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 141ms (Views: 135.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:27:59 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_navigation_links.html.erb (4.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (6.3ms)
+  Rendered layouts/_navigation.html.erb (19.7ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+Completed 200 OK in 300ms (Views: 283.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:28:11 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navigation_links.html.erb (4.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.1ms)
+  Rendered layouts/_navigation.html.erb (17.0ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 221ms (Views: 215.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:28:20 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.8ms)
+  Rendered layouts/_navigation.html.erb (22.3ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 199ms (Views: 193.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:28:42 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation_links.html.erb (4.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (6.5ms)
+  Rendered layouts/_navigation.html.erb (22.5ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 246ms (Views: 238.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:29:18 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.0ms)
+  Rendered layouts/_navigation.html.erb (21.5ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 317ms (Views: 311.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:30:12 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (30.0ms)
+  Rendered layouts/_navigation_links.html.erb (5.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (7.0ms)
+  Rendered layouts/_navigation.html.erb (24.7ms)
+  Rendered layouts/_messages.html.erb (4.2ms)
+Completed 200 OK in 318ms (Views: 299.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:30:49 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_navigation_links.html.erb (2.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.6ms)
+  Rendered layouts/_navigation.html.erb (15.9ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 191ms (Views: 184.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:31:37 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_navigation_links.html.erb (6.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.1ms)
+  Rendered layouts/_navigation.html.erb (20.1ms)
+  Rendered layouts/_messages.html.erb (1.9ms)
+Completed 200 OK in 234ms (Views: 225.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:32:49 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (29.4ms)
+  Rendered layouts/_navigation_links.html.erb (5.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.8ms)
+  Rendered layouts/_navigation.html.erb (19.3ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 302ms (Views: 287.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:33:52 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (30.4ms)
+  Rendered layouts/_navigation_links.html.erb (3.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.6ms)
+  Rendered layouts/_navigation.html.erb (18.5ms)
+  Rendered layouts/_messages.html.erb (2.3ms)
+Completed 200 OK in 477ms (Views: 462.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:33:54 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (5.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (28.7ms)
+  Rendered layouts/_navigation_links.html.erb (6.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.3ms)
+  Rendered layouts/_navigation.html.erb (21.8ms)
+  Rendered layouts/_messages.html.erb (6.0ms)
+Completed 200 OK in 197ms (Views: 186.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:33:57 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navigation_links.html.erb (2.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.5ms)
+  Rendered layouts/_navigation.html.erb (13.9ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 166ms (Views: 158.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:34:31 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (35.7ms)
+  Rendered layouts/_navigation_links.html.erb (12.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.7ms)
+  Rendered layouts/_navigation.html.erb (27.3ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 669ms (Views: 651.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:34:50 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation_links.html.erb (3.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.4ms)
+  Rendered layouts/_navigation.html.erb (22.9ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 307ms (Views: 303.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:35:13 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navigation_links.html.erb (7.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.0ms)
+  Rendered layouts/_navigation.html.erb (26.4ms)
+  Rendered layouts/_messages.html.erb (1.8ms)
+Completed 200 OK in 518ms (Views: 509.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:36:03 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (28.0ms)
+  Rendered layouts/_navigation_links.html.erb (5.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (7.3ms)
+  Rendered layouts/_navigation.html.erb (23.4ms)
+  Rendered layouts/_messages.html.erb (9.0ms)
+Completed 200 OK in 691ms (Views: 670.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:36:15 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation_links.html.erb (5.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.1ms)
+  Rendered layouts/_navigation.html.erb (16.7ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 249ms (Views: 246.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:36:41 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.8ms)
+  Rendered layouts/_navigation.html.erb (15.0ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 198ms (Views: 192.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:37:39 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (27.8ms)
+  Rendered layouts/_navigation_links.html.erb (2.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.7ms)
+  Rendered layouts/_navigation.html.erb (35.5ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 548ms (Views: 528.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:38:48 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.8ms)
+  Rendered layouts/_navigation.html.erb (23.3ms)
+  Rendered layouts/_messages.html.erb (5.8ms)
+Completed 200 OK in 285ms (Views: 279.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:39:03 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.1ms)
+  Rendered layouts/_navigation.html.erb (17.7ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 243ms (Views: 235.7ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:39:11 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.5ms)
+  Rendered layouts/_navigation.html.erb (17.8ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 331ms (Views: 327.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:39:21 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (12.8ms)
+  Rendered layouts/_messages.html.erb (3.0ms)
+Completed 200 OK in 250ms (Views: 245.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:39:36 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navigation_links.html.erb (5.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (17.0ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 275ms (Views: 269.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:40:37 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_navigation_links.html.erb (7.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (9.4ms)
+  Rendered layouts/_navigation.html.erb (48.4ms)
+  Rendered layouts/_messages.html.erb (8.2ms)
+Completed 200 OK in 6299ms (Views: 6291.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:41:23 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.erb (19.2ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 310ms (Views: 304.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:41:31 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.2ms)
+  Rendered layouts/_navigation.html.erb (15.0ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 102ms (Views: 99.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:41:55 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.erb (5.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (10.2ms)
+  Rendered layouts/_navigation.html.erb (43.0ms)
+  Rendered layouts/_messages.html.erb (5.5ms)
+Completed 200 OK in 4424ms (Views: 4420.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:42:15 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_navigation_links.html.erb (5.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (6.0ms)
+  Rendered layouts/_navigation.html.erb (21.6ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+Completed 200 OK in 3376ms (Views: 3369.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:42:39 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (10.4ms)
+  Rendered layouts/_navigation.html.erb (24.2ms)
+  Rendered layouts/_messages.html.erb (2.2ms)
+Completed 200 OK in 4337ms (Views: 4331.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:42:59 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navigation_links.html.erb (6.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (8.7ms)
+  Rendered layouts/_navigation.html.erb (25.8ms)
+  Rendered layouts/_messages.html.erb (2.6ms)
+Completed 200 OK in 2980ms (Views: 2974.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:43:35 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (12.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 3384ms (Views: 3378.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:43:52 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.3ms)
+  Rendered layouts/_navigation.html.erb (16.1ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 2923ms (Views: 2917.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:45:02 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (25.3ms)
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.9ms)
+  Rendered layouts/_navigation.html.erb (15.7ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 5257ms (Views: 5243.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:45:21 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (9.5ms)
+  Rendered layouts/_messages.html.erb (3.8ms)
+Completed 200 OK in 3024ms (Views: 3017.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:46:04 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (12.9ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 3445ms (Views: 3439.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:46:58 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation_links.html.erb (11.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (22.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 3287ms (Views: 3281.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:47:24 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation_links.html.erb (3.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.8ms)
+  Rendered layouts/_navigation.html.erb (15.7ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 3361ms (Views: 3356.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:47:53 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.erb (12.6ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 3326ms (Views: 3318.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:48:20 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (11.9ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 3480ms (Views: 3475.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/app/views/signup/index.html" for 127.0.0.1 at 2018-04-25 12:48:49 -0700
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (11.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 100ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:48:53 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation_links.html.erb (3.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (7.7ms)
+  Rendered layouts/_navigation.html.erb (23.1ms)
+  Rendered layouts/_messages.html.erb (7.3ms)
+Completed 200 OK in 130ms (Views: 126.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2018-04-25 12:48:54 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (12.0ms)
+  Rendered layouts/_messages.html.erb (4.2ms)
+Completed 200 OK in 107ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-25 12:48:55 -0700
+Processing by ListingsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:48:55 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (9.9ms)
+  Rendered layouts/_messages.html.erb (3.1ms)
+Completed 200 OK in 112ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:48:56 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.8ms)
+  Rendered layouts/_navigation.html.erb (13.6ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 102ms (Views: 97.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/listings/edit" for 127.0.0.1 at 2018-04-25 12:48:59 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mListing Load (5.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 14ms (ActiveRecord: 5.9ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=edit:
+  app/controllers/listings_controller.rb:92:in `set_listing'
+
+Started POST "/__better_errors/1d81fc41adc9dcea/variables" for 127.0.0.1 at 2018-04-25 12:48:59 -0700
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-25 12:49:02 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (4.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (17.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (12.7ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 138ms (Views: 133.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:49:06 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (10.2ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 226ms (Views: 222.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-25 12:49:16 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (9.3ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 3467ms (Views: 3464.2ms | ActiveRecord: 0.2ms)
+
+
