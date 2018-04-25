@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.4.1'
+ruby '2.3.1'
 
 # gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'rails', '~> 5.1.5'
@@ -18,9 +18,14 @@ gem 'graphicsmagick'
 
 gem 'bulma-rails', '~> 0.6.1'
 gem 'simple_form', '~> 3.5'
+
+### Image uploading ###
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'devise'
+gem 'fog'
+######
 
 group :development, :test do
   gem 'byebug', platform: :mri
