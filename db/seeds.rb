@@ -12,8 +12,10 @@ puts 'CREATED ADMIN USER: ' << user.email
 
 
 [['Oski Bear', '140 Market St', 'San Francisco', '2018-08-01', '2019-01-01', "1 double bedroom, in 2 bedroom house; includes: washer & dryer", 'https://upload.wikimedia.org/wikipedia/commons/c/c7/House_at_1329_Carroll_Ave.%2C_Los_Angeles_%28Charmed_House%29.JPG'],
-['Furry Boi', '20 Mission St', 'San Francisco', '2018-05-30', '2019-01-01', "Nice 1 bedroom single, in 3 bedroom house, is fully furnished with plenty of amenities", 'https://goo.gl/images/Kqy8s5']
-['Josh Hug', '2516 Piedmont Ave', 'Berkeley', '2018-06-01', '2019-01-01', "1 spacious double bedroom, needs subletter for fall, friendly roomates, free utilities", 'https://goo.gl/images/Kqy8s5']
+['Furry Boi', '20 Mission St', 'San Francisco', '2018-05-30', '2019-01-01', "Nice 1 bedroom single, in 3 bedroom house, is fully furnished with plenty of amenities", 'https://goo.gl/images/Kqy8s5'],
+['Josh Hug', '2516 Piedmont Ave', 'Berkeley', '2018-06-01', '2019-01-01', "1 spacious double bedroom, needs subletter for fall, friendly roomates, free utilities", 'https://goo.gl/images/Kqy8s5'],
+['Josh Hug', '2516 Piedmont Ave', 'Berkeley', '2018-06-01', '2019-01-01', "1 spacious double bedroom, needs subletter for fall, friendly roomates, free utilities", 'https://goo.gl/images/Kqy8s5'],
+
 
 ].each do |author, street, city, start_date, end_date, description, image|
   Listing.create(
@@ -31,9 +33,3 @@ puts 'CREATED ADMIN USER: ' << user.email
     lng: 0,
   )
 end
-
-
-# Make other trainers
-# %w(Ash Gary Misty Brock).each do |name|
-#   Trainer.create name: name, email: name+"@pokeportal.com", password: 'password'
-# end
