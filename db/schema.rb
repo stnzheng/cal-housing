@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20180425053340) do
-=======
 ActiveRecord::Schema.define(version: 20180425055818) do
->>>>>>> c12a735f1826e935d292bf7f36edba2e795c999f
 
   create_table "landlords", force: :cascade do |t|
     t.string "name"
@@ -84,8 +80,8 @@ ActiveRecord::Schema.define(version: 20180425055818) do
     t.datetime "last_sign_in_at"
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string "name"
     t.integer "listingID"
     t.integer "userType"

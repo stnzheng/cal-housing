@@ -58,10 +58,8 @@ header.masthead .intro-text {
 
 header.masthead .intro-text .intro-lead-in {
   font-size: 22px;
-  font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 header.masthead .intro-text .intro-heading {
@@ -69,7 +67,6 @@ header.masthead .intro-text .intro-heading {
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -79,20 +76,27 @@ header.masthead .intro-text .intro-heading {
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
-    font-style: italic;
     line-height: 40px;
     margin-bottom: 25px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
     margin-bottom: 50px;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 }
+input#address {
+  line-height: 3;
+  border-radius: 10px;
 
+}
+.address-button {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 5px;
+  line-height: 36px;
+}
 
 main {
   width: 100%;
@@ -105,10 +109,106 @@ main {
   font-size: 86px;
   margin: 40px 20px 20px 40px;
   padding: 100px;
-  // color: white;
   font-family: 'Roboto Mono', monospace;
   opacity: 1;
 }
+#housing {
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+// About Page Styling
+.about-container .bg {
+  position: absolute;
+  font-family: 'Roboto Mono', monospace;
+  // z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("campanille.jpg") center center;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  min-height: 760px;
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+  /* Center the background image */
+  background-position: center;
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+  /* Scale the background image to be as large as possible */
+  background-size: cover;
+  height: 805px;
+
+}
+.about-content {
+  margin: 50px;
+  padding: 50px;
+  opacity: 1;
+  color: white;
+  z-index: 1;
+
+}
+// about-container {
+//   text-align: center;
+//   color: white;
+//   background-repeat: no-repeat;
+//   background-attachment: scroll;
+//   background-position: center center;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+//
+// header.masthead .intro-text {
+//   padding-top: 150px;
+//   padding-bottom: 100px;
+//   opacity: 1;
+// }
+//
+// header.masthead .intro-text .intro-lead-in {
+//   font-size: 22px;
+//   // font-style: italic;
+//   line-height: 22px;
+//   margin-bottom: 25px;
+//   // font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// }
+//
+// header.masthead .intro-text .intro-heading {
+//   font-size: 50px;
+//   font-weight: 700;
+//   line-height: 50px;
+//   margin-bottom: 25px;
+//   //font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// }
+//
+// @media (min-width: 768px) {
+//   header.masthead .intro-text {
+//     padding-top: 300px;
+//     padding-bottom: 200px;
+//   }
+//   header.masthead .intro-text .intro-lead-in {
+//     font-size: 40px;
+//     // font-style: italic;
+//     line-height: 40px;
+//     margin-bottom: 25px;
+//     // font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//   }
+//   header.masthead .intro-text .intro-heading {
+//     font-size: 75px;
+//     font-weight: 700;
+//     line-height: 75px;
+//     margin-bottom: 50px;
+//     // font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//   }
+// }
+//
+// about-container {
+//   font-family: 'Roboto Mono', monospace;
+//
+// }
 .app_container {
   // height: 680px;
   width: 100%;

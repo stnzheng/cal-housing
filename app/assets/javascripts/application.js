@@ -15,4 +15,4 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gugi|Roboto+Mono" rel="stylesheet">

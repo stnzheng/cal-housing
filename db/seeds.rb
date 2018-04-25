@@ -24,6 +24,7 @@ puts 'CREATED ADMIN USER: ' << user.email
   ['Hannah', '400 Howard St', 'San Francisco', '2018-08-01', '2019-06-01', 'Close to BART Station and lots of room!', 'https://goo.gl/images/PpP4PL'],
   ['Dylan', '400 Howard St', 'San Francisco', '2018-10-01', '2019-10-01', 'Friendly environment, comes with parking space and covered water bill!', 'https://goo.gl/images/7geDFN'],
   ['Sean', '140 Montgomery St', 'San Francisco', '2018-5-01', '2019-03-15', 'Comes with laundry machine access and close to public transportation!', 'https://goo.gl/images/8HfqUr']].each do |author, street, city, start_date, end_date, description, image|
+  a=Geokit::Geocoders::GoogleGeocoder.geocode street +', '+ city
   Listing.create(
     author: author,
     price: rand(500..1500),
@@ -35,5 +36,7 @@ puts 'CREATED ADMIN USER: ' << user.email
     rating: rand(0..10),
     description: description,
     image: image,
+    lat: a.lat,
+    lng: a.lng
   )
 end
