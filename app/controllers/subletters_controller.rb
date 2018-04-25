@@ -7,6 +7,9 @@ class SublettersController < ApplicationController
 
 	def show
 		@subletter = Subletter.find(params[:id])
+		
+	    unless @subletter == current_subletter
+	      redirect_to :back, :alert => "Access denied."
+	    end
 	end
-
 end
