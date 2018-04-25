@@ -4,3 +4,7 @@
 <p>Profile Picture:
 	<%= link_to(image_tag(@subletter.avatar.medium.url), @subletter.avatar.url, target: '_blank') if @subletter.avatar? %></p>
 
+<p>Start Date: <%= @subletter.startDate if @subletter.startDate %></p>
+<p>End Date: <%= @subletter.endDate if @subletter.endDate %></p>
+
+
