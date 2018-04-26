@@ -48,6 +48,8 @@
         </div>
         <div>
           <strong>Pictures:</strong>
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @listing.street %>,<%= @listing.city %>,California,CA&zoom=15&size=500x250&maptype=roadmap&markers=color:blue%7Clabel:S%7C<%= @listing.lat %>,<%= @listing.lng %>&key=AIzaSyDwCneHgmqCleIPP5yYSG6R5owApys1nGI" />
+
           <%= @listing.image %>
         </div>
       </div>
