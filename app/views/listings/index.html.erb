@@ -1,22 +1,30 @@
 <div class="background-container">
   <div class="bg"> </div>
-  <div class="listing_title"> Listings: </div>
+  <h1 class="listing_title"> Listings: </h1>
   <div class="all_listings">
     <% @listings.each do |listing| %>
     <div class="listing_container">
       <h1> <%= listing.open_spots%> Bedroom, $<%= listing.price %>, <%= listing.city%> </h1>
-      <h5> Price: $ <%= listing.price %> </h5>
-      <h5> Author: <%= listing.author %> </h5>
-      <h5> Start Date: <%= listing.start_date.year %> <%= Date::MONTHNAMES[listing.start_date.month] %> <%= listing.start_date.day %> </h5>
-      <h5> End Date: <%= listing.end_date.year %> <%= Date::MONTHNAMES[listing.end_date.month] %> <%= listing.end_date.day %> </h5>
-      <h5> Rating:
-        <% (0..listing.rating - 1).each do |_| %>
-        <span><%='☆'%> </span>
-        <% end %>
-        (<%= listing.rating %>)
+      <div class="listing-row">
+        <div class="listing-column">
+          <h5> Price: $ <%= listing.price %> </h5>
+          <h5> Author: <%= listing.author %> </h5>
+          <h5> Start Date: <%= listing.start_date.year %> <%= Date::MONTHNAMES[listing.start_date.month] %> <%= listing.start_date.day %> </h5>
+          <h5> End Date: <%= listing.end_date.year %> <%= Date::MONTHNAMES[listing.end_date.month] %> <%= listing.end_date.day %> </h5>
+          <h5> Rating:
+            <% (0..listing.rating - 1).each do |_| %>
+            <span><%='☆'%> </span>
+            <% end %>
+            (<%= listing.rating %>)
+          </h5>
+        </div>
+        <div class="listing-column">
 
-      </h5>
-      <td><%= link_to 'Show More', listing %></td>
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= listing.street %>,<%= listing.city %>,California,CA&zoom=15&size=400x200&maptype=roadmap&markers=color:blue%7Clabel:S%7C<%= listing.lat %>,<%= listing.lng %>&key=<%=ENV["GOOGLE_API_KEY"]%>" />
+
+          <td><%= link_to 'Show More', listing %></td>
+        </div>
+      </div>
     </div>
     <% end %>
   </div>
