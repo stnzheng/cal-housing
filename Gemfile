@@ -24,7 +24,6 @@ gem 'figaro'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'devise'
 gem 'fog'
 ######
 

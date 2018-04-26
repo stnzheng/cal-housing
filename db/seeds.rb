@@ -40,3 +40,23 @@ puts 'CREATED ADMIN USER: ' << user.email
     lng: a.lng
   )
 end
+
+# Make Subletters
+[['Roger Federer', 'federer@berkeley.edu',  Date.new(2018,4,29),  Date.new(2018,6,14)], 
+ ['Rafael Nadal', 'nadal@berkeley.edu',  Date.new(2018,5,12),  Date.new(2018,8,18)],
+ ['Alexander Zverev', 'zverev@berkeley.edu',  Date.new(2018,6,23),  Date.new(2018,12,12)], 
+ ['Marin Cilic', 'cilic@berkeley.edu',  Date.new(2018,8,27),  Date.new(2018,9,20)],
+ ['Grigor Dimitrov', 'dimitrov@berkeley.edu',  Date.new(2018,10,6),  Date.new(2018,10,6)],
+ ['Juan DelPotro', 'delpotro@berkeley.edu',  Date.new(2018,10,23),  Date.new(2018,11,4)],
+ ['Dominic Thiem', 'thiem@berkeley.edu',  Date.new(2018,11,14),  Date.new(2018,11,6)],
+ ['Kevin Anderson', 'anderson@berkeley.edu',  Date.new(2018,11,29),  Date.new(2018,11,30)],
+ ['John Isner', 'isner@berkeley.edu',  Date.new(2018,12,1),  Date.new(2018,12,23)]].each do |name, email, startDate, endDate|
+  Subletter.create(
+    name: name,
+    email: email,
+    startDate: startDate,
+    endDate: endDate,
+    password: "password",
+    password_confirmation: "password",
+    )
+end

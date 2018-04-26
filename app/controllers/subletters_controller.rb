@@ -7,8 +7,16 @@ class SublettersController < ApplicationController
   def index
     if params[:search]
     	@search_term = params[:search]
-    	# puts 'Search for date: ', @search_term
-    	@subletters = Subletter.all.search_by(@search_term)
+    	puts 'Search for date: ', @search_term
+    	@subletters_list = Subletter.all
+    	@subletters = []
+    	@subletters_list.each { |x| 
+    		if x.startDate > Date.parse(@search_term) 
+    			@subletters.push(x)
+    		end
+    	}
+    	# @subletters = @subletters.search_by(@search_term)
+    	puts @subletters
     end
   end
 
