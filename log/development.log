@@ -37883,3 +37883,2711 @@ Processing by VisitorsController#index as HTML
 Completed 200 OK in 198ms (Views: 193.6ms | ActiveRecord: 0.2ms)
 
 
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-26 03:20:58 -0700
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (14.3ms)
+  Rendered layouts/_navigation.html.erb (27.7ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 1658ms (Views: 1630.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2018-04-26 03:21:06 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (10.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 198ms (Views: 191.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-26 03:21:31 -0700
+Processing by ListingsController#new as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-26 03:21:32 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.7ms)
+  Rendered users/sessions/new.html.erb within layouts/application (72.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (12.9ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 274ms (Views: 243.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 03:21:35 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (10.9ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 138ms (Views: 133.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/app/views/signup/index.html" for 127.0.0.1 at 2018-04-26 03:21:42 -0700
+Processing by SignupsController#index as HTML
+  Rendering signups/index.html.erb within layouts/application
+  Rendered signups/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (8.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 87ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subletter/sign_in" for 127.0.0.1 at 2018-04-26 03:21:52 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering subletters/sessions/new.html.erb within layouts/application
+  Rendered subletters/shared/_links.html.erb (2.1ms)
+  Rendered subletters/sessions/new.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (13.6ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 131ms (Views: 106.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-26 03:21:55 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (11.5ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 138ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:21:57 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (44.3ms)
+  Rendered layouts/_navigation_links.html.erb (17.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.3ms)
+  Rendered layouts/_navigation.html.erb (31.1ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 197ms (Views: 159.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/listings/12" for 127.0.0.1 at 2018-04-26 03:22:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.5ms)
+
+
+
+NoMethodError - undefined method `listings' for nil:NilClass:
+  app/controllers/listings_controller.rb:65:in `show'
+
+Started POST "/__better_errors/09b5b2d93952a029/variables" for 127.0.0.1 at 2018-04-26 03:22:05 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:22:54 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+
+NoMethodError - undefined method `listings' for nil:NilClass:
+  app/controllers/listings_controller.rb:65:in `show'
+
+Started POST "/__better_errors/bcfc17e8508ad051/variables" for 127.0.0.1 at 2018-04-26 03:22:54 -0700
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:22:56 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (11.4ms)
+  Rendered layouts/_messages.html.erb (2.6ms)
+Completed 200 OK in 248ms (Views: 243.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:24:29 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (51.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.8ms)
+  Rendered layouts/_navigation.html.erb (14.1ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 267ms (Views: 247.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:24:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation_links.html.erb (4.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.0ms)
+  Rendered layouts/_navigation.html.erb (14.5ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 109ms (Views: 99.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 03:25:54 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (27.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (12.3ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 196ms (Views: 183.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:25:58 -0700
+
+SyntaxError - syntax error, unexpected ':', expecting '}'
+      format.html { notice: 'Sign up for an account to se
+                           ^
+/Users/Vcortes/ruby198/cal-housing/app/controllers/listings_controller.rb:68: syntax error, unexpected '}', expecting keyword_end
+for an account to see more!' }
+                              ^
+/Users/Vcortes/ruby198/cal-housing/app/controllers/listings_controller.rb:109: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/controllers/listings_controller.rb:68:in `'
+
+Started POST "/__better_errors/d66652328104acd2/variables" for 127.0.0.1 at 2018-04-26 03:25:58 -0700
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:26:47 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (26.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (10.5ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 195ms (Views: 174.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:26:50 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+
+
+
+ArgumentError - too few arguments:
+  app/controllers/listings_controller.rb:68:in `format'
+  app/controllers/listings_controller.rb:68:in `show'
+
+Started POST "/__better_errors/d300530f3e1f46fb/variables" for 127.0.0.1 at 2018-04-26 03:26:50 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:27:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 3.4ms)
+
+
+
+ArgumentError - too few arguments:
+  app/controllers/listings_controller.rb:68:in `format'
+  app/controllers/listings_controller.rb:68:in `show'
+
+Started POST "/__better_errors/8b5d7bfc0c37e403/variables" for 127.0.0.1 at 2018-04-26 03:27:31 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:27:33 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+
+ArgumentError - too few arguments:
+  app/controllers/listings_controller.rb:68:in `format'
+  app/controllers/listings_controller.rb:68:in `show'
+
+Started POST "/__better_errors/96abd24ab1ccb966/variables" for 127.0.0.1 at 2018-04-26 03:27:33 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:27:51 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 3.1ms)
+
+
+
+ArgumentError - too few arguments:
+  app/controllers/listings_controller.rb:68:in `format'
+  app/controllers/listings_controller.rb:68:in `show'
+
+Started POST "/__better_errors/c1f231c9794f5883/variables" for 127.0.0.1 at 2018-04-26 03:27:52 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:27:54 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+
+
+ArgumentError - too few arguments:
+  app/controllers/listings_controller.rb:68:in `format'
+  app/controllers/listings_controller.rb:68:in `show'
+
+Started POST "/__better_errors/e7d926efd3d63d34/variables" for 127.0.0.1 at 2018-04-26 03:27:54 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:28:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 3.2ms)
+
+
+
+ArgumentError - too few arguments:
+  app/controllers/listings_controller.rb:68:in `format'
+  app/controllers/listings_controller.rb:68:in `show'
+
+Started POST "/__better_errors/4aa235cc5b85f9a1/variables" for 127.0.0.1 at 2018-04-26 03:28:32 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:28:33 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+
+
+ArgumentError - too few arguments:
+  app/controllers/listings_controller.rb:68:in `format'
+  app/controllers/listings_controller.rb:68:in `show'
+
+Started POST "/__better_errors/ba8f819340a19859/variables" for 127.0.0.1 at 2018-04-26 03:28:33 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:28:36 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+
+
+ArgumentError - too few arguments:
+  app/controllers/listings_controller.rb:68:in `format'
+  app/controllers/listings_controller.rb:68:in `show'
+
+Started POST "/__better_errors/5d31073edcac09b0/variables" for 127.0.0.1 at 2018-04-26 03:28:36 -0700
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:28:41 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (10.6ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 155ms (Views: 150.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:28:43 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+
+ArgumentError - too few arguments:
+  app/controllers/listings_controller.rb:68:in `format'
+  app/controllers/listings_controller.rb:68:in `show'
+
+Started POST "/__better_errors/f58927a6f4b33f7e/variables" for 127.0.0.1 at 2018-04-26 03:28:43 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:29:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 4.2ms)
+
+
+
+NoMethodError - undefined method `keys' for "Sign up for an account to see more!":String:
+  app/controllers/listings_controller.rb:68:in `show'
+
+Started POST "/__better_errors/4cfafb505c6fcbfd/variables" for 127.0.0.1 at 2018-04-26 03:29:06 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:29:21 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 3.5ms)
+
+
+
+NoMethodError - undefined method `keys' for "Sign up for an account to see more!":String:
+  app/controllers/listings_controller.rb:68:in `show'
+
+Started POST "/__better_errors/46dca3dee0c6500c/variables" for 127.0.0.1 at 2018-04-26 03:29:21 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:30:42 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to 
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 4.7ms)
+
+
+
+ActionController::ActionControllerError - Cannot redirect to nil!:
+  app/controllers/listings_controller.rb:69:in `show'
+
+Started POST "/__better_errors/b260015a317c01bc/variables" for 127.0.0.1 at 2018-04-26 03:30:43 -0700
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:30:59 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (29.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (10.6ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 297ms (Views: 273.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:05 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:31:13 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/6
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 03:31:16 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (13.7ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 134ms (Views: 127.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:31:23 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (11.5ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 95ms (Views: 91.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 14ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:24 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/listings/4
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:31:44 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (2.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering listings/index.html.erb within layouts/application
+  Rendered listings/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 3.6ms)
+
+
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/listings/index.html.erb:5:in `_app_views_listings_index_html_erb___1855199450598245030_70159437530140'
+  app/controllers/listings_controller.rb:69:in `show'
+
+Started POST "/__better_errors/e089e0410f7c37ec/variables" for 127.0.0.1 at 2018-04-26 03:31:45 -0700
+Started GET "/" for 127.0.0.1 at 2018-04-26 03:32:00 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.4ms)
+  Rendered layouts/_navigation.html.erb (17.3ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 162ms (Views: 155.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 03:32:21 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.1ms)
+  Rendered layouts/_navigation.html.erb (21.3ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 241ms (Views: 232.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:32:24 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (30.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.erb (12.8ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 145ms (Views: 123.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:32:25 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 423ms (ActiveRecord: 0.2ms)
+
+
+
+NameError - undefined local variable or method `visitors' for #<ListingsController:0x007f9e88e2f6e8>:
+  app/controllers/listings_controller.rb:69:in `show'
+
+Started POST "/__better_errors/c8b75e147f4aba29/variables" for 127.0.0.1 at 2018-04-26 03:32:25 -0700
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:32:34 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (45.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.7ms)
+  Rendered layouts/_navigation.html.erb (9.7ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 194ms (Views: 174.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:32:35 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 456ms (ActiveRecord: 2.1ms)
+
+
+
+NameError - undefined local variable or method `visitor_path' for #<ListingsController:0x007f9e8e439480>:
+  app/controllers/listings_controller.rb:69:in `show'
+
+Started POST "/__better_errors/70d7f6900f7a1238/variables" for 127.0.0.1 at 2018-04-26 03:32:36 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 03:32:49 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.7ms)
+  Rendered layouts/_navigation.html.erb (12.6ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 165ms (Views: 114.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 03:32:53 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (8.3ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 94ms (Views: 88.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:32:54 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (8.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 84ms (Views: 79.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:32:56 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (7.4ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 80ms (Views: 74.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:34:48 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (2.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 441ms (ActiveRecord: 3.8ms)
+
+
+
+NameError - undefined local variable or method `login_path' for #<ListingsController:0x007f9e8f976910>:
+  app/controllers/listings_controller.rb:69:in `show'
+
+Started POST "/__better_errors/cd9dbf041bcf5d83/variables" for 127.0.0.1 at 2018-04-26 03:34:49 -0700
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:35:06 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (2.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 334ms (ActiveRecord: 3.4ms)
+
+
+
+NameError - undefined local variable or method `signup_path' for #<ListingsController:0x007f9e8eb158f8>
+Did you mean?  sign_out:
+  app/controllers/listings_controller.rb:69:in `show'
+
+Started POST "/__better_errors/4a3ee87fac11b716/variables" for 127.0.0.1 at 2018-04-26 03:35:07 -0700
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:35:14 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 3.3ms)
+
+
+
+NameError - undefined local variable or method `sign_up_path' for #<ListingsController:0x007f9e8cd32d18>
+Did you mean?  sign_out:
+  app/controllers/listings_controller.rb:69:in `show'
+
+Started POST "/__better_errors/f393e1e7fc4cad2a/variables" for 127.0.0.1 at 2018-04-26 03:35:15 -0700
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:35:31 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 3.8ms)
+
+
+
+NameError - undefined local variable or method `login_path' for #<ListingsController:0x007f9e8f8dc2e8>:
+  app/controllers/listings_controller.rb:69:in `show'
+
+Started POST "/__better_errors/498ab914cf91f9d5/variables" for 127.0.0.1 at 2018-04-26 03:35:32 -0700
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:35:46 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (2.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 317ms (ActiveRecord: 4.3ms)
+
+
+
+NameError - undefined local variable or method `visitors_path' for #<ListingsController:0x007f9e8e4bcd80>:
+  app/controllers/listings_controller.rb:69:in `show'
+
+Started POST "/__better_errors/b5a58913ef19af7f/variables" for 127.0.0.1 at 2018-04-26 03:35:46 -0700
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:35:51 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 508ms (ActiveRecord: 1.1ms)
+
+
+
+NameError - undefined local variable or method `visitor_path' for #<ListingsController:0x007f9e8cc6b038>:
+  app/controllers/listings_controller.rb:69:in `show'
+
+Started POST "/__better_errors/591519fdf190c633/variables" for 127.0.0.1 at 2018-04-26 03:35:52 -0700
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:37:22 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 333ms (ActiveRecord: 1.5ms)
+
+
+
+NameError - undefined local variable or method `root' for #<ListingsController:0x007f9e8ee6e180>:
+  app/controllers/listings_controller.rb:69:in `show'
+
+Started POST "/__better_errors/67d39b3bba3ba5b1/variables" for 127.0.0.1 at 2018-04-26 03:37:22 -0700
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:38:27 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 77ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 03:38:27 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.3ms)
+  Rendered layouts/_navigation.html.erb (15.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 238ms (Views: 232.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:38:32 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.4ms)
+  Rendered layouts/_navigation.html.erb (13.8ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 261ms (Views: 251.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:38:34 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 03:38:34 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.2ms)
+  Rendered layouts/_navigation.html.erb (14.8ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 128ms (Views: 125.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2018-04-26 03:38:43 -0700
+Processing by ListingsController#new as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-26 03:38:43 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.9ms)
+  Rendered users/sessions/new.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (9.3ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 132ms (Views: 106.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2018-04-26 03:38:47 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (14.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 94ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 03:38:49 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (12.1ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 109ms (Views: 106.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2619+Etna+St%2C+Berkeley%2C+CA&commit=Search" for 127.0.0.1 at 2018-04-26 03:38:54 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2619 Etna St, Berkeley, CA", "commit"=>"Search"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-26 03:38:54 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (23.4ms)
+  Rendered layouts/_navigation_links.html.erb (6.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.3ms)
+  Rendered layouts/_navigation.html.erb (22.7ms)
+  Rendered layouts/_messages.html.erb (6.4ms)
+Completed 200 OK in 254ms (Views: 250.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2018-04-26 03:39:02 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mojoOp+YIo+YNzX5QAzt4tmAGcelbuewDXNRr642alXq5BnEnEcN0DNGYut7idQqIdB5/LO5c2Fm2Qe2DeFx+g==", "user"=>{"email"=>"vanessa@berkeley.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "vanessa@berkeley.edu"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 13ms (ActiveRecord: 3.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mojoOp+YIo+YNzX5QAzt4tmAGcelbuewDXNRr642alXq5BnEnEcN0DNGYut7idQqIdB5/LO5c2Fm2Qe2DeFx+g==", "user"=>{"email"=>"vanessa@berkeley.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (81.8ms)
+  Rendered layouts/_navigation_links.html.erb (2.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (14.5ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 480ms (Views: 235.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2018-04-26 03:39:11 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M2LB+JL2Vuc+Jy89RV0EbSP6sUL3thpZ+5ISpZUJdlVDDjAGkSl5uJVWeC9+2D2l26rReeFhjoiQOES8Nt5t+g==", "user"=>{"email"=>"oski@berkeley.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oski@berkeley.edu"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (10.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-26 10:39:12.025657"], ["last_sign_in_at", "2018-04-26 10:10:22.111497"], ["sign_in_count", 3], ["updated_at", "2018-04-26 10:39:12.027704"], ["id", 2]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/browse?utf8=%E2%9C%93&address=2619+Etna+St%2C+Berkeley%2C+CA&commit=Search
+Completed 302 Found in 224ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2619+Etna+St%2C+Berkeley%2C+CA&commit=Search" for 127.0.0.1 at 2018-04-26 03:39:12 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2619 Etna St, Berkeley, CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 2619 Etna St, Berkeley, CA, args []
+Google geocoding. Result: %7B%0A+++%22error_message%22+%3A+%22You+have+exceeded+your+daily+request+quota+for+this+API.+We+recommend+registering+for+a+key+at+the+Google+Developers+Console%3A+https%3A%2F%2Fconsole.developers.google.com%2Fapis%2Fcredentials%3Fproject%3D_%22%2C%0A+++%22results%22+%3A+%5B%5D%2C%0A+++%22status%22+%3A+%22OVER_QUERY_LIMIT%22%0A%7D%0A
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 0.2ms)
+
+
+
+Geokit::Geocoders::TooManyQueriesError - You have exceeded your daily request quota for this API. We recommend registering for a key at the Google Developers Console: https://console.developers.google.com/apis/credentials?project=_:
+  app/controllers/listings_controller.rb:15:in `browse'
+
+Started POST "/__better_errors/e0cc9f596de10eff/variables" for 127.0.0.1 at 2018-04-26 03:39:12 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2619+Etna+St%2C+Berkeley%2C+CA&commit=Search" for 127.0.0.1 at 2018-04-26 03:39:14 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2619 Etna St, Berkeley, CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 2619 Etna St, Berkeley, CA, args []
+Google geocoding. Result: %7B%0A+++%22error_message%22+%3A+%22You+have+exceeded+your+daily+request+quota+for+this+API.+We+recommend+registering+for+a+key+at+the+Google+Developers+Console%3A+https%3A%2F%2Fconsole.developers.google.com%2Fapis%2Fcredentials%3Fproject%3D_%22%2C%0A+++%22results%22+%3A+%5B%5D%2C%0A+++%22status%22+%3A+%22OVER_QUERY_LIMIT%22%0A%7D%0A
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.5ms)
+
+
+
+Geokit::Geocoders::TooManyQueriesError - You have exceeded your daily request quota for this API. We recommend registering for a key at the Google Developers Console: https://console.developers.google.com/apis/credentials?project=_:
+  app/controllers/listings_controller.rb:15:in `browse'
+
+Started POST "/__better_errors/5bb214898e171d5f/variables" for 127.0.0.1 at 2018-04-26 03:39:14 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2619+Etna+St%2C+Berkeley%2C+CA&commit=Search" for 127.0.0.1 at 2018-04-26 03:39:16 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2619 Etna St, Berkeley, CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 2619 Etna St, Berkeley, CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222619%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222619%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Etna+Street%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Etna+St%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Elmwood%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Elmwood%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%223421%22%2C%0A+++++++++++++++%22short_name%22+%3A+%223421%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222619+Etna+St%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8632271%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2520539%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8631064%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2523436%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.8631843%2C%0A+++++++++++++++%22lng%22+%3A+-122.2522059%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.86451573029149%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2508497697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.86181776970849%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2535477302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJtz1v7jJ8hYARhSfzU4hNMdk%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/browse.html.erb within layouts/application
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.79089937357321 AND listings.lat<37.9354692264268 AND listings.lng>-122.34376620338134 AND listings.lng<-122.16064559661866) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.6608372313244244)*COS(-2.1337035107810376)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.6608372313244244)*SIN(-2.1337035107810376)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.6608372313244244)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/browse.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (8.5ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 638ms (Views: 94.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 03:39:19 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (5.2ms)
+  Rendered layouts/_navigation.html.erb (15.8ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 152ms (Views: 141.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 03:39:21 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (11.5ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 168ms (Views: 117.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 03:39:23 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation_links.html.erb (6.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (5.7ms)
+  Rendered layouts/_navigation.html.erb (23.7ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 155ms (Views: 150.8ms | ActiveRecord: 1.0ms)
+
+
