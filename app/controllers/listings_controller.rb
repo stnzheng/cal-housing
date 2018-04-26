@@ -61,13 +61,8 @@ class ListingsController < ApplicationController
   end
 
   def show
-    if current_user
       @listing = Listing.find(params[:id])
       @author_listing = current_user.listings
-    else
-      flash[:error] = "Sign up for an account to see more!"
-      redirect_to root_path
-    end
   end
 
   # PATCH/PUT /listings/1
