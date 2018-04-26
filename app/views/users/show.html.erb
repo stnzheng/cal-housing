@@ -1,5 +1,11 @@
 <div class="login-content" id="user-profile">
-  <div class="title">Your User Profile</div>
+  <div class="title">User Center</div>
   <div>Name: <%= @user.name if @user.name %></div>
   <div>Email: <%= @user.email if @user.email %></div>
+  <div>Create Listing: <%= link_to 'Create', new_listing_path %></div>
+  <div>Edit Listings:
+    <%= @user.listing_ids.each do |id| %>
+    <div><%= link_to ('No.' + id.to_s), listing_path(id) %></div>
+    <% end %>
+  </div>
 </div>

@@ -5,9 +5,11 @@ class SublettersController < ApplicationController
 	end
 
   def index
-    startLeaseDate = params[:startDate]
-    puts "start Lease date %i", startLeaseDate
-    @subletters = Subletter.all.select { |s| s.startDate == startLeaseDate }
+    if params[:search]
+    	@search_term = params[:search]
+    	# puts 'Search for date: ', @search_term
+    	@subletters = Subletter.all.search_by(@search_term)
+    end
   end
 
 	def show
