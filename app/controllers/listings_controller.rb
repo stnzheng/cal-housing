@@ -23,7 +23,6 @@ class ListingsController < ApplicationController
   def new
     # @listing = current_user.listings.build
     @listing = Listing.new
-    puts 'this is the new method'
   end
 
   # GET /listings/1/edit
@@ -43,10 +42,7 @@ class ListingsController < ApplicationController
     @listing.user_id = current_user.id
     address = @listing.street
     city = @listing.city
-    puts 'this is the create method'
-    puts address, city
     tempLatLon = a=Geokit::Geocoders::GoogleGeocoder.geocode address +', '+ city
-    puts tempLatLon
     @listing.lat = tempLatLon.lat
     @listing.lng = tempLatLon.lng
     @listing.save
@@ -66,13 +62,8 @@ class ListingsController < ApplicationController
   end
 
   def show
-    if current_user
       @listing = Listing.find(params[:id])
-      @author_listing = current_user.listings
-    else
-      flash[:error] = "Register for a user account to see more!"
-      redirect_to root_path
-    end
+
   end
 
   # PATCH/PUT /listings/1

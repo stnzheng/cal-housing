@@ -40,17 +40,17 @@
           <strong>End date:</strong>
           <%= @listing.end_date %>
         </div>
-      </div>
-      <div class="listing-column">
         <div>
           <strong>Description:</strong>
           <%= @listing.description %>
         </div>
+      </div>
+      <div class="listing-column">
         <div>
           <strong>Pictures:</strong>
-          <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @listing.street %>,<%= @listing.city %>,California,CA&zoom=15&size=500x250&maptype=roadmap&markers=color:blue%7Clabel:S%7C<%= @listing.lat %>,<%= @listing.lng %>&key=<%= ENV["GOOGLE_API_KEY"] %>" />
+          <img style="margin-bottom: 5px;" src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @listing.street %>,<%= @listing.city %>,California,CA&zoom=16&size=500x350&maptype=roadmap&markers=color:blue%7Clabel:S%7C<%= @listing.lat %>,<%= @listing.lng %>&key=<%= ENV["GOOGLE_API_KEY"] %>" />
 
-          <%= @listing.image %>
+          <%=image_tag("listing" + @listing.id.to_s + ".jpg") %>
         </div>
       </div>
     </div>
