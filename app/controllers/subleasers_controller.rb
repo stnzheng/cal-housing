@@ -1,4 +1,2 @@
 class SubleaserController < ApplicationController
-
-
 end

@@ -5,6 +5,9 @@
 		<div><b>Name:</b> <%= @subletter.name if @subletter.name %></div>
 		<div><b>Email:</b> <%= @subletter.email if @subletter.email %></div>
 		<div><b>Profile Picture: </b>
-			<%= link_to(image_tag(@subletter.avatar.medium.url), @subletter.avatar.url, target: '_blank') if @subletter.avatar? %></div>
+			<%= link_to(image_tag(@subletter.avatar.medium.url), @subletter.avatar.url, target: '_blank') if @subletter.avatar? %>
+		</div>
+		<div><b>Start Date: </b> <%= @subletter.startDate if @subletter.startDate %> </div>
+		<div><b>End Date:</b> <%= @subletter.endDate if @subletter.endDate %> </div>
 	</div>
 </div>

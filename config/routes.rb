@@ -10,9 +10,11 @@ Rails.application.routes.draw do
   get "/app/views/signup/index.html", to: "signups#index"
 
   get "/subletter/:id", to: "subletters#show", as: "subletter_show"
+
   get "/user/:id", to: "users#show", as: "user_show"
 
   get "/browse", to: "listings#index", as: "browse"
+  get "/browse/subletters", to: "subletters#index", as: "browse_subletters"
 
 
 end

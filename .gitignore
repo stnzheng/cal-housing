@@ -1,6 +1,6 @@
-tmp
-log
+tmp/*
+log/*
 Gemfile
 
-# Ignore application configuration
+# Ignore application configuration: super important api key info
 /config/application.yml
