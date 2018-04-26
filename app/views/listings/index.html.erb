@@ -1,17 +1,20 @@
-<h1 class="listing_title"> Listings: </h1>
-<div class="all_listings">
-  <% @listings.each do |listing| %>
-    <div class="listing_container">
-      <h1> <%= listing.open_spots%> Bedroom, $<%= listing.price %>, <%= listing.city%> </h1>
-      <h5> Price: $ <%= listing.price %> </h5>
-      <h5> Author: <%= listing.author %> </h5>
-      <h5> Start Date: <%= listing.start_date %> </h5>
-      <h5> End Date: <%= listing.end_date %> </h5>
-      <h5> Rating: <%= listing.rating %> </h5>
+<div class="background-container">
+  <div class="bg"> </div>
+  <h1 class="listing_title"> Listings: </h1>
+  <div class="all_listings">
+    <% @listings.each do |listing| %>
+      <div class="listing_container">
+        <h1> <%= listing.open_spots%> Bedroom, $<%= listing.price %>, <%= listing.city%> </h1>
+        <h5> Price: $ <%= listing.price %> </h5>
+        <h5> Author: <%= listing.author %> </h5>
+        <h5> Start Date: <%= listing.start_date %> </h5>
+        <h5> End Date: <%= listing.end_date %> </h5>
+        <h5> Rating: <%= listing.rating %> </h5>
 
-      <td><%= link_to 'Show More', listing %></td>
-    </div>
-  <% end %>
+        <td><%= link_to 'Show More', listing %></td>
+      </div>
+    <% end %>
+  </div>
+
+  <%= link_to 'New Listing', new_listing_path %>
 </div>
-
-<%= link_to 'New Listing', new_listing_path %>
