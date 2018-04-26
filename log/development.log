@@ -42245,3 +42245,146 @@ Completed 200 OK in 508ms (Views: 479.1ms | ActiveRecord: 3.9ms)
 >>>>>>> parent of 3a34af7... updated listing show action to work only for registered users
 =======
 >>>>>>> parent of 3a34af7... updated listing show action to work only for registered users
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-26 06:09:56 -0700
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_navigation_links.html.erb (3.9ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (52.7ms)
+  Rendered layouts/_navigation.html.erb (67.0ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 1418ms (Views: 1381.2ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-26 06:10:05 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22error_message%22+%3A+%22You+have+exceeded+your+daily+request+quota+for+this+API.+We+recommend+registering+for+a+key+at+the+Google+Developers+Console%3A+https%3A%2F%2Fconsole.developers.google.com%2Fapis%2Fcredentials%3Fproject%3D_%22%2C%0A+++%22results%22+%3A+%5B%5D%2C%0A+++%22status%22+%3A+%22OVER_QUERY_LIMIT%22%0A%7D%0A
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 1.3ms)
+
+
+
+Geokit::Geocoders::TooManyQueriesError - You have exceeded your daily request quota for this API. We recommend registering for a key at the Google Developers Console: https://console.developers.google.com/apis/credentials?project=_:
+  app/controllers/listings_controller.rb:15:in `browse'
+
+Started POST "/__better_errors/9c1a23e03a4491dc/variables" for 127.0.0.1 at 2018-04-26 06:10:06 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-26 06:10:09 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22error_message%22+%3A+%22You+have+exceeded+your+daily+request+quota+for+this+API.+We+recommend+registering+for+a+key+at+the+Google+Developers+Console%3A+https%3A%2F%2Fconsole.developers.google.com%2Fapis%2Fcredentials%3Fproject%3D_%22%2C%0A+++%22results%22+%3A+%5B%5D%2C%0A+++%22status%22+%3A+%22OVER_QUERY_LIMIT%22%0A%7D%0A
+Completed 500 Internal Server Error in 330ms (ActiveRecord: 0.4ms)
+
+
+
+Geokit::Geocoders::TooManyQueriesError - You have exceeded your daily request quota for this API. We recommend registering for a key at the Google Developers Console: https://console.developers.google.com/apis/credentials?project=_:
+  app/controllers/listings_controller.rb:15:in `browse'
+
+Started POST "/__better_errors/4e94c507c579b3c2/variables" for 127.0.0.1 at 2018-04-26 06:10:10 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-26 06:10:51 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/browse.html.erb within layouts/application
+  [1m[36mListing Load (8.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.7970271735732 AND listings.lat<37.941597026426784 AND listings.lng>-122.34208441760072 AND listings.lng<-122.15894858239928) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.660944181610328)*COS(-2.1336740251886543)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.660944181610328)*SIN(-2.1336740251886543)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.660944181610328)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/browse.html.erb within layouts/application (98.3ms)
+  Rendered layouts/_navigation_links.html.erb (4.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (5.1ms)
+  Rendered layouts/_navigation.html.erb (30.6ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 1340ms (Views: 514.7ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/listings/8" for 127.0.0.1 at 2018-04-26 06:11:02 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mListing Load (4.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  [1m[36mListing Load (2.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  Rendered listings/show.html.erb within layouts/application (804.8ms)
+Completed 500 Internal Server Error in 955ms (ActiveRecord: 8.4ms)
+
+
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+
+NameError - undefined local variable or method `google_maps_key' for #<#<Class:0x007fe0f3e155b0>:0x007fe0f3d46558>:
+  app/views/listings/show.html.erb:51:in `_app_views_listings_show_html_erb__934051810116409292_70302070093820'
+
+Started POST "/__better_errors/3a1fd1c7f23b3a0c/variables" for 127.0.0.1 at 2018-04-26 06:11:03 -0700
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+Started GET "/listings/8" for 127.0.0.1 at 2018-04-26 06:12:54 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mListing Load (3.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (20.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.2ms)
+  Rendered layouts/_navigation.html.erb (18.6ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 281ms (Views: 224.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 06:12:59 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (4.5ms)
+  Rendered layouts/_navigation.html.erb (15.1ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 130ms (Views: 117.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/listings/10" for 127.0.0.1 at 2018-04-26 06:13:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mListing Load (2.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.6ms)
+  Rendered layouts/_navigation.html.erb (17.0ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+Completed 200 OK in 179ms (Views: 169.8ms | ActiveRecord: 2.4ms)
+
+
