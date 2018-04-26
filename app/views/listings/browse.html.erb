@@ -1,6 +1,7 @@
+
 <div class="background-container">
   <div class="bg"> </div>
-  <div class="listing_title"> Listings: </div>
+  <h1 class="listing_title"> Listings: </h1>
   <div class="all_listings">
     <% @listings.each do |listing| %>
     <div class="listing_container">
@@ -14,8 +15,8 @@
         <span><%='☆'%> </span>
         <% end %>
         (<%= listing.rating %>)
-
       </h5>
+
       <td><%= link_to 'Show More', listing %></td>
     </div>
     <% end %>

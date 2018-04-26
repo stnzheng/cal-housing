@@ -6,6 +6,11 @@ class ListingsController < ApplicationController
   # GET /listings
   # GET /listings.json
   def index
+    @listings = Listing.all.order(:price)
+  end
+
+  def browse
+
     address = params[:address]
     @lat_lon = a=Geokit::Geocoders::GoogleGeocoder.geocode address
     @listings = Listing.within(5, :origin => [@lat_lon.lat, @lat_lon.lng])
@@ -21,7 +26,7 @@ class ListingsController < ApplicationController
 
   # GET /listings/1/edit
   def edit
-
+    @listing = Listing.find(params[:id])
   end
 
   # POST /listings

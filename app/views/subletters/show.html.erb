@@ -1,13 +1,16 @@
-<div class="background-container">
-	<div class="bg"> </div>
-	<div class="subletter_profile">
-		<div class="profile-title">Your Subletter Profile</div>
-		<div><b>Name:</b> <%= @subletter.name if @subletter.name %></div>
-		<div><b>Email:</b> <%= @subletter.email if @subletter.email %></div>
-		<div><b>Profile Picture: </b>
-			<%= link_to(image_tag(@subletter.avatar.medium.url), @subletter.avatar.url, target: '_blank') if @subletter.avatar? %>
+<div class="login-content" id="your-subletter-profile">
+	<div class="profile-title">Your Subletter Profile</div>
+	<div class="profile-row">
+		<div class="profile-column">
+			<div><b>Name</b> <div> : <%= @subletter.name if @subletter.name %></div> </div>
+			<div><b>Email:</b> <div> : <%= @subletter.email if @subletter.email %></div></div>
+			<div><b>Start Date</b> <div> : <%= @subletter.startDate if @subletter.startDate %> </div> </div>
+			<div><b>End Date:</b> <div> : <%= @subletter.endDate if @subletter.endDate %> </div> </div>
 		</div>
-		<div><b>Start Date: </b> <%= @subletter.startDate if @subletter.startDate %> </div>
-		<div><b>End Date:</b> <%= @subletter.endDate if @subletter.endDate %> </div>
+		<div class ="profile-column">
+			<div><b>Profile Picture: </b>
+				<%= link_to(image_tag(@subletter.avatar.medium.url), @subletter.avatar.url, target: '_blank') if @subletter.avatar? %>
+			</div>
+		</div>
 	</div>
 </div>

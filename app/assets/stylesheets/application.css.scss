@@ -1,18 +1,18 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any styles
+* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+* file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
 // HOME PAGE STYLING
 .container .bg {
   position: absolute;
@@ -140,16 +140,16 @@ main {
 
 // About Page Styling
 .row {
-    display: flex;
-    margin: 10px;
+  display: flex;
+  margin: 10px;
 }
 .column {
-    flex: 50%;
-    font-size: 20px;
-    text-align: left;
-    line-height: 30px;
-    padding: 10px;
-    margin: 20px 20px;
+  flex: 50%;
+  // font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+  padding: 10px;
+  margin: 20px 20px;
 }
 
 .background-container {
@@ -188,7 +188,7 @@ main {
   width: 900px;
   color: black;
   position: fixed;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 60px;
   top: 30%;
   left: 30%;
@@ -196,6 +196,7 @@ main {
   margin-left: -200px;
   font-family: 'Roboto Mono', monospace;
   background: #EEE4E2;
+  border-radius: 5px;
 }
 .about-item {
   font-size: 25px;
@@ -286,6 +287,7 @@ main {
   // text-align: center;
   font-family: 'Roboto Mono', monospace;
   padding: 10px;
+  border-radius: 5px;
 }
 .login-content .title {
   font-size: 35px;
@@ -316,23 +318,181 @@ main {
   margin: 40px 20px 20px 100px;
   padding: 40px;
 }
- // RENDERED LISTINGS STYLING
- .listing_title {
-   text-align: center;
-   margin: 80px 0px 40px 0px;
-   color: white;
- }
- .listing_container {
-   position: relative;
-   border-radius: 3px;
-   border: black solid;
-   margin: 10px;
-   padding: 20px;
-   background-color: white;
-   opacity: 1;
+// RENDERED LISTINGS STYLING
+.listing_title {
+  text-align: center;
+  margin: 80px 0px 40px 0px;
+  color: white;
+  font-size: 40px;
+  position: relative;
 
- }
- .all_listings {
-   width: 50%;
-   margin: 0 auto;
- }
+}
+.listing_container {
+  position: relative;
+  border-radius: 3px;
+  border: white solid;
+  margin: 10px;
+  padding: 20px;
+  background-color: #EEE4E2;
+  font-family: 'Roboto Mono', monospace;
+  opacity: 1;
+
+}
+.all_listings {
+  width: 50%;
+  margin: 0 auto;
+}
+#new-listing {
+  height: 650px;
+  width: 500px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 12px;
+  line-height: 20px;
+  top: 25%;
+  left: 45%;
+  margin-top: -100px;
+  margin-left: -200px;
+  // text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px;
+  border-radius: 5px;
+}
+.listing-row {
+  display: flex;
+  margin: 10px;
+}
+.listing-column {
+  flex: 50%;
+  font-size: 12px;
+  text-align: left;
+  line-height: 30px;
+  padding: 10px;
+  margin: 20px 20px;
+}
+#rendered-listing {
+  height: 500px;
+  width: 600px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 14px;
+  line-height: 18px;
+  top: 25%;
+  left: 45%;
+  margin-top: -100px;
+  margin-left: -200px;
+  // text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 20px 20px 20px 40px;
+  border-radius: 5px;
+}
+#rendered-listing .title {
+  font-size: 24px;
+  text-align: center;
+  // margin: 4px;
+}
+
+#user-profile {
+  font-size: 14px;
+  padding: 20px;
+}
+#user-profile .title {
+  margin: 50px 0px;
+}
+#your-subletter-profile {
+  height: 550px;
+  width: 750px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 16px;
+  line-height: 24px;
+  top: 30%;
+  left: 40%;
+  margin-top: -100px;
+  margin-left: -200px;
+  // text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px;
+  border-radius: 5px;
+}
+#your-subletter-profile .profile-title {
+  margin: 50px 0px;
+  text-align: center;
+}
+.profile-row {
+  display: flex;
+  margin: 10px;
+}
+.profile-column {
+  flex: 50%;
+  font-size: 15px;
+  text-align: left;
+  line-height: 30px;
+  padding: 10px;
+  margin: 20px 20px;
+
+}
+.subletter-row {
+  display: flex;
+  margin: 10px;
+}
+.subletter-column {
+  flex: 50%;
+  font-size: 12px;
+  text-align: left;
+  line-height: 16px;
+  padding: 10px;
+  margin: 20px 20px;
+
+}
+// USERS STYLING
+#edit-user {
+  height: 650px;
+  width: 500px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 12px;
+  line-height: 18px;
+  top: 25%;
+  left: 45%;
+  margin-top: -100px;
+  margin-left: -200px;
+  // text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 20px 20px 20px 40px;
+  border-radius: 5px;
+}
+#edit-user .title {
+  // font-size: 18px;
+  font-size: 35px;
+  font-weight: lighter;
+  margin: 40px 0px;
+}
+#edit-subletter {
+  height: 700px;
+  width: 800px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 12px;
+  line-height: 14px;
+  top: 20%;
+  left: 35%;
+  margin-top: -100px;
+  margin-left: -200px;
+  // text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 20px 20px 20px 40px;
+  border-radius: 5px;
+}
+#edit-subletter .title {
+  // font-size: 18px;
+  font-size: 35px;
+  font-weight: lighter;
+  margin: 20px 0px;
+  text-align: center;
+}
