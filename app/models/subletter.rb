@@ -8,6 +8,11 @@ class Subletter < ApplicationRecord
 
   validates_format_of :email, with: /\@berkeley\.edu/, message: 'Make sure to sign up with your berkeley.edu'
 
+	def self.search_by(search)
+		self.where("startDate >= ?", search)
+		# puts 'search_by in subletter.rb'
+	end
+
   # User Avatar Validation
   validates_integrity_of  :avatar
   validates_processing_of :avatar
