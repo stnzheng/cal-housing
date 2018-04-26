@@ -5,7 +5,7 @@
   <div class="all_listings">
     <% @listings.each do |listing| %>
     <div class="listing_container">
-      <h1> <%= listing.open_spots%> Bedroom, $<%= listing.price %>, <%= listing.city%> </h1>
+      <div style="font-size: 34px; padding-top: 5px; text-align: center;"> <%= listing.open_spots%> Bedroom, $<%= listing.price %>, <%= listing.city%> </div>
       <div class="listing-row">
         <div class="listing-column">
           <h5> Price: $ <%= listing.price %> </h5>

@@ -43461,3 +43461,929 @@ Processing by ListingsController#show as HTML
 Completed 200 OK in 100ms (Views: 95.2ms | ActiveRecord: 0.6ms)
 
 
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 15:42:47 -0700
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 3.8ms)
+
+
+
+SyntaxError - syntax error, unexpected ';', expecting ')'
+            '.freeze;@output_buffer.append=( link_t
+                     ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:72: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:74: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^:
+  app/views/listings/show.html.erb:62:in `'
+
+Started POST "/__better_errors/09caf17ac6cb3a46/variables" for 127.0.0.1 at 2018-04-26 15:42:47 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 15:43:40 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (33.6ms)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 1.4ms)
+
+
+
+ArgumentError - nil is not a valid asset source:
+  app/views/listings/show.html.erb:53:in `_app_views_listings_show_html_erb__134361876893203583_70134213917380'
+
+Started POST "/__better_errors/739649a921317c13/variables" for 127.0.0.1 at 2018-04-26 15:43:40 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 15:45:10 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 2.2ms)
+
+
+
+SyntaxError - syntax error, unexpected '<', expecting ')'
+put_buffer.append=(image_tag(<%= url );@output_buffer.safe_a
+                              ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:73: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:75: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^:
+  app/views/listings/show.html.erb:54:in `'
+
+Started POST "/__better_errors/01446880d74271d5/variables" for 127.0.0.1 at 2018-04-26 15:45:10 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 15:45:11 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.2ms)
+
+
+
+SyntaxError - syntax error, unexpected '<', expecting ')'
+put_buffer.append=(image_tag(<%= url );@output_buffer.safe_a
+                              ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:73: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:75: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^:
+  app/views/listings/show.html.erb:54:in `'
+
+Started POST "/__better_errors/aa94664c84ff21d5/variables" for 127.0.0.1 at 2018-04-26 15:45:12 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 15:47:17 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (30.2ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 1.3ms)
+
+
+
+TypeError - no implicit conversion of Integer into String:
+  app/views/listings/show.html.erb:53:in `+'
+  app/views/listings/show.html.erb:53:in `_app_views_listings_show_html_erb__134361876893203583_70134204689700'
+
+Started POST "/__better_errors/aee0def297874377/variables" for 127.0.0.1 at 2018-04-26 15:47:17 -0700
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 15:48:08 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (1.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+DEPRECATION WARNING: The asset "listing6.jpg" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_listings_show_html_erb__134361876893203583_70134229751600 at /Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:53)
+  Rendered listings/show.html.erb within layouts/application (384.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (32.5ms)
+  Rendered layouts/_navigation.html.erb (47.9ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 1770ms (Views: 1738.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/images/listing6.jpg" for 127.0.0.1 at 2018-04-26 15:48:10 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/listing6.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:48:14 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (3.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (5.0ms)
+  Rendered layouts/_navigation.html.erb (14.7ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 134ms (Views: 121.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/images/listing6.jpg" for 127.0.0.1 at 2018-04-26 15:48:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/listing6.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 15:48:17 -0700
+Started GET "/images/listing6.jpg" for 127.0.0.1 at 2018-04-26 15:48:17 -0700
+Processing by ListingsController#show as HTML
+  
+  Parameters: {"id"=>"6"}
+ActionController::RoutingError (No route matches [GET] "/images/listing6.jpg"):
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering listings/show.html.erb within layouts/application
+DEPRECATION WARNING: The asset "listing6.jpg" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_listings_show_html_erb__134361876893203583_70134245363580 at /Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:53)
+  Rendered listings/show.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (4.7ms)
+  Rendered layouts/_navigation.html.erb (150.7ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 721ms (Views: 711.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/images/listing6.jpg" for 127.0.0.1 at 2018-04-26 15:48:19 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/listing6.jpg"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 15:48:21 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.0ms)
+  Rendered layouts/_navigation.html.erb (11.4ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 101ms (Views: 94.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:48:27 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (24.3ms)
+  Rendered layouts/_navigation.html.erb (36.6ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 232ms (Views: 220.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/listings/11" for 127.0.0.1 at 2018-04-26 15:48:30 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.3ms)
+  Rendered layouts/_navigation.html.erb (8.2ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 122ms (Views: 116.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:49:00 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (31.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (5.2ms)
+  Rendered layouts/_navigation.html.erb (15.5ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 236ms (Views: 221.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 15:49:03 -0700
+Processing by ListingsController#show as HTML
+Started GET "/images/listing6.jpg" for 127.0.0.1 at 2018-04-26 15:49:03 -0700
+  Parameters: {"id"=>"6"}
+  
+ActionController::RoutingError (No route matches [GET] "/images/listing6.jpg"):
+  
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+DEPRECATION WARNING: The asset "listing6.jpg" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_listings_show_html_erb__134361876893203583_70134235489820 at /Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:53)
+  Rendered listings/show.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (5.5ms)
+  Rendered layouts/_navigation.html.erb (14.0ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 168ms (Views: 139.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 15:52:50 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (586.2ms)
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (10.1ms)
+  Rendered layouts/_navigation.html.erb (24.0ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 884ms (Views: 855.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 15:53:16 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (31.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (6.9ms)
+  Rendered layouts/_navigation.html.erb (18.9ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 398ms (Views: 373.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:53:32 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.7ms)
+  Rendered layouts/_navigation.html.erb (12.5ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 112ms (Views: 102.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/listings/11" for 127.0.0.1 at 2018-04-26 15:53:36 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (4.2ms)
+  Rendered layouts/_navigation.html.erb (14.2ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 123ms (Views: 114.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:53:39 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.9ms)
+  Rendered layouts/_navigation.html.erb (13.2ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 170ms (Views: 163.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/listings/11" for 127.0.0.1 at 2018-04-26 15:53:41 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.2ms)
+  Rendered layouts/_navigation.html.erb (12.6ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 117ms (Views: 111.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:53:42 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (9.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 110ms (Views: 100.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/listings/7" for 127.0.0.1 at 2018-04-26 15:53:44 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.9ms)
+  Rendered layouts/_navigation.html.erb (22.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 128ms (Views: 124.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/listings/7" for 127.0.0.1 at 2018-04-26 15:54:03 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (11.3ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 145ms (Views: 140.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:54:15 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.7ms)
+  Rendered layouts/_navigation.html.erb (11.2ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 117ms (Views: 106.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:54:57 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (13.5ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 458ms (Views: 451.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:55:05 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.6ms)
+  Rendered layouts/_navigation.html.erb (13.0ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 281ms (Views: 276.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:55:48 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.1ms)
+  Rendered layouts/_navigation.html.erb (26.0ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 205ms (Views: 195.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:55:53 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.1ms)
+  Rendered layouts/_navigation.html.erb (12.9ms)
+  Rendered layouts/_messages.html.erb (1.9ms)
+Completed 200 OK in 128ms (Views: 123.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:56:05 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (31.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (6.2ms)
+  Rendered layouts/_navigation.html.erb (16.7ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 344ms (Views: 317.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:56:30 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (4.1ms)
+  Rendered layouts/_navigation.html.erb (15.6ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 200ms (Views: 193.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:56:33 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.9ms)
+  Rendered layouts/_navigation.html.erb (11.9ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 129ms (Views: 124.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2018-04-26 15:56:40 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (6.0ms)
+  Rendered layouts/_navigation.html.erb (16.7ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 125ms (Views: 122.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 15:56:42 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.erb (8.2ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 97ms (Views: 90.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-26 15:56:44 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/browse.html.erb within layouts/application
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.7970271735732 AND listings.lat<37.941597026426784 AND listings.lng>-122.34208441760072 AND listings.lng<-122.15894858239928) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.660944181610328)*COS(-2.1336740251886543)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.660944181610328)*SIN(-2.1336740251886543)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.660944181610328)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/browse.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.7ms)
+  Rendered layouts/_navigation.html.erb (10.4ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 697ms (Views: 86.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-26 15:56:55 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/browse.html.erb within layouts/application
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.7970271735732 AND listings.lat<37.941597026426784 AND listings.lng>-122.34208441760072 AND listings.lng<-122.15894858239928) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.660944181610328)*COS(-2.1336740251886543)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.660944181610328)*SIN(-2.1336740251886543)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.660944181610328)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/browse.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.5ms)
+  Rendered layouts/_navigation.html.erb (8.9ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 204ms (Views: 119.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 15:56:59 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.3ms)
+  Rendered layouts/_navigation.html.erb (11.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 100ms (Views: 96.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=140+Market+St%2C+San+Francisco%2C+CA&commit=Search" for 127.0.0.1 at 2018-04-26 15:57:02 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"140 Market St, San Francisco, CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 140 Market St, San Francisco, CA, args []
+Google geocoding. Result: %7B%0A+++%22error_message%22+%3A+%22You+have+exceeded+your+daily+request+quota+for+this+API.+We+recommend+registering+for+a+key+at+the+Google+Developers+Console%3A+https%3A%2F%2Fconsole.developers.google.com%2Fapis%2Fcredentials%3Fproject%3D_%22%2C%0A+++%22results%22+%3A+%5B%5D%2C%0A+++%22status%22+%3A+%22OVER_QUERY_LIMIT%22%0A%7D%0A
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.3ms)
+
+
+
+Geokit::Geocoders::TooManyQueriesError - You have exceeded your daily request quota for this API. We recommend registering for a key at the Google Developers Console: https://console.developers.google.com/apis/credentials?project=_:
+  app/controllers/listings_controller.rb:17:in `browse'
+
+Started POST "/__better_errors/5581dd350a9f1079/variables" for 127.0.0.1 at 2018-04-26 15:57:02 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=140+Market+St%2C+San+Francisco%2C+CA&commit=Search" for 127.0.0.1 at 2018-04-26 15:57:04 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"140 Market St, San Francisco, CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 140 Market St, San Francisco, CA, args []
+Google geocoding. Result: %7B%0A+++%22error_message%22+%3A+%22You+have+exceeded+your+daily+request+quota+for+this+API.+We+recommend+registering+for+a+key+at+the+Google+Developers+Console%3A+https%3A%2F%2Fconsole.developers.google.com%2Fapis%2Fcredentials%3Fproject%3D_%22%2C%0A+++%22results%22+%3A+%5B%5D%2C%0A+++%22status%22+%3A+%22OVER_QUERY_LIMIT%22%0A%7D%0A
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.4ms)
+
+
+
+Geokit::Geocoders::TooManyQueriesError - You have exceeded your daily request quota for this API. We recommend registering for a key at the Google Developers Console: https://console.developers.google.com/apis/credentials?project=_:
+  app/controllers/listings_controller.rb:17:in `browse'
+
+Started POST "/__better_errors/12b908ecd26d386f/variables" for 127.0.0.1 at 2018-04-26 15:57:04 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=140+Market+St%2C+San+Francisco%2C+CA&commit=Search" for 127.0.0.1 at 2018-04-26 15:57:06 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"140 Market St, San Francisco, CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 140 Market St, San Francisco, CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22140%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22140%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Market+Street%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Market+St%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Financial+District%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Financial+District%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22San+Francisco%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22SF%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22San+Francisco+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22San+Francisco+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294105%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294105%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%22140+Market+St%2C+San+Francisco%2C+CA+94105%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.7937284%2C%0A+++++++++++++++%22lng%22+%3A+-122.3958728%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22RANGE_INTERPOLATED%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.7950773802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.3945238197085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.7923794197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.3972217802915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22EisxNDAgTWFya2V0IFN0LCBTYW4gRnJhbmNpc2NvLCBDQSA5NDEwNSwgVVNBIhsSGQoUChIJjwg9_mOAhYARDE7iYg0_oFAQjAE%22%2C%0A+++++++++%22types%22+%3A+%5B+%22street_address%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/browse.html.erb within layouts/application
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.721443473573196 AND listings.lat<37.86601332642679 AND listings.lng>-122.48734696110395 AND listings.lng<-122.30439863889607) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.6596249971844884)*COS(-2.1362109712121713)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.6596249971844884)*SIN(-2.1362109712121713)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.6596249971844884)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/browse.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (5.9ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 740ms (Views: 79.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=140+Market+St%2C+San+Francisco%2C+CA&commit=Search" for 127.0.0.1 at 2018-04-26 15:57:19 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"140 Market St, San Francisco, CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 140 Market St, San Francisco, CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22140%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22140%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Market+Street%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Market+St%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Financial+District%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Financial+District%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22San+Francisco%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22SF%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22San+Francisco+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22San+Francisco+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294105%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294105%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%22140+Market+St%2C+San+Francisco%2C+CA+94105%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.7937284%2C%0A+++++++++++++++%22lng%22+%3A+-122.3958728%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22RANGE_INTERPOLATED%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.7950773802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.3945238197085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.7923794197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.3972217802915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22EisxNDAgTWFya2V0IFN0LCBTYW4gRnJhbmNpc2NvLCBDQSA5NDEwNSwgVVNBIhsSGQoUChIJjwg9_mOAhYARDE7iYg0_oFAQjAE%22%2C%0A+++++++++%22types%22+%3A+%5B+%22street_address%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/browse.html.erb within layouts/application
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.721443473573196 AND listings.lat<37.86601332642679 AND listings.lng>-122.48734696110395 AND listings.lng<-122.30439863889607) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.6596249971844884)*COS(-2.1362109712121713)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.6596249971844884)*SIN(-2.1362109712121713)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.6596249971844884)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/browse.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (8.3ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 166ms (Views: 89.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=140+Market+St%2C+San+Francisco%2C+CA&commit=Search" for 127.0.0.1 at 2018-04-26 15:57:24 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"140 Market St, San Francisco, CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 140 Market St, San Francisco, CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22140%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22140%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Market+Street%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Market+St%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Financial+District%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Financial+District%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22San+Francisco%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22SF%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22San+Francisco+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22San+Francisco+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294105%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294105%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%22140+Market+St%2C+San+Francisco%2C+CA+94105%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.7937284%2C%0A+++++++++++++++%22lng%22+%3A+-122.3958728%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22RANGE_INTERPOLATED%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.7950773802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.3945238197085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.7923794197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.3972217802915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22EisxNDAgTWFya2V0IFN0LCBTYW4gRnJhbmNpc2NvLCBDQSA5NDEwNSwgVVNBIhsSGQoUChIJjwg9_mOAhYARDE7iYg0_oFAQjAE%22%2C%0A+++++++++%22types%22+%3A+%5B+%22street_address%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/browse.html.erb within layouts/application
+  [1m[36mListing Load (7.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.721443473573196 AND listings.lat<37.86601332642679 AND listings.lng>-122.48734696110395 AND listings.lng<-122.30439863889607) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.6596249971844884)*COS(-2.1362109712121713)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.6596249971844884)*SIN(-2.1362109712121713)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.6596249971844884)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/browse.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.5ms)
+  Rendered layouts/_navigation.html.erb (11.7ms)
+  Rendered layouts/_messages.html.erb (3.3ms)
+Completed 200 OK in 197ms (Views: 110.9ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/listings/1" for 127.0.0.1 at 2018-04-26 15:57:36 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navigation_links.html.erb (1.9ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (14.1ms)
+  Rendered layouts/_navigation.html.erb (28.6ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 193ms (Views: 183.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:57:54 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (3.3ms)
+  Rendered layouts/_navigation.html.erb (16.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 206ms (Views: 199.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:58:27 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (6.6ms)
+  Rendered layouts/_navigation.html.erb (21.3ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 233ms (Views: 228.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:58:53 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (6.4ms)
+  Rendered layouts/_navigation.html.erb (17.5ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 180ms (Views: 175.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:59:01 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.5ms)
+  Rendered layouts/_navigation.html.erb (12.3ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 250ms (Views: 244.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 15:59:38 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (4.5ms)
+  Rendered layouts/_navigation.html.erb (19.8ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 230ms (Views: 222.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:00:06 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (22.9ms)
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (15.8ms)
+  Rendered layouts/_navigation.html.erb (31.8ms)
+  Rendered layouts/_messages.html.erb (1.6ms)
+Completed 200 OK in 364ms (Views: 348.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=140+Market+St%2C+San+Francisco%2C+CA&commit=Search" for 127.0.0.1 at 2018-04-26 16:00:11 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"140 Market St, San Francisco, CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 140 Market St, San Francisco, CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22140%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22140%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Market+Street%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Market+St%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Financial+District%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Financial+District%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22San+Francisco%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22SF%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22San+Francisco+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22San+Francisco+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294105%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294105%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%22140+Market+St%2C+San+Francisco%2C+CA+94105%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.7937284%2C%0A+++++++++++++++%22lng%22+%3A+-122.3958728%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22RANGE_INTERPOLATED%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.7950773802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.3945238197085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.7923794197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.3972217802915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22EisxNDAgTWFya2V0IFN0LCBTYW4gRnJhbmNpc2NvLCBDQSA5NDEwNSwgVVNBIhsSGQoUChIJjwg9_mOAhYARDE7iYg0_oFAQjAE%22%2C%0A+++++++++%22types%22+%3A+%5B+%22street_address%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/browse.html.erb within layouts/application
+  [1m[36mListing Load (43.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.721443473573196 AND listings.lat<37.86601332642679 AND listings.lng>-122.48734696110395 AND listings.lng<-122.30439863889607) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.6596249971844884)*COS(-2.1362109712121713)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.6596249971844884)*SIN(-2.1362109712121713)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.6596249971844884)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/browse.html.erb within layouts/application (58.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.7ms)
+  Rendered layouts/_navigation.html.erb (10.8ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 247ms (Views: 113.5ms | ActiveRecord: 43.8ms)
+
+
+Started GET "/listings/10" for 127.0.0.1 at 2018-04-26 16:00:19 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (8.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 105ms (Views: 96.7ms | ActiveRecord: 0.7ms)
+
+
