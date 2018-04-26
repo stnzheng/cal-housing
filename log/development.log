@@ -42388,3 +42388,512 @@ Processing by ListingsController#show as HTML
 Completed 200 OK in 179ms (Views: 169.8ms | ActiveRecord: 2.4ms)
 
 
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/Vcortes/ruby198/cal-housing/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2018-04-26 13:13:43 -0700
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (46.3ms)
+  Rendered layouts/_navigation.html.erb (62.9ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 1269ms (Views: 1229.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 13:13:51 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (69.5ms)
+  Rendered layouts/_navigation_links.html.erb (9.8ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (9.4ms)
+  Rendered layouts/_navigation.html.erb (148.0ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 587ms (Views: 461.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 13:14:07 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (3.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 197ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 13:14:07 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (20.8ms)
+  Rendered layouts/_navigation_links.html.erb (5.3ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (4.4ms)
+  Rendered layouts/_navigation.html.erb (113.6ms)
+  Rendered layouts/_messages.html.erb (1.4ms)
+Completed 200 OK in 961ms (Views: 955.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/subletter/sign_in" for 127.0.0.1 at 2018-04-26 13:14:18 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering subletters/sessions/new.html.erb within layouts/application
+  Rendered subletters/shared/_links.html.erb (1.8ms)
+  Rendered subletters/sessions/new.html.erb within layouts/application (1478.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.3ms)
+  Rendered layouts/_navigation.html.erb (14.8ms)
+  Rendered layouts/_messages.html.erb (2.1ms)
+Completed 200 OK in 1863ms (Views: 1730.2ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/subletter/sign_in" for 127.0.0.1 at 2018-04-26 13:14:24 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Z+YYmmu1BgoS1OeVE6EM3su50mkK0qAZzFpEah9mEtm+2bEI9XkplpwPTWEQzGmSjPBs5OUoJ5a+jCuSPihNA==", "subletter"=>{"email"=>"vanessa@berkeley.edu", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mSubletter Load (6.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."email" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["email", "vanessa@berkeley.edu"], ["LIMIT", 1]]
+  [1m[35m (2.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (14.6ms)[0m  [1m[33mUPDATE "subletters" SET "remember_created_at" = ?, "updated_at" = ? WHERE "subletters"."id" = ?[0m  [["remember_created_at", "2018-04-26 20:14:24.577407"], ["updated_at", "2018-04-26 20:14:24.593330"], ["id", 1]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "subletters" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "updated_at" = ? WHERE "subletters"."id" = ?[0m  [["sign_in_count", 5], ["current_sign_in_at", "2018-04-26 20:14:24.637226"], ["last_sign_in_at", "2018-04-26 09:55:08.754539"], ["updated_at", "2018-04-26 20:14:24.642466"], ["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 459ms (ActiveRecord: 29.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 13:14:24 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navigation_links.html.erb (8.0ms)
+  [1m[36mSubletter Load (6.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (15.9ms)
+  Rendered layouts/_navigation.html.erb (34.9ms)
+  Rendered layouts/_messages.html.erb (3.3ms)
+Completed 200 OK in 372ms (Views: 361.9ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-26 13:14:33 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+Completed 401 Unauthorized in 29ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2018-04-26 13:14:33 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (8.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (88.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.9ms)
+  [1m[36mSubletter Load (1.2ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (11.7ms)
+  Rendered layouts/_navigation.html.erb (22.1ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+Completed 200 OK in 779ms (Views: 764.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2018-04-26 13:15:09 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B7O525tAhs0ISNGxnLnoqFvrBavb2YR5Yobboe7lgpOXoqqOiYg4w6HoV3ynCWRHo+7yHTxNkQ/dD/6HjQAX7Q==", "user"=>{"email"=>"oski@berkeley.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "oski@berkeley.edu"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-04-26 20:15:09.363257"], ["last_sign_in_at", "2018-04-26 10:10:22.111497"], ["sign_in_count", 3], ["updated_at", "2018-04-26 20:15:09.372072"], ["id", 2]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search
+Completed 302 Found in 280ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-26 13:15:09 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22error_message%22+%3A+%22You+have+exceeded+your+daily+request+quota+for+this+API.+We+recommend+registering+for+a+key+at+the+Google+Developers+Console%3A+https%3A%2F%2Fconsole.developers.google.com%2Fapis%2Fcredentials%3Fproject%3D_%22%2C%0A+++%22results%22+%3A+%5B%5D%2C%0A+++%22status%22+%3A+%22OVER_QUERY_LIMIT%22%0A%7D%0A
+Completed 500 Internal Server Error in 236ms (ActiveRecord: 0.9ms)
+
+
+
+Geokit::Geocoders::TooManyQueriesError - You have exceeded your daily request quota for this API. We recommend registering for a key at the Google Developers Console: https://console.developers.google.com/apis/credentials?project=_:
+  app/controllers/listings_controller.rb:15:in `browse'
+
+Started POST "/__better_errors/3e7b143804431506/variables" for 127.0.0.1 at 2018-04-26 13:15:10 -0700
+Started GET "/browse?utf8=%E2%9C%93&address=2830+Bancroft+Steps%2C+Berkeley+CA&commit=Search" for 127.0.0.1 at 2018-04-26 13:15:17 -0700
+Processing by ListingsController#browse as HTML
+  Parameters: {"utf8"=>"✓", "address"=>"2830 Bancroft Steps, Berkeley CA", "commit"=>"Search"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Google geocoding. address: 2830 Bancroft Steps, Berkeley CA, args []
+Google geocoding. Result: %7B%0A+++%22results%22+%3A+%5B%0A++++++%7B%0A+++++++++%22address_components%22+%3A+%5B%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22short_name%22+%3A+%222830%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22street_number%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Bancroft+Steps%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22route%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Southside%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22neighborhood%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Berkeley%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22locality%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22Alameda+County%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_2%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22California%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22CA%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22administrative_area_level_1%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%22United+States%22%2C%0A+++++++++++++++%22short_name%22+%3A+%22US%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22country%22%2C+%22political%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22short_name%22+%3A+%2294704%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code%22+%5D%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A+++++++++++++++%22long_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22short_name%22+%3A+%221814%22%2C%0A+++++++++++++++%22types%22+%3A+%5B+%22postal_code_suffix%22+%5D%0A++++++++++++%7D%0A+++++++++%5D%2C%0A+++++++++%22formatted_address%22+%3A+%222830+Bancroft+Steps%2C+Berkeley%2C+CA+94704%2C+USA%22%2C%0A+++++++++%22geometry%22+%3A+%7B%0A++++++++++++%22bounds%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8693949%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2502885%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8691533%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2506882%0A+++++++++++++++%7D%0A++++++++++++%7D%2C%0A++++++++++++%22location%22+%3A+%7B%0A+++++++++++++++%22lat%22+%3A+37.86931209999999%2C%0A+++++++++++++++%22lng%22+%3A+-122.2505165%0A++++++++++++%7D%2C%0A++++++++++++%22location_type%22+%3A+%22ROOFTOP%22%2C%0A++++++++++++%22viewport%22+%3A+%7B%0A+++++++++++++++%22northeast%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8706230802915%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2491393697085%0A+++++++++++++++%7D%2C%0A+++++++++++++++%22southwest%22+%3A+%7B%0A++++++++++++++++++%22lat%22+%3A+37.8679251197085%2C%0A++++++++++++++++++%22lng%22+%3A+-122.2518373302915%0A+++++++++++++++%7D%0A++++++++++++%7D%0A+++++++++%7D%2C%0A+++++++++%22place_id%22+%3A+%22ChIJxUwt_TB8hYARXv2Atsbq9-g%22%2C%0A+++++++++%22types%22+%3A+%5B+%22premise%22+%5D%0A++++++%7D%0A+++%5D%2C%0A+++%22status%22+%3A+%22OK%22%0A%7D%0A
+  Rendering listings/browse.html.erb within layouts/application
+  [1m[36mListing Load (5.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (listings.lat IS NOT NULL AND listings.lng IS NOT NULL) AND (listings.lat>37.7970271735732 AND listings.lat<37.941597026426784 AND listings.lng>-122.34208441760072 AND listings.lng<-122.15894858239928) AND ((
+          (CASE WHEN listings.lat IS NULL OR listings.lng IS NULL THEN NULL ELSE
+          (ACOS(least(1,COS(0.660944181610328)*COS(-2.1336740251886543)*COS(RADIANS(listings.lat))*COS(RADIANS(listings.lng))+
+          COS(0.660944181610328)*SIN(-2.1336740251886543)*COS(RADIANS(listings.lat))*SIN(RADIANS(listings.lng))+
+          SIN(0.660944181610328)*SIN(RADIANS(listings.lat))))*3963.1899999999996)
+          END)
+          <= 5))[0m
+  Rendered listings/browse.html.erb within layouts/application (66.5ms)
+  Rendered layouts/_navigation_links.html.erb (5.9ms)
+  [1m[36mSubletter Load (0.4ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (5.7ms)
+  Rendered layouts/_navigation.html.erb (22.0ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 1625ms (Views: 871.9ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/listings/7" for 127.0.0.1 at 2018-04-26 13:15:27 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (18.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (32.7ms)
+  Rendered layouts/_navigation_links.html.erb (15.1ms)
+  [1m[36mSubletter Load (4.6ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (66.0ms)
+  Rendered layouts/_navigation.html.erb (114.2ms)
+  Rendered layouts/_messages.html.erb (1.7ms)
+Completed 200 OK in 1831ms (Views: 1459.5ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/listings/7" for 127.0.0.1 at 2018-04-26 13:17:37 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mListing Load (10.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (76.1ms)
+Completed 500 Internal Server Error in 221ms (ActiveRecord: 18.6ms)
+
+
+
+SyntaxError - syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:74: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^:
+  app/views/listings/show.html.erb:72:in `'
+
+Started POST "/__better_errors/c1f2d9694d7fe017/variables" for 127.0.0.1 at 2018-04-26 13:17:38 -0700
+  [1m[36mListing Load (7.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+Started GET "/listings/7" for 127.0.0.1 at 2018-04-26 13:19:19 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mListing Load (4.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (14.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (26.5ms)
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 18.8ms)
+
+
+
+SyntaxError - syntax error, unexpected '>'
+_buffer.safe_append='.jpg") %>
+                              ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:55: unknown regexp options - dv
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:56: syntax error, unexpected '<'
+    </div>
+     ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:65: unknown regexp option - p
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:66: syntax error, unexpected '<'
+        </div>
+         ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:67: unknown regexp options - dv
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:68: syntax error, unexpected '<'
+    </div>
+     ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:69: unknown regexp options - dv
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:70: unterminated string meets end of file
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:70: syntax error, unexpected end-of-input, expecting ')':
+  app/views/listings/show.html.erb:53:in `'
+
+Started POST "/__better_errors/026ce23de1f33cd8/variables" for 127.0.0.1 at 2018-04-26 13:19:20 -0700
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+Started GET "/listings/7" for 127.0.0.1 at 2018-04-26 13:20:23 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mListing Load (2.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (41.6ms)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 4.6ms)
+
+
+
+SyntaxError - syntax error, unexpected ';', expecting ')'
+            '.freeze;@output_buffer.append=( link_t
+                     ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:72: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:74: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^:
+  app/views/listings/show.html.erb:62:in `'
+
+Started POST "/__better_errors/6704fceb661e827f/variables" for 127.0.0.1 at 2018-04-26 13:20:24 -0700
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2018-04-26 13:20:39 -0700
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (16.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (416.1ms)
+  Rendered layouts/_navigation_links.html.erb (5.1ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubletter Load (1.0ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (81.2ms)
+  Rendered layouts/_navigation.html.erb (110.1ms)
+  Rendered layouts/_messages.html.erb (29.5ms)
+Completed 200 OK in 2748ms (Views: 2678.4ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 13:20:46 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (8.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (184.6ms)
+  Rendered layouts/_navigation_links.html.erb (2.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.6ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (8.4ms)
+  Rendered layouts/_navigation.html.erb (27.4ms)
+  Rendered layouts/_messages.html.erb (1.6ms)
+Completed 200 OK in 2164ms (Views: 2022.6ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 13:20:51 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 1.8ms)
+
+
+
+SyntaxError - syntax error, unexpected ';', expecting ')'
+            '.freeze;@output_buffer.append=( link_t
+                     ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:72: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:74: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^:
+  app/views/listings/show.html.erb:62:in `'
+
+Started POST "/__better_errors/7fca9ddf82b94fe0/variables" for 127.0.0.1 at 2018-04-26 13:20:51 -0700
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 13:21:35 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (29.1ms)
+  Rendered layouts/_navigation_links.html.erb (2.7ms)
+  [1m[36mSubletter Load (0.4ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (13.1ms)
+  Rendered layouts/_navigation.html.erb (35.6ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 732ms (Views: 659.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 13:21:51 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (66.7ms)
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  [1m[36mSubletter Load (0.7ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (7.2ms)
+  Rendered layouts/_navigation.html.erb (28.9ms)
+  Rendered layouts/_messages.html.erb (11.6ms)
+Completed 200 OK in 1292ms (Views: 1208.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 13:22:12 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (43.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (44.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (70.3ms)
+Completed 500 Internal Server Error in 698ms (ActiveRecord: 87.3ms)
+
+
+
+SyntaxError - syntax error, unexpected '>'
+_buffer.safe_append='.jpg") %>
+                              ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:55: unknown regexp options - dv
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:56: syntax error, unexpected '<'
+    </div>
+     ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:65: unknown regexp option - p
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:66: syntax error, unexpected '<'
+        </div>
+         ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:67: unknown regexp options - dv
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:68: syntax error, unexpected '<'
+    </div>
+     ^
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:69: unknown regexp options - dv
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:70: unterminated string meets end of file
+/Users/Vcortes/ruby198/cal-housing/app/views/listings/show.html.erb:70: syntax error, unexpected end-of-input, expecting ')':
+  app/views/listings/show.html.erb:53:in `'
+
+Started POST "/__better_errors/09eadd8b4935b999/variables" for 127.0.0.1 at 2018-04-26 13:22:14 -0700
+  [1m[36mListing Load (8.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 13:22:43 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (93.9ms)
+  Rendered layouts/_navigation_links.html.erb (22.8ms)
+  [1m[36mSubletter Load (1.0ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (183.0ms)
+  Rendered layouts/_navigation.html.erb (307.4ms)
+  Rendered layouts/_messages.html.erb (16.4ms)
+Completed 200 OK in 979ms (Views: 899.4ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 13:23:11 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (24.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (24.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (207.8ms)
+  Rendered layouts/_navigation_links.html.erb (25.0ms)
+  [1m[36mSubletter Load (0.5ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (6.8ms)
+  Rendered layouts/_navigation.html.erb (51.8ms)
+  Rendered layouts/_messages.html.erb (1.6ms)
+Completed 200 OK in 897ms (Views: 726.0ms | ActiveRecord: 48.6ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 13:23:45 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (5.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (66.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (166.8ms)
+  Rendered layouts/_navigation_links.html.erb (21.8ms)
+  [1m[36mSubletter Load (2.7ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (108.5ms)
+  Rendered layouts/_navigation.html.erb (226.0ms)
+  Rendered layouts/_messages.html.erb (47.8ms)
+Completed 200 OK in 1730ms (Views: 1438.7ms | ActiveRecord: 74.8ms)
+
+
+Started GET "/listings/6" for 127.0.0.1 at 2018-04-26 13:24:38 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mListing Load (8.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (106.0ms)
+  Rendered layouts/_navigation_links.html.erb (2.2ms)
+  [1m[36mSubletter Load (0.7ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (11.1ms)
+  Rendered layouts/_navigation.html.erb (44.1ms)
+  Rendered layouts/_messages.html.erb (2.5ms)
+Completed 200 OK in 1056ms (Views: 982.2ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 13:25:09 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (11.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (96.5ms)
+  Rendered layouts/_navigation_links.html.erb (9.3ms)
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.4ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (34.4ms)
+  Rendered layouts/_navigation.html.erb (62.3ms)
+  Rendered layouts/_messages.html.erb (15.7ms)
+Completed 200 OK in 715ms (Views: 663.7ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 13:25:14 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_navigation_links.html.erb (5.4ms)
+  [1m[36mSubletter Load (0.6ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (8.9ms)
+  Rendered layouts/_navigation.html.erb (26.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 408ms (Views: 381.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/listings/4" for 127.0.0.1 at 2018-04-26 13:25:42 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (46.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  [1m[36mSubletter Load (0.8ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (15.5ms)
+  Rendered layouts/_navigation.html.erb (36.7ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 2597ms (Views: 2521.3ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2018-04-26 13:25:50 -0700
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (2.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" ORDER BY "listings"."price" ASC[0m
+  Rendered listings/index.html.erb within layouts/application (48.4ms)
+  Rendered layouts/_navigation_links.html.erb (3.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSubletter Load (0.4ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (15.3ms)
+  Rendered layouts/_navigation.html.erb (32.3ms)
+  Rendered layouts/_messages.html.erb (4.7ms)
+Completed 200 OK in 405ms (Views: 384.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/listings/11" for 127.0.0.1 at 2018-04-26 13:25:55 -0700
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (13.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Listing Load (0.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (150.4ms)
+  Rendered layouts/_navigation_links.html.erb (17.8ms)
+  [1m[36mSubletter Load (1.9ms)[0m  [1m[34mSELECT  "subletters".* FROM "subletters" WHERE "subletters"."id" = ? ORDER BY "subletters"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (29.0ms)
+  Rendered layouts/_navigation.html.erb (184.6ms)
+  Rendered layouts/_messages.html.erb (5.6ms)
+Completed 200 OK in 2243ms (Views: 2014.4ms | ActiveRecord: 17.6ms)
+
+
