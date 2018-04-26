@@ -8,10 +8,19 @@
         <!-- <p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p> -->
 
         <%= form_tag("/browse", method: "get") do %>
-          <%= label_tag(:address, "Search for:") %>
+          <%= label_tag(:address, "Search for Housing:") %>
           <%= text_field_tag(:address, '', size: 50, placeholder: 'housing near this address...') %>
           <%= submit_tag("Search", class: 'address-button') %>
         <% end %>
+
+      </br> </br>
+        <%= form_tag("/browse/subletters", method: "get") do %>
+          <%= label_tag(:address, "Search for Subletters:") %>
+          <%= text_field_tag(:address, '', size: 50, placeholder: 'subletters who fit your start lease date...') %>
+          <%= submit_tag("Search", class: 'address-button') %>
+        <% end %>
+
+
       </div>
     </div>
   </header>

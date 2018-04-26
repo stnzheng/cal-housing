@@ -11,16 +11,10 @@ Rails.application.routes.draw do
 
   get "/subletter/:id", to: "subletters#show", as: "subletter_show"
 
-	# as :subletter do
-	#   put 'subletter/', :to => 'subletters#show', :as => :subletter_root
-	# end
-	# devise_for :subletters, :controllers => { :registrations => "subletter_show" }
-	# match 'subletter_root' => redirect("/subletter/:id")
-
-
   get "/user/:id", to: "users#show", as: "user_show"
 
   get "/browse", to: "listings#index", as: "browse"
+  get "/browse/subletters", to: "subletters#index", as: "browse_subletters"
 
 
 end
