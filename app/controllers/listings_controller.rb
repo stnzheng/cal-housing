@@ -5,7 +5,14 @@ class ListingsController < ApplicationController
 
   # GET /listings
   # GET /listings.json
+
+
   def index
+    @listings = Listing.all.order(:price)
+  end
+
+  def browse
+
     address = params[:address]
     @lat_lon = a=Geokit::Geocoders::GoogleGeocoder.geocode address
     @listings = Listing.within(5, :origin => [@lat_lon.lat, @lat_lon.lng])
@@ -21,7 +28,10 @@ class ListingsController < ApplicationController
 
   # GET /listings/1/edit
   def edit
-
+    @listing = Listing.find(params[:id])
+    unless current_user == @listing.user
+      redirect_to(@listing, notice: "You cannot edit this listing") and return
+    end
   end
 
   # POST /listings
@@ -56,8 +66,13 @@ class ListingsController < ApplicationController
   end
 
   def show
+    if current_user
       @listing = Listing.find(params[:id])
       @author_listing = current_user.listings
+    else
+      flash[:error] = "Register for a user account to see more!"
+      redirect_to root_path
+    end
   end
 
   # PATCH/PUT /listings/1
@@ -84,15 +99,17 @@ class ListingsController < ApplicationController
       format.html { redirect_to listings_url, notice: 'Listing was successfully destroyed.' }
       format.json { head :no_content }
     end
+    unless current_user == @listing.user
+      redirect_to(@listing, notice: "You cannot delete this listing") and return
+    end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_listing
       @listing = Listing.find(params[:id])
+
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
   def listing_params
     params.require(:listing).permit(:author, :price, :open_spots, :street, :city, :start_date, :end_date, :rating, :description, :image)
   end

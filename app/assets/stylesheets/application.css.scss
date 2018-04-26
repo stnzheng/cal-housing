@@ -1,42 +1,42 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any styles
+* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+* file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
 // HOME PAGE STYLING
 .container .bg {
   position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url("campanille.jpg") center center;
-    opacity: .8;
-    width: 100%;
-    height: 100%;
-    min-height: 760px;
-    /* Set background image to fixed (don't scroll along with the page) */
-    background-attachment: fixed;
-    /* Center the background image */
-    background-position: center;
-    /* Set the background image to no repeat */
-    background-repeat: no-repeat;
-    /* Scale the background image to be as large as possible */
-    background-size: cover;
-    height: 805px;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("campanille.jpg") center center;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  min-height: 760px;
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+  /* Center the background image */
+  background-position: center;
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+  /* Scale the background image to be as large as possible */
+  background-size: cover;
+  height: 805px;
 
-  }
+}
 
 header.masthead {
   text-align: center;
@@ -86,6 +86,9 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
+input {
+  color: black;
+}
 input#address {
   line-height: 3;
   border-radius: 10px;
@@ -96,13 +99,31 @@ input#address {
   border: 2px solid;
   border-radius: 5px;
   line-height: 36px;
+  color: white;
 }
 
 main {
+
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  // bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("campanille.jpg") center center;
+  opacity: .8;
   width: 100%;
-  height: 760px;
-  padding: 0px;
-  margin: 0px;
+  // height: 100%;
+  min-height: 760px;
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+  /* Center the background image */
+  background-position: center;
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+  /* Scale the background image to be as large as possible */
+  background-size: cover;
+  // height: 805px;
 }
 
 .app_title {
@@ -118,7 +139,23 @@ main {
 
 
 // About Page Styling
-.about-container .bg {
+.row {
+  display: flex;
+  margin: 10px;
+}
+.column {
+  flex: 50%;
+  // font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+  padding: 10px;
+  margin: 20px 20px;
+}
+
+.background-container {
+  position: relative;
+}
+.background-container .bg {
   position: absolute;
   font-family: 'Roboto Mono', monospace;
   // z-index: -1;
@@ -130,7 +167,7 @@ main {
   opacity: .8;
   width: 100%;
   height: 100%;
-  min-height: 760px;
+  min-height: 800px;
   /* Set background image to fixed (don't scroll along with the page) */
   background-attachment: fixed;
   /* Center the background image */
@@ -139,81 +176,130 @@ main {
   background-repeat: no-repeat;
   /* Scale the background image to be as large as possible */
   background-size: cover;
-  height: 805px;
 
+}
+.about-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
 }
 .about-content {
-  margin: 50px;
+  height: 600px;
+  width: 900px;
+  color: black;
+  position: fixed;
+  font-size: 20px;
+  line-height: 60px;
+  top: 30%;
+  left: 30%;
+  margin-top: -100px;
+  margin-left: -200px;
+  font-family: 'Roboto Mono', monospace;
+  background: #EEE4E2;
+  border-radius: 5px;
+}
+.about-item {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px 80px;
+  padding: 10px;
+  line-height: 35px;
+  font-family: 'Roboto Mono', monospace;
+}
+// LEASER SIGN IN
+.subletter_profile {
+  position: absolute;
+  margin: 140px 100px;
   padding: 50px;
   opacity: 1;
-  color: white;
+  color: black;
   z-index: 1;
+  height: 800px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 25px;
+  line-height: 35px;
+}
+.profile-title {
+  font-size: 35px;
+  font-weight: lighter;
+  margin: 20px 0px;
+}
+
+// SIGN UP STYLING
+.signup-content {
+  height: 200px;
+  width: 800px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 40px;
+  line-height: 60px;
+  top: 50%;
+  left: 35%;
+  margin-top: -100px;
+  margin-left: -200px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+.signup-box {
+  height: 620px;
+  width: 400px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 20px;
+  line-height: 30px;
+  top: 30%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px 40px;
+}
+.signup-box input {
+  color: black;
+}
+.signup-box .title {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 20px 0px;
+  text-align: center;
+}
+.signup-options {
+  text-align: center;
+  text-decoration: none;
+  color: black;
 
 }
-// about-container {
-//   text-align: center;
-//   color: white;
-//   background-repeat: no-repeat;
-//   background-attachment: scroll;
-//   background-position: center center;
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-// }
-//
-// header.masthead .intro-text {
-//   padding-top: 150px;
-//   padding-bottom: 100px;
-//   opacity: 1;
-// }
-//
-// header.masthead .intro-text .intro-lead-in {
-//   font-size: 22px;
-//   // font-style: italic;
-//   line-height: 22px;
-//   margin-bottom: 25px;
-//   // font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-// }
-//
-// header.masthead .intro-text .intro-heading {
-//   font-size: 50px;
-//   font-weight: 700;
-//   line-height: 50px;
-//   margin-bottom: 25px;
-//   //font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-// }
-//
-// @media (min-width: 768px) {
-//   header.masthead .intro-text {
-//     padding-top: 300px;
-//     padding-bottom: 200px;
-//   }
-//   header.masthead .intro-text .intro-lead-in {
-//     font-size: 40px;
-//     // font-style: italic;
-//     line-height: 40px;
-//     margin-bottom: 25px;
-//     // font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-//   }
-//   header.masthead .intro-text .intro-heading {
-//     font-size: 75px;
-//     font-weight: 700;
-//     line-height: 75px;
-//     margin-bottom: 50px;
-//     // font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-//   }
-// }
-//
-// about-container {
-//   font-family: 'Roboto Mono', monospace;
-//
-// }
+// LOGIN PAGES STYLING
+.login-content {
+  height: 500px;
+  width: 400px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 20px;
+  line-height: 30px;
+  top: 30%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+  // text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px;
+  border-radius: 5px;
+}
+.login-content .title {
+  font-size: 35px;
+  font-weight: lighter;
+  margin: 20px 0px;
+  text-align: center;
+}
 .app_container {
   // height: 680px;
   width: 100%;
   position: relative;
-    z-index: 1;
+  z-index: 1;
 
   //background-image: url("bridge.jpg");
   /* Set a specified height, or the minimum height for the background image */
@@ -232,18 +318,181 @@ main {
   margin: 40px 20px 20px 100px;
   padding: 40px;
 }
- // RENDERED LISTINGS STYLING
- .listing_title {
-   text-align: center;
-   margin: 30px auto;
- }
- .listing_container {
-   border-radius: 3px;
-   border: black solid;
-   margin: 10px;
-   padding: 20px;
- }
- .all_listings {
-   width: 50%;
-   margin: 0 auto;
- }
+// RENDERED LISTINGS STYLING
+.listing_title {
+  text-align: center;
+  margin: 80px 0px 40px 0px;
+  color: white;
+  font-size: 40px;
+  position: relative;
+
+}
+.listing_container {
+  position: relative;
+  border-radius: 3px;
+  border: white solid;
+  margin: 10px;
+  padding: 20px;
+  background-color: #EEE4E2;
+  font-family: 'Roboto Mono', monospace;
+  opacity: 1;
+
+}
+.all_listings {
+  width: 50%;
+  margin: 0 auto;
+}
+#new-listing {
+  height: 650px;
+  width: 500px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 12px;
+  line-height: 20px;
+  top: 25%;
+  left: 45%;
+  margin-top: -100px;
+  margin-left: -200px;
+  // text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px;
+  border-radius: 5px;
+}
+.listing-row {
+  display: flex;
+  margin: 10px;
+}
+.listing-column {
+  flex: 50%;
+  font-size: 12px;
+  text-align: left;
+  line-height: 30px;
+  // padding: 10px;
+  margin: 20px 20px;
+}
+#rendered-listing {
+  height: 500px;
+  width: 700px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 16px;
+  line-height: 18px;
+  top: 25%;
+  left: 40%;
+  margin-top: -100px;
+  margin-left: -200px;
+  // text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 20px 20px 20px 40px;
+  border-radius: 5px;
+}
+#rendered-listing .title {
+  font-size: 24px;
+  text-align: center;
+  // margin: 4px;
+}
+
+#user-profile {
+  font-size: 14px;
+  padding: 20px;
+}
+#user-profile .title {
+  margin: 50px 0px;
+}
+#your-subletter-profile {
+  height: 550px;
+  width: 750px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 16px;
+  line-height: 24px;
+  top: 30%;
+  left: 40%;
+  margin-top: -100px;
+  margin-left: -200px;
+  // text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px;
+  border-radius: 5px;
+}
+#your-subletter-profile .profile-title {
+  margin: 50px 0px;
+  text-align: center;
+}
+.profile-row {
+  display: flex;
+  margin: 10px;
+}
+.profile-column {
+  flex: 50%;
+  font-size: 15px;
+  text-align: left;
+  line-height: 30px;
+  padding: 10px;
+  margin: 20px 20px;
+
+}
+.subletter-row {
+  display: flex;
+  margin: 10px;
+}
+.subletter-column {
+  flex: 50%;
+  font-size: 12px;
+  text-align: left;
+  line-height: 16px;
+  padding: 10px;
+  margin: 20px 20px;
+
+}
+// USERS STYLING
+#edit-user {
+  height: 650px;
+  width: 500px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 12px;
+  line-height: 18px;
+  top: 25%;
+  left: 45%;
+  margin-top: -100px;
+  margin-left: -200px;
+  // text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 20px 20px 20px 40px;
+  border-radius: 5px;
+}
+#edit-user .title {
+  // font-size: 18px;
+  font-size: 35px;
+  font-weight: lighter;
+  margin: 40px 0px;
+}
+#edit-subletter {
+  height: 700px;
+  width: 800px;
+  background: #EEE4E2;
+  color: black;
+  position: fixed;
+  font-size: 12px;
+  line-height: 14px;
+  top: 20%;
+  left: 35%;
+  margin-top: -100px;
+  margin-left: -200px;
+  // text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 20px 20px 20px 40px;
+  border-radius: 5px;
+}
+#edit-subletter .title {
+  // font-size: 18px;
+  font-size: 35px;
+  font-weight: lighter;
+  margin: 20px 0px;
+  text-align: center;
+}

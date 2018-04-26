@@ -1,54 +1,69 @@
-<p id="notice"><%= notice %></p>
+<div id="rendered-listing">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @listing.author %>
-</p>
+  <div class="title"> <%= @listing.open_spots%> Bedroom, $<%= @listing.price %>, <%= @listing.city%>
+    <div style="text-align:center;margin-top:10px;font-size: 20px;">
+      <% (0..@listing.rating - 1).each do |_| %>
+      <span><%='☆'%> </span>
+      <% end %>
+      (<%= @listing.rating %>) </div>
 
-<p>
-  <strong>Price:</strong>
-  <%= @listing.price %>
-</p>
+    </div>
+    <div class="listing-row">
+      <div class="listing-column">
+        <div>
+          <strong>Author:</strong>
+          <%= @listing.author %>
+        </div>
+        <div>
+          <strong>Price:</strong>
+          <%= @listing.price %>
+        </div>
+        <div>
+          <strong>Open spots:</strong>
+          <%= @listing.open_spots %>
+        </div>
+        <div>
+          <strong>Street:</strong>
+          <%= @listing.street %>
+        </div>
+        <div>
+          <strong>City:</strong>
+          <%= @listing.city %>
+        </div>
+        <div>
+          <strong>Start date:</strong>
+          <%= @listing.start_date %>
+        </div>
 
-<p>
-  <strong>Open spots:</strong>
-  <%= @listing.open_spots %>
-</p>
+        <div>
+          <strong>End date:</strong>
+          <%= @listing.end_date %>
+        </div>
+      </div>
+      <div class="listing-column">
+        <div>
+          <strong>Description:</strong>
+          <%= @listing.description %>
+        </div>
+        <div>
+          <strong>Pictures:</strong>
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @listing.street %>,<%= @listing.city %>,California,CA&zoom=15&size=500x250&maptype=roadmap&markers=color:blue%7Clabel:S%7C<%= @listing.lat %>,<%= @listing.lng %>&key=<%= ENV["GOOGLE_API_KEY"] %>" />
 
-<p>
-  <strong>Street:</strong>
-  <%= @listing.street %>
-</p>
+          <%= @listing.image %>
+        </div>
+      </div>
+    </div>
 
-<p>
-  <strong>City:</strong>
-  <%= @listing.city %>
-</p>
-
-<p>
-  <strong>Start date:</strong>
-  <%= @listing.start_date %>
-</p>
-
-<p>
-  <strong>End date:</strong>
-  <%= @listing.end_date %>
-</p>
-
-<p>
-  <strong>Rating:</strong>
-  <%= @listing.rating %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @listing.description %>
-</p>
-
-
-<div style="clear: both">
-<p>
-  <%= link_to 'Edit', edit_listing_path(@listing) %> |
-  <%= link_to 'Destroy', @listing, method: :delete, data: { confirm: 'Are you sure?' } %> |
-  <%= link_to 'Back', listings_path %>
-</p>
+    <div class="listing-row">
+      <div class="listing-column">
+        <div style="clear: both; align-self:center;">
+          <p>
+            <%= link_to 'Edit', edit_listing_path(@listing) %> |
+            <%= link_to 'Destroy', @listing, method: :delete, data: { confirm: 'Are you sure?' } %> |
+            <%= link_to 'Back', listings_path %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

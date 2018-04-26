@@ -1,3 +1,4 @@
+
 <div class="background-container">
   <div class="bg"> </div>
   <h1 class="listing_title"> Listings: </h1>
@@ -19,7 +20,8 @@
           </h5>
         </div>
         <div class="listing-column">
-          <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= listing.street %>,<%= listing.city %>,California,CA&zoom=15&size=400x200&maptype=roadmap&markers=color:blue%7Clabel:S%7C<%= listing.lat %>,<%= listing.lng %>&key=<%=ENV["GOOGLE_API_KEY"]%>" />
+
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= listing.street %>,<%= listing.city %>,California,CA&zoom=15&size=400x200&maptype=roadmap&markers=color:blue%7Clabel:S%7C<%= listing.lat %>,<%= listing.lng %>&key=<%= ENV["GOOGLE_API_KEY"] %>" />
           <td><%= link_to 'Show More', listing %></td>
         </div>
       </div>

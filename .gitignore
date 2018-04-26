@@ -1,2 +1,6 @@
 tmp/*
 log/*
+Gemfile
+
+# Ignore application configuration: super important api key info
+/config/application.yml

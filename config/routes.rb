@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get "/user/:id", to: "users#show", as: "user_show"
 
-  get "/browse", to: "listings#index", as: "browse"
+  get "/browse", to: "listings#browse", as: "browse"
   get "/browse/subletters", to: "subletters#index", as: "browse_subletters"
 
 
