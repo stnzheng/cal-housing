@@ -10,13 +10,14 @@ class SublettersController < ApplicationController
     	puts 'Search for date: ', @search_term
     	@subletters_list = Subletter.all
     	@subletters = []
-    	@subletters_list.each { |x| 
-    		if x.startDate > Date.parse(@search_term) 
-    			@subletters.push(x)
-    		end
-    	}
+    	if @subletters_list
+	    	@subletters_list.each do |x| 
+	    		if x.startDate && x.startDate > Date.parse(@search_term) 
+	    				@subletters.push(x)
+	    		end
+	    	end
+	    end
     	# @subletters = @subletters.search_by(@search_term)
-    	puts @subletters
     end
   end
 
