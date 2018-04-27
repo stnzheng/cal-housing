@@ -1,6 +1,8 @@
 tmp/*
 log/*
+db/development.sqlite3
 Gemfile
+*.sqlite3
 
 # Ignore application configuration: super important api key info
 /config/application.yml

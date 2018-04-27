@@ -1,5 +1,7 @@
 # README
 
+##Cal Housing
+
 ## Team Members:
 + Nalin Chopra
 + Vanessa Cortes
@@ -9,8 +11,9 @@
 ## Demo Link:
 
 ## Idea:
-The main purpose of the app is to provide a platform for subleasers and landlords to find trustworthy subletters (college students), and for college students to find open spots for housing. This app will meet the demand of people who are looking for short-term leasing due to internship relocation or summer school, and will also ensure the safety and quality of subletter matching.
+The main purpose of the app is to provide a platform for subleasers and landlords to find trustworthy subletters (college students), and for college students to find open spots for housing. This app will meet the demand of people who are looking for short-term leasing due to internship relocation or summer school, and will also ensure the safety and quality of subletter matching, by authenticating users based on their berkeley.edu emails.
 
+Whether you're looking to find housing in an area, or a trusted roommate for a couple months, Cal-Housing is designed to match your needs!
 
 ## Models:
 + Landlord:
@@ -37,7 +40,7 @@ The main purpose of the app is to provide a platform for subleasers and landlord
 	* Has street Address
 	* Has city
 	* Has distance
-	* Has time 
+	* Has time
 		- Time frame of subletting period
 	* Has rating
 	* Has description
@@ -45,9 +48,26 @@ The main purpose of the app is to provide a platform for subleasers and landlord
 		- Single/double
 
 ## Features:
-+ Authentication of identity
-+ Filter by multiple attributes
++ Filter by multiple attributes in housing search
+	+ Start date
+	+ Location (10 Mile radius)
++ Search platform for subletters
++ Post & modify listings
++ Authentication of identity for verified customer-leaser community (berkeley.edu emails only)
 
-## Extra Gem:
-+ Google Maps for “Listing ___ miles away”: https://github.com/edwardsamuel/google-maps-services-ruby
+## Extra Gems:
++ Google Maps API for “Listing ___ miles away”: https://github.com/edwardsamuel/google-maps-services-ruby
+	+ Geokit / GeokitRails - gems to geocode addresses & find close locations
+	+ figaro - API Key storage
++ Image uploads / formatting to profiles & listings
+	+ graphicsmagick / mini_magick
+	+ fog
+	+ carrierwav
+	+ gravatar_image_tag
 
+
+## Division of Labor:
++ Vanessa -
++ Nalin - Worked on API config. and Google Maps gems to locate closest listings, added seed data integrated with API, worked on initial Listings Controllers methods & basic rendering 
++ Steven
++ Tinsley
