@@ -67,7 +67,7 @@ Whether you're looking to find housing in an area, or a trusted roommate for a c
 
 
 ## Division of Labor:
-+ Vanessa -
++ Vanessa - Implemented front-end, worked on API configuration with google maps gems.
 + Nalin - Worked on API config. and Google Maps gems to locate closest listings, added seed data integrated with API, worked on initial Listings Controllers methods & basic rendering 
-+ Steven
-+ Tinsley
++ Steven - Implemented double devise models, sign in page customization, view/edit subletter profile page, subletter image uploading, seed data for subletters, filter by/display by subletter start date
++ Tinsley - Implemented listing creation, image uploading, listing update/destroy functions, subleasor profile creation and log-in authentication, allowed subleasor to have control over his/her listings only.
