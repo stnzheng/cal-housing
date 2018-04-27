@@ -92,7 +92,10 @@ input {
 input#address {
   line-height: 3;
   border-radius: 10px;
-
+}
+input#search {
+  line-height: 3;
+  border-radius: 10px;
 }
 .address-button {
   background-color: transparent;
@@ -167,7 +170,7 @@ main {
   opacity: .8;
   width: 100%;
   height: 100%;
-  min-height: 800px;
+  min-height: 780px;
   /* Set background image to fixed (don't scroll along with the page) */
   background-attachment: fixed;
   /* Center the background image */
