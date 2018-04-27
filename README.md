@@ -13,7 +13,7 @@
 ## Idea:
 The main purpose of the app is to provide a platform for subleasers and landlords to find trustworthy subletters (college students), and for college students to find open spots for housing. This app will meet the demand of people who are looking for short-term leasing due to internship relocation or summer school, and will also ensure the safety and quality of subletter matching, by authenticating users based on their berkeley.edu emails.
 
-Whether you find housing in an area, or a trusted roommate for a couple months, Cal-Housing is designed to match your needs!
+Whether you're looking to find housing in an area, or a trusted roommate for a couple months, Cal-Housing is designed to match your needs!
 
 ## Models:
 + Landlord:
