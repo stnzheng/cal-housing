@@ -63,7 +63,6 @@ class ListingsController < ApplicationController
 
   def show
       @listing = Listing.find(params[:id])
-
   end
 
   # PATCH/PUT /listings/1
@@ -98,7 +97,6 @@ class ListingsController < ApplicationController
   private
     def set_listing
       @listing = Listing.find(params[:id])
-
     end
 
   def listing_params
