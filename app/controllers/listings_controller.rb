@@ -19,6 +19,16 @@ class ListingsController < ApplicationController
     @listings = Listing.all.order(:price)
   end
 
+  # def authenticate!
+  #     if user_signed_in?
+  #       @current_user = current_user
+  #       true
+  #     else
+  #       authenticate_subletter!
+  #     end
+
+  # end
+
   def browse
 
     address = params[:address]
