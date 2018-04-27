@@ -42,9 +42,9 @@ puts 'CREATED ADMIN USER: ' << user.email
 end
 
 # Make Subletters
-[['Roger Federer', 'federer@berkeley.edu',  Date.new(2018,4,29),  Date.new(2018,6,14)], 
+[['Roger Federer', 'federer@berkeley.edu',  Date.new(2018,4,29),  Date.new(2018,6,14)],
  ['Rafael Nadal', 'nadal@berkeley.edu',  Date.new(2018,5,12),  Date.new(2018,8,18)],
- ['Alexander Zverev', 'zverev@berkeley.edu',  Date.new(2018,6,23),  Date.new(2018,12,12)], 
+ ['Alexander Zverev', 'zverev@berkeley.edu',  Date.new(2018,6,23),  Date.new(2018,12,12)],
  ['Marin Cilic', 'cilic@berkeley.edu',  Date.new(2018,8,27),  Date.new(2018,9,20)],
  ['Grigor Dimitrov', 'dimitrov@berkeley.edu',  Date.new(2018,10,6),  Date.new(2018,10,6)],
  ['Juan DelPotro', 'delpotro@berkeley.edu',  Date.new(2018,10,23),  Date.new(2018,11,4)],
