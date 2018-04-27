@@ -64,3 +64,10 @@ Whether you're looking to find housing in an area, or a trusted roommate for a c
 	+ fog
 	+ carrierwav
 	+ gravatar_image_tag
+
+
+## Division of Labor:
++ Vanessa -
++ Nalin - Worked on API config. and Google Maps gems to locate closest listings, added seed data integrated with API, worked on initial Listings Controllers methods & basic rendering 
++ Steven
++ Tinsley
