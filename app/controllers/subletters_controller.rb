@@ -11,8 +11,8 @@ class SublettersController < ApplicationController
     	@subletters_list = Subletter.all
     	@subletters = []
     	if @subletters_list
-	    	@subletters_list.each do |x| 
-	    		if x.startDate && x.startDate > Date.parse(@search_term) 
+	    	@subletters_list.each do |x|
+	    		if x.startDate && x.startDate > Date.parse(@search_term)
 	    				@subletters.push(x)
 	    		end
 	    	end
