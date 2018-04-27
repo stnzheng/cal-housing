@@ -14,13 +14,12 @@
         <% end %>
 
       </br> </br>
-      
+
         <%= form_tag("/browse/subletters", method: "get") do %>
           <%= label_tag(:startDate, "Search for Subletters:") %>
           <%= text_field_tag :search, @search_term, size: 50, placeholder: 'subletters who fit your start lease date...' %>
           <%= submit_tag("Search", class: 'address-button') %>
         <% end %>
-
 
       </div>
     </div>

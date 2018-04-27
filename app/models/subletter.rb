@@ -9,8 +9,9 @@ class Subletter < ApplicationRecord
   validates_format_of :email, with: /\@berkeley\.edu/, message: 'Make sure to sign up with your berkeley.edu'
 
 	def self.search_by(search)
-		self.where("startDate >= ?", search)
-		# puts 'search_by in subletter.rb'
+		formatted_date = Date.parse(search)#.strftime("%a, %d %b %Y")
+		self.where("startDate >= ?", formatted_date)
+		puts 'search_by in subletter.rb: ', formatted_date
 	end
 
   # User Avatar Validation
